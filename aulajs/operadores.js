@@ -5,14 +5,11 @@ console.log(4 !== "5") // true
 
 //DESAFIO 1
 //Verificar se a pessoa é maior de idade
-const idade = 17
-if (idade >= 18) {
-    console.log('Deixar entrar')
-} else {
+const idade = 20
+if (!(idade >= 18) || idade === 17) {
     console.log('Bloquear a entrada')
-}
-if (idade === 17) {
-    console.log('Volte quando tiver 18')
+} else {
+    console.log('Deixar entrar')
 }
 
 console.log(5 == 5 && 6 == 6) // true
@@ -23,3 +20,9 @@ console.log(5 == 5 || 6 != 6) // true
 
 console.log(!(5>6)) // true
 console.log(!(5 < 6)) // false
+
+console.log(2 * 2) // 4
+console.log(2 / 2) // 1
+console.log(2 % 1.5) // 0.5
+console.log(2 + 2) // 4
+console.log(2 - 2) // 0
