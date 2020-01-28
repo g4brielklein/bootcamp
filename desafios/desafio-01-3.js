@@ -21,6 +21,5 @@ for (let i = 0; i < usuarios.length; i++) {
 
 function checaSeUsuarioUsaCSS(usuario) {
     for (let i = 0; i < usuarios.length; i++) {
-           
     }
 }
