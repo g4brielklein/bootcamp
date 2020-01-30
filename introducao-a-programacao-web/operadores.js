@@ -3,7 +3,7 @@ console.log(4 === "4") // false
 console.log(4 != "5") // true
 console.log(4 !== "5") // true
 
-//DESAFIO 1
+//Desafio 1
 //Verificar se a pessoa é maior de idade
 const idade = 20
 if (!(idade >= 18) || idade === 17) {
