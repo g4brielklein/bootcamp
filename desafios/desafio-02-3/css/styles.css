@@ -36,7 +36,7 @@ div {
     text-align: center;
 }
 
-div img {
+.wrapper img {
     border-radius: 50%;
     border: 3px solid var(--rocketseat-color);
     margin-top: 100px;
@@ -74,4 +74,16 @@ div a:hover {
 
 footer {
     margin-top: 150px;
+}
+
+.cursos {
+    max-width: 800px;
+    margin: 100px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.wrapper h1 {
+    color: white;
 }
