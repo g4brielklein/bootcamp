@@ -84,6 +84,32 @@ footer {
     gap: 20px;
 }
 
+.curso {
+    background-color: var(--color-rocket);
+}
+
+.curso__image-container img {
+    width: 100%;
+}
+
+.curso__content,
+.curso__info {
+    padding: 24px;
+}
+
+.curso_info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.curso__price {
+    background-color: var(--color-rocketseat);
+    filter: brightness(90%);
+    padding: 5px 20px;
+    border-radius: 20px;
+    text-align: center;
+}
+
 .wrapper h1 {
     color: white;
 }
