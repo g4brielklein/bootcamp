@@ -15,25 +15,27 @@ body {
     color: white;
 }
 
-header div {
-    text-align: center;
-    padding: 30px;
+header {
+    padding: 32px;
+    border-bottom: 1px solid #333;
     background: rgba(0, 0, 0, 0.1);
-    border-bottom: 2px solid #000033;
 }
 
-header div a {
-    padding: 0 30px;
+.links {
+    text-align: center;
+}
+
+.links a {
     color: white;
+    font-size: 18px;
+    line-height: 28px;
+    margin: 0 16px;
     text-decoration: none;
 }
 
-header div a:hover {
-    color: #00CC00;
-}
-
-div {
-    text-align: center;
+.links a:hover {
+    color: var(--color-green);
+    transition: color 200ms;
 }
 
 .wrapper img {
@@ -78,7 +80,7 @@ footer {
 
 .cursos {
     max-width: 800px;
-    margin: 100px auto;
+    margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
