@@ -1,7 +1,4 @@
 @import "https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap";
-:root {
-    --rocketseat-color: #8E4Dff;
-}
 
 * {
     margin: 0;
@@ -10,68 +7,67 @@
 }
 
 body {
-    background: #282a36;
+    background: #3b5998;
     font-family: 'Roboto', sans-serif;
     color: white;
 }
 
-header div {
-    text-align: center;
+header {
+    background-color: rgb(0, 0, 0, 0.4);
     padding: 30px;
-    background: rgba(0, 0, 0, 0.1);
-    border-bottom: 2px solid #000033;
+    border-bottom: 1px solid #333;
 }
 
-header div a {
-    padding: 0 30px;
+.links {
+    text-align: center;
+}
+
+.links a {
+    margin: 0 30px;
     color: white;
     text-decoration: none;
+    font-size: 18px;
+    line-height: 28px;
 }
 
-header div a:hover {
-    color: #00CC00;
+.links a:hover {
+    color: #8E4Dff;
+    transition: color 200ms;
 }
 
-div {
+#wrapper {
     text-align: center;
+    padding: 30px;
 }
 
-div img {
+#wrapper img {
     border-radius: 50%;
-    border: 3px solid var(--rocketseat-color);
-    margin-top: 100px;
+    border: 3px solid rgba(0, 0, 0, 0.4);
 }
 
-div h1 {
-    margin: 20px;
+#wrapper h1 {
     font-size: 40px;
+    line-height: 50px;
     font-weight: bold;
-    margin-bottom: 50px;
-    color: var(--rocketseat-color);
+    padding: 10px;
+    margin-bottom: 30px;
 }
 
-div h2 {
-    margin: 30px;
-}
-
-body div ul {
-    padding: 5px;
-}
-
-body div ul li {
-    padding: 3px;
-}
-
-div a {
-    color: white;
-    text-decoration: none;
+#wrapper h2 {
+    font-weight: normal;
     padding: 30px;
+    font-size: 20px;
 }
 
-div a:hover {
-    color: var(--rocketseat-color);
+#wrapper p {
+    font-size: 20px;
 }
 
-footer {
-    margin-top: 150px;
+#wrapper ul li {
+    list-style: none;
+    margin: 10px;
+}
+
+#link-footer {
+    margin-top: 80px;
 }
