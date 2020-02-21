@@ -1,5 +1,9 @@
 @import "https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap";
 
+:root {
+    --destaque: rgba(0, 0, 0, 0.4);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -70,4 +74,26 @@ header {
 
 #link-footer {
     margin-top: 80px;
+}
+
+/* === CURSOS === */
+
+.cursos {
+    max-width: 800px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.curso {
+    background-color: var(--destaque);
+}
+
+.curso__image-container img {
+    width: 100%;
+}
+
+.curso__content {
+    
 }
