@@ -141,11 +141,23 @@ header {
     cursor: pointer;
 }
 
+.modal .maximize {
+    color: black;
+    position: absolute;
+    top: 16px;
+    right: 32px;
+    cursor: pointer;
+}
+
 /* === MODAL.ACTIVE === */
 
 .modal-overlay.active {
     opacity: 1;
     visibility: visible;
+}
+
+.modal.maximize {
+    background-color: black; 
 }
 
 iframe {
