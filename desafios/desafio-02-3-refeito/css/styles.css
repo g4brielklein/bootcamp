@@ -156,6 +156,10 @@ header {
     visibility: visible;
 }
 
+.modal-overlay.maximize {
+    opacity: 0;
+}
+
 iframe {
     width: 100%;
     height: 90%;
