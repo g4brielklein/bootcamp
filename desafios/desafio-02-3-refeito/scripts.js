@@ -1,5 +1,6 @@
 const modalOverlay = document.querySelector(".modal-overlay")
 const cursos = document.querySelectorAll(".curso")
+const modal = document.querySelector(".modal")
 
 for(let curso of cursos) {
     curso.addEventListener("click", function(){
@@ -14,7 +15,6 @@ document.querySelector(".close-modal").addEventListener("click", function(){
     modalOverlay.querySelector("iframe").src = ""
 })
 
-document.querySelector(".maximize-modal").addEventListener("click", function(){
-    alert("Funcionando!")
-    modalOverlay.classList.add('maximize')
+document.querySelector(".max-modal").addEventListener("click", function(){
+    modal.classList.add("max")
 })

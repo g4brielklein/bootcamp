@@ -141,7 +141,7 @@ header {
     cursor: pointer;
 }
 
-.modal .maximize-modal {
+.modal .max-modal {
     color: red;
     position: absolute;
     top: 16px;
@@ -156,8 +156,9 @@ header {
     visibility: visible;
 }
 
-.modal-overlay.maximize {
-    opacity: 0;
+.modal.max {
+    width: 100%;
+    height: 100%;
 }
 
 iframe {
