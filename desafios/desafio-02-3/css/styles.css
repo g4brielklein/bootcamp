@@ -17,9 +17,9 @@ body {
 }
 
 header {
-    padding: 32px;
-    border-bottom: 1px solid #333;
-    background: rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    border-bottom: 3px solid #333;
+    background: rgba(0, 0, 0, 0.2);
 }
 
 .links {
@@ -28,15 +28,21 @@ header {
 
 .links a {
     color: white;
-    font-size: 18px;
-    line-height: 28px;
-    margin: 0 16px;
+    font-size: 20px;
+    line-height: 30px;
     text-decoration: none;
+    margin: 30px;
 }
 
 .links a:hover {
-    color: var(--color-green);
+    color: var(--rocketseat-color);
     transition: color 200ms;
+}
+
+/* === WRAPPER === */
+
+.wrapper {
+    text-align: center;
 }
 
 .wrapper img {
@@ -45,54 +51,48 @@ header {
     margin-top: 100px;
 }
 
-div h1 {
+.wrapper h1 {
     margin: 20px;
     font-size: 40px;
+    line-height: 50px;
     font-weight: bold;
     margin-bottom: 50px;
     color: var(--rocketseat-color);
 }
 
-div h2 {
+.wrapper h2 {
     margin: 30px;
 }
 
-body div ul {
+.wrapper ul {
     padding: 5px;
 }
 
-body div ul li {
+.wrapper ul li {
     padding: 3px;
 }
 
-div a {
-    color: white;
-    text-decoration: none;
-    padding: 30px;
-}
-
-div a:hover {
-    color: var(--rocketseat-color);
-}
-
-footer {
+#links-footer {
     margin-top: 150px;
 }
 
+/* === MODAL === */
+
 .cursos {
     max-width: 800px;
-    margin: 0 auto;
+    margin: 100px auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
 }
 
 .curso {
-    background-color: var(--color-rocket);
+    background-color: rgba(0, 0, 0, 0.2);
 }
 
-.curso__image-container img {
-    width: 100%;
+.curso__image-container {
+    text-align: center;
+    margin-top: 20px;
 }
 
 .curso__content,
@@ -100,19 +100,15 @@ footer {
     padding: 24px;
 }
 
-.curso_info {
+.curso__info {
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
 
 .curso__price {
-    background-color: var(--color-rocketseat);
+    background-color: var(--rocketseat-color);
     filter: brightness(90%);
     padding: 5px 20px;
     border-radius: 20px;
     text-align: center;
-}
-
-.wrapper h1 {
-    color: white;
 }
