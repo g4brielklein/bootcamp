@@ -16,5 +16,11 @@ document.querySelector(".close-modal").addEventListener("click", function(){
 })
 
 document.querySelector(".max-modal").addEventListener("click", function(){
-    modal.classList.add("max")
+    const is_maximize = modal.classList.contains('maximize')
+    if(is_maximize) {
+        modal.classList.remove('maximize')
+    } else {
+        modal.classList.add('maximize')
+    }
 })
+    
