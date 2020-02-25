@@ -24,4 +24,3 @@ document.querySelector(".maximize-modal").addEventListener("click", function(){
         modal.classList.add('maximize')
     }
 })
-    
