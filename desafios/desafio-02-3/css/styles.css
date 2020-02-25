@@ -48,7 +48,7 @@ header {
 .wrapper img {
     border-radius: 50%;
     border: 3px solid var(--rocketseat-color);
-    margin-top: 100px;
+    margin-top: 60px;
 }
 
 .wrapper h1 {
@@ -73,7 +73,7 @@ header {
 }
 
 #links-footer {
-    margin-top: 150px;
+    margin-top: 80px;
 }
 
 /* === CURSOS === */
