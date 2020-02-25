@@ -1,7 +1,7 @@
 @import "https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap";
 
 :root {
-    --rocketseat-color: #8E4Dff;
+    --destaque: #284177;
 }
 
 * {
@@ -11,15 +11,15 @@
 }
 
 body {
-    background: #282a36;
+    background: #3b5998;
     font-family: 'Roboto', sans-serif;
     color: white;
 }
 
 header {
+    background-color: var(--destaque);
     padding: 30px;
-    border-bottom: 3px solid #333;
-    background: rgba(0, 0, 0, 0.2);
+    border-bottom: 1px solid #333;
 }
 
 .links {
@@ -27,52 +27,53 @@ header {
 }
 
 .links a {
+    margin: 0 30px;
     color: white;
-    font-size: 20px;
-    line-height: 30px;
     text-decoration: none;
-    margin: 30px;
+    font-size: 18px;
+    line-height: 28px;
 }
 
 .links a:hover {
-    color: var(--rocketseat-color);
+    color: #8E4Dff;
     transition: color 200ms;
 }
 
-/* === WRAPPER === */
-
-.wrapper {
+#wrapper {
     text-align: center;
+    padding: 30px;
 }
 
-.wrapper img {
+#wrapper img {
     border-radius: 50%;
-    border: 3px solid var(--rocketseat-color);
-    margin-top: 60px;
+    border: 3px solid rgba(0, 0, 0, 0.4);
 }
 
-.wrapper h1 {
-    margin: 20px;
+#wrapper h1 {
+    text-align: center;
     font-size: 40px;
     line-height: 50px;
     font-weight: bold;
-    margin-bottom: 50px;
-    color: var(--rocketseat-color);
+    padding: 10px;
+    margin-bottom: 30px;
 }
 
-.wrapper h2 {
-    margin: 30px;
+#wrapper h2 {
+    font-weight: normal;
+    padding: 30px;
+    font-size: 20px;
 }
 
-.wrapper ul {
-    padding: 5px;
+#wrapper p {
+    font-size: 20px;
 }
 
-.wrapper ul li {
-    padding: 3px;
+#wrapper ul li {
+    list-style: none;
+    margin: 10px;
 }
 
-#links-footer {
+#link-footer {
     margin-top: 80px;
 }
 
@@ -80,23 +81,23 @@ header {
 
 .cursos {
     max-width: 800px;
-    margin: 100px auto;
+    margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
 }
 
 .curso {
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: var(--destaque);
 }
 
 .curso__image-container {
     text-align: center;
-    margin-top: 20px;
+    margin-top: 24px;
 }
 
-.curso__content,
-.curso__info {
+.curso__info,
+.curso__content {
     padding: 24px;
 }
 
@@ -106,7 +107,7 @@ header {
 }
 
 .curso__price {
-    background-color: var(--rocketseat-color);
+    background-color: var(--destaque);
     filter: brightness(90%);
     padding: 5px 20px;
     border-radius: 20px;
@@ -152,6 +153,7 @@ header {
 }
 
 /* === MODAL.ACTIVE === */
+
 .modal-overlay.active {
     opacity: 1;
     visibility: visible;
