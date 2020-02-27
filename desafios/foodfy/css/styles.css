@@ -32,7 +32,7 @@ body {
     margin-left: 231px; 
 }
 
-.main {
+#main {
     position: absolute;
     background-color: #FBDFDB;
     border-radius: 30px;
@@ -41,7 +41,7 @@ body {
     margin-left: 230px; 
 }
 
-.main h1 {
+#main h1 {
     font-weight: bold;
     font-size: 32px;
     line-height: 38px;
@@ -50,9 +50,10 @@ body {
     margin-top: 117px;
 }
 
-.main p {
+#main p {
     font-size: 18px;
     line-height: 28px;
+    font-weight: normal;
     color: #000000;
     opacity: 0.7;
     max-width: 316px;
@@ -66,9 +67,59 @@ body {
     margin-left : 854px;
 }
 
-.mais-acessadas h1 {
+#mais-acessadas h1 {
     margin: 50px 0 20px 230px;
     font-size: 24px;
     line-height: 28px;
     color: #111111;
 }
+
+/* === RECEITAS === */
+
+.receitas {
+    max-width: 800px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-left: 230px;
+    gap: 20px;
+}
+
+.receita {
+    width: 300px;
+}
+
+.receita-imagem img {
+    border-radius: 15px;
+    width: 100%;
+}
+
+.receita-nome h1 {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    color: #111111;
+    margin-top: 20px;
+}
+
+.receita-autor h2 {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: #777777;
+    margin-top: 5px;
+    margin-bottom: 30px
+}
+
+footer {
+    background-color: #EEEEEE;
+    padding: 23px;
+    margin-top: 20px;
+}
+
+footer h2 {
+    color: #999999;
+    font-weight: normal;
+    font-size: 14px;
+    text-align: center;
+}
+
