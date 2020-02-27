@@ -26,6 +26,10 @@ body {
     padding: 0 15px;
 }
 
+span {
+    font-weight: bold;
+}
+
 .logo {
     position: absolute;
     margin-top: 36.1px;
@@ -123,3 +127,26 @@ footer h2 {
     text-align: center;
 }
 
+/* === Sobre === */
+
+.titulo {
+    margin-left: 230px;
+    margin-top: 14px;
+    max-width: 940px;
+}
+
+.titulo h1 {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    color: #111111;
+}
+
+.titulo p {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 28px;
+    color: #444444;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
