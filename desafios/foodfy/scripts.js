@@ -5,11 +5,13 @@ const modal = document.querySelector(".modal")
 for(let receita of receitas) {
     receita.addEventListener("click", function(){
         modal.classList.remove("maximize")
+        const receitaId = receita.getAttribute("id")
+        modalOverlay.querySelector("iframe").src = `${receitaId}.html`
         modalOverlay.classList.add("active")
     })
 }
 
-document.querySelector(".close-modal").addEventListener("click", function(){
+document.querySelector(".modal-overlay").addEventListener("click", function(){
     modalOverlay.classList.remove("active")
 })
 
