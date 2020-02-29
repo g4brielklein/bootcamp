@@ -208,3 +208,8 @@ iframe {
     height: 100%;
     padding: 30px;
 }
+
+iframe img {
+    border-radius: 16px;
+    width: 100%;
+}
