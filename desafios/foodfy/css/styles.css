@@ -213,3 +213,7 @@ iframe img {
     border-radius: 16px;
     width: 100%;
 }
+iframe h1 {
+    font-size: 18px;
+    line-height: 28px;
+}
