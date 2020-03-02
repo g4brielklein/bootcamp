@@ -17,9 +17,9 @@ document.querySelector(".modal-overlay").addEventListener("click", function(){
 
 document.querySelector(".maximize-modal").addEventListener("click", function(){
     const is_maximize = modal.classList.contains("maximize")
-    if(is_maximize) {
-        modal.classList.remove("maximize")
-    } else {
+    if(!is_maximize) {
         modal.classList.add("maximize")
+    } else {
+        modal.classList.remove("maximize")
     }
 })
