@@ -11,8 +11,9 @@ for(let receita of receitas) {
     })
 }
 
-document.querySelector(".modal-overlay").addEventListener("click", function(){
+document.querySelector(".close-modal").addEventListener("click", function(){
     modalOverlay.classList.remove("active")
+    modalOverlay.querySelector("iframe").src = ``
 })
 
 document.querySelector(".maximize-modal").addEventListener("click", function(){
