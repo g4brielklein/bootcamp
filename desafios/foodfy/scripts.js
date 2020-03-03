@@ -6,7 +6,7 @@ for(let receita of receitas) {
     receita.addEventListener("click", function(){
         modal.classList.remove("maximize")
         const receitaId = receita.getAttribute("id")
-        modalOverlay.querySelector("iframe").src = `${receitaId}.html`
+        modalOverlay.querySelector("iframe").src = `receitas/${receitaId}.html`
         modalOverlay.classList.add("active")
     })
 }
