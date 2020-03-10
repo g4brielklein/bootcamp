@@ -16,5 +16,5 @@ server.get("/", function(req, res) {
 })
 
 server.listen(5000, function(){
-    console.log("server is running!")
+    console.log("server is running")
 })
