@@ -1,4 +1,4 @@
-// Desafio 01-3. Funções e estruturas de repetição
+// Desafio 01-3: Funções e estruturas de repetição
 
 const usuarios = [
     {
