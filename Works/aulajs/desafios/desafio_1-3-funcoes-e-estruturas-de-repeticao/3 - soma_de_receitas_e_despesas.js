@@ -25,10 +25,14 @@ function calculaSaldo(receitas, despesas) {
 
 // Cria uma função para somar os numeros recebidos pela função calculaSaldo(receitas e despesas do usuário)
 function somaNumeros(numeros) {
+    // Cria um variável para armazenar a soma dos numeros recebidos na função
     let soma = 0
+    // Percorre o array de numeros
     for (let numero of numeros) {
+        // Soma todos os numeros do array
         soma = soma + numero
     }
+    // Retorna a soma dos numeros do array
     return soma
 }
 
