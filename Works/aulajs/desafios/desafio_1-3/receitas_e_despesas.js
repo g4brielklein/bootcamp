@@ -25,13 +25,3 @@ function calculaSaldo(usuario) {
 for (let usuario of usuarios) {
     console.log(`${usuario.nome} possui ${calculaSaldo(usuario)}`)
 }
-
-function verificaStatus(saldo) {
-    let status
-    if (saldo >=  0.0) {
-        status = 'POSITIVO'
-    } else {
-        status = 'NEGATIVO'
-    }
-    return status
-}
