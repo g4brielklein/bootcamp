@@ -22,6 +22,8 @@ function calculaSaldo(receitas, despesas) {
 // para calcular a soma de receitas e despesas dentro da função calculaSaldo.
 // A função calculaSaldo deve utilizar a função somaNumeros para calcular a soma de receitas e 
 // despesas e no fim retornar o saldo do usuário, ou seja receitas - despesas.
+
+// Cria uma função para somar os numeros recebidos pela função calculaSaldo(receitas e despesas do usuário)
 function somaNumeros(numeros) {
     let soma = 0
     for (let numero of numeros) {
@@ -31,12 +33,17 @@ function somaNumeros(numeros) {
 }
 
 // No fim exiba todos usuários em telas, seu respectivo saldo e SE o saldo é POSITIVO ou NEGATIVO.
+// Percorre o array de usuários
 for (let usuario of usuarios) {
+    // Cria uma constante para armazenar o saldo do usuário
     const saldo = calculaSaldo(usuario.receitas, usuario.despesas)
 
+    // Verifica se o saldo do usuário é positivo ou negativo
     if (saldo > 0) {
+        // Se for positivo, exibe a mensagem abaixo
         console.log(`${usuario.nome} possui saldo POSITIVO de R$ ${saldo}`)
     } else {
+        // Se for negativo, exibe a mensagem abaixo
         console.log(`${usuario.nome} possui saldo NEGATIVO de R$ ${saldo}`)
     }
 }
