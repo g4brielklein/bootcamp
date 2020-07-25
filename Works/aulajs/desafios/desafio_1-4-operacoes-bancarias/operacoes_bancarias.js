@@ -13,67 +13,65 @@ const user = {
 // um usuário, essa função deve receber como parâmetro um objeto de transação que tem o seguinte formato:
 
 function createTransaction(transaction) {
+    user.transactions.push(transaction)
+
     if (transaction.type == 'credit') {
-        user.transactions.push(transaction.value)
         user.balance = user.balance + transaction.value
     }
     if (transaction.type == 'debit') {
-        user.transactions.push(transaction.value)
         user.balance = user.balance - transaction.value
     }
 }
 
 function getHigherTransactionByType(type) {
-    for (let i = 0; i < user.transactions.length; i++) {
-        let higherTransaction = user.transactions[i]
+    let higherTransaction = { type: type, value: 0 }
 
-        if ((user.transactions[i] > higherTransaction)) {
-            higherTransaction = user.transactions[i]
+    for (let transaction of user.transactions) {
+        if ( (transaction.value > higherTransaction.value) && (transaction.type == type ) ) {
+            higherTransaction = transaction
         }
-        return user.transaction
     }
+
+    console.log(higherTransaction)
 }
 
 function getAverageTransactionValue() {
     let sum = 0
+
     for (let transaction of user.transactions) {
-        sum = sum + transaction
+        sum = sum + transaction.value
     }
+
     average = (sum / user.transactions.length)
     
-    return console.log(average.toFixed(2))
+    console.log(average.toFixed(2))
 }
 
-createTransaction({ type: "credit", value: 50 })
-createTransaction({ type: "credit", value: 120 })
-createTransaction({ type: "debit", value: 80 })
-createTransaction({ type: "debit", value: 30 })
-
-getTransactionsCount() // { credit: 2, debit: 2 }
-
-console.log(user.transactions)
-
 function getTransactionsCount() {
-    let counter = {
-        credit: 0, 
-        debit: 0
-    }
+    let counter = { credit: 0, debit: 0 }
 
     for (let transaction of user.transactions) {
-        if (transaction > 1) {
+        if (transaction.type == 'credit') {
             counter.credit++
         }
-        if (transaction.type > 1) {
+        if (transaction.type == 'debit') {
             counter.debit++
         }
     }
-    return console.log(counter)
+
+    console.log(counter)
 }
 
+createTransaction({ type: "credit", value: 50 });
+createTransaction({ type: "credit", value: 120 });
+createTransaction({ type: "debit", value: 80 });
+createTransaction({ type: "debit", value: 30 });
 
-console.log(user.balance) // 60
+console.log(user.balance); // 60
 
-getHigherTransactionByType('credit') // { type: 'credit', value: 120 }
-getHigherTransactionByType('debit') // { type: 'debit', value: 80 }
+getHigherTransactionByType("credit"); // { type: 'credit', value: 120 }
+getHigherTransactionByType("debit"); // { type: 'debit', value: 80 }
 
-getAverageTransactionValue() // 70
+getAverageTransactionValue(); // 70
+
+getTransactionsCount(); // { credit: 2, debit: 2 }
