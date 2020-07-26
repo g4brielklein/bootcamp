@@ -2,14 +2,14 @@ const classA = [
     { name: 'Gabriel', grade: 9.8 },
     { name: 'Mayk', grade: 10 },
     { name: 'Diego', grade: 10 },
-    { name: 'Mais um student', grade: 10 }
+    { name: 'Student', grade: 10 }
 ]
 
 const classB = [
     { name: 'Cleiton', grade: 10 },
     { name: 'Robson', grade: 10 },
     { name: 'Ciclano', grade: 0 },
-    { name: 'Novo Aluno', grade: 5 }
+    { name: 'New student', grade: 5 }
 ]
 
 function calculateAverage(students) {
