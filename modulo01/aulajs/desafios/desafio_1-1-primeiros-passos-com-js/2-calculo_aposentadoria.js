@@ -23,7 +23,7 @@ if (sexo == 'M') {
     if ((contrib >= 35) && (soma >= 95)) {
         console.log(`${nome}, você pode se aposentar!`)
     } else {
-        console.log(`${nome}, você ainda não pode se aposentar!`)
+        console.log(`${nome}, você ainda não pode se aposentar.`)
     }
 }
 
@@ -31,6 +31,6 @@ if (sexo == 'F') {
     if ((contrib >= 30) && (soma >= 85)) {
         console.log(`${nome}, você pode se aposentar!`)
     } else {
-        console.log(`${nome}, você ainda não pode se aposentar!`)
+        console.log(`${nome}, você ainda não pode se aposentar.`)
     }
 }
