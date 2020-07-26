@@ -11,9 +11,18 @@ const programador = {
     nome: 'Carlos',
     idade: 32,
     tecs: [
-        { nome: 'C++', especialidade: 'Desktop' },
-        { nome: 'Python', especialidade: 'Data Science' },
-        { nome: 'JavaScript', especialidade: 'Web/Mobile' }
+        { 
+            nome: 'C++', 
+            especialidade: 'Desktop' 
+        },
+        { 
+            nome: 'Python', 
+            especialidade: 'Data Science' 
+        },
+        { 
+            nome: 'JavaScript', 
+            especialidade: 'Web/Mobile' 
+        }
     ]
 }
 
