@@ -7,7 +7,6 @@ console.log( 4 != "5" ) // true
 console.log( 4 !== "5" ) // true
 */
 
-/*
 // DESAFIO 1
 const idade = 21
 // Verificar se a pessoa é maior igual a 18 anos
@@ -22,7 +21,6 @@ if (idade >= 18) {
 if (idade === 17) {
     console.log('Volte quando tiver 18')
 }
-*/
 
 /*
 // Operadores lógicos
