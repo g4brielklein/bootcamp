@@ -9,16 +9,6 @@ const user = {
     balance: 0
 }
 
-const user = {
-    name: 'Gabriel',
-    transactions = [],
-    balance = 0
-}
-
-
-
-createTransactions( { type: 'credit', value: 608.2 } )
-
 // Crie uma função createTransaction para adicionar uma nova transação no array de transações de 
 // um usuário, essa função deve receber como parâmetro um objeto de transação que tem o seguinte formato:
 
