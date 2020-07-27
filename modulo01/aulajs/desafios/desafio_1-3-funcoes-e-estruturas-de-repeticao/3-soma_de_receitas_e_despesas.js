@@ -45,9 +45,9 @@ for (let usuario of usuarios) {
     // Verifica se o saldo do usuário é positivo ou negativo
     if (saldo > 0) {
         // Se for positivo, exibe a mensagem abaixo
-        console.log(`${usuario.nome} possui saldo POSITIVO de R$ ${saldo.toFixed(2)}`)
+        console.log(`${usuario.nome} possui saldo POSITIVO de R$ ${saldo.toFixed(2)}.`)
     } else {
         // Se for negativo, exibe a mensagem abaixo
-        console.log(`${usuario.nome} possui saldo NEGATIVO de R$ ${saldo.toFixed(2)}`)
+        console.log(`${usuario.nome} possui saldo NEGATIVO de R$ ${saldo.toFixed(2)}.`)
     }
 }

@@ -42,7 +42,7 @@ for (i = 0; i < usuarios.length; i++) {
     // Chama a funcão que verifica se o usuário trabalha com CSS e recebe a resposta (true ou false)
     if (verificaSeUsuarioTrabalhaComCSS(usuarios[i])) {
         // Caso receba 'true', exibe a mensagem abaixo
-        console.log(`O usuário(a) ${usuarios[i].nome} trabalha com CSS`)
+        console.log(`O usuário(a) ${usuarios[i].nome} trabalha com CSS!`)
     }
 }
 
