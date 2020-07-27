@@ -12,17 +12,8 @@ const usuarios = [
 // Percorra a lista de usuários com uma estrutura de repetição imprimindo em tela 
 // as informações dos usuários:
 
-// * Método 1 *
 // Percorre o array de usuários
-for (let i = 0; i < usuarios.length; i++) {
+for (let usuario of  usuarios) {
     // Imprime a mensagem abaixo
-    console.log(`O usuário(a) ${usuarios[i].nome} usa as tecnologias ${usuarios[i].tecs.join(', ')}`)
+    console.log(`O usuário(a) ${usuario.nome} usa as tecnologias ${usuario.tecs.join(', ')}.`)
 }
-
-// * Método 2 *
-// const tec_separator = ', '
-// // Percorre o array de usuários
-// for (let usuario of usuarios) {
-//     // Imprime a mensagem abaixo
-//     console.log(`O usuário(a) ${usuario.nome} usa as tecnologias ${usuario.tecs.join(`${tec_separator}`)}`)
-// }
