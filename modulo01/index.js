@@ -1,15 +1,39 @@
 const classA = [
-    { name: 'Gabriel', grade: 9.8 },
-    { name: 'Mayk', grade: 10 },
-    { name: 'Diego', grade: 10 },
-    { name: 'Student', grade: 10 }
+    {
+        name: 'Gabriel',
+        grade: 9.8
+    },
+    {
+        name: 'Maykão',
+        grade: 10
+    },
+    {
+        name: 'Diego',
+        grade: 10
+    },
+    {
+        name: 'Joe',
+        grade: 2
+    }
 ]
 
 const classB = [
-    { name: 'Cleiton', grade: 10 },
-    { name: 'Robson', grade: 10 },
-    { name: 'Ciclano', grade: 0 },
-    { name: 'New student', grade: 5 }
+    {
+        name: 'Cleiton',
+        grade: 10
+    },
+    {
+        name: 'Robson',
+        grade: 10
+    },
+    {
+        name: 'Matt',
+        grade: 2
+    },
+    {
+        name: 'Nathaniel',
+        grade: 4
+    }
 ]
 
 function calculateAverage(students) {
@@ -24,29 +48,29 @@ function calculateAverage(students) {
     return average
 }
 
-function sendMessage(average, turma) {
+function sendMessage(average, classx) {
     if (average > 5) {
-        console.log(`${turma} average: ${average}. Congrats!`)
+        console.log(`${classx} average: ${average}. Congrats!`)
     } else {
-        console.log(`${turma} average: ${average}. Not so good.`)
+        console.log(`${classx} average: ${average}. Not so good.`)
     }
 }
 
 function markAsFlunked(student) {
-    student.flunked = false
-
     if (student.grade < 5) {
         student.flunked = true
+    } else {
+        student.flunked = false
     }
 }
 
 function sendFlunkedMessage(student) {
     if (student.flunked) {
-        console.log(`${student.name} flunked!`)
+        console.log(`${student.name} flunked`)
     }
 }
 
-function flunkedStudents(students) {
+function FlunkedStudents(students) {
     for (let student of students) {
         markAsFlunked(student)
         sendFlunkedMessage(student)
@@ -59,5 +83,5 @@ const average2 = calculateAverage(classB)
 sendMessage(average1, 'Class A')
 sendMessage(average2, 'Class B')
 
-flunkedStudents(classA)
-flunkedStudents(classB)
+FlunkedStudents(classA)
+FlunkedStudents(classB)
