@@ -10,6 +10,7 @@ function createTransaction(transaction) {
     if (transaction.type == 'credit') {
         user.balance = user.balance + transaction.value
     }
+    
     if (transaction.type == 'debit') {
         user.balance = user.balance - transaction.value
     }
