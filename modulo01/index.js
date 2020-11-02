@@ -2,8 +2,14 @@
 // das notas entre os alunos e envia
 // uma mensagem do cáculo da média.
 
-const aluno1 = "Gabriel"
-const aluno2 = 'Diego'
+const aluno01 = 'Gabriel'
+const aluno02 = 'Diego'
+const aluno03 = 'Fulano'
+const notaAluno01 = 9.8
+const notaAluno02 = 10
+const notaAluno03 = 2
 
-const notaAluno1 = 9.8
-const notaAluno2 = 10
+const media = (notaAluno01 + notaAluno02 + notaAluno03) / 3
+
+console.log(media)
+
