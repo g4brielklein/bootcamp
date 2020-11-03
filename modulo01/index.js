@@ -2,16 +2,22 @@
 // das notas entre os alunos e envia
 // uma mensagem do cáculo da média.
 
-const aluno01 = 'Gabriel'
-const notaAluno01 = 1.8
+const aluno01 = {
+    nome: 'Gabriel',
+    nota: 9
+}
 
-const aluno02 = 'Diego'
-const notaAluno02 = 10
+const aluno02 = {
+    nome: 'Diego',
+    nota: 10
+}
 
-const aluno03 = 'Fulano'
-const notaAluno03 = 2
+const aluno03 = {
+    nome: 'Mayk',
+    nota: 9.8
+}
 
-const media = (notaAluno01 + notaAluno02 + notaAluno03) / 3
+const media = (aluno01.nota + aluno01.nota + aluno03.nota) / 3
 
 // Se a média for maior que 5, parabenizar a turma
 if (media > 5) {
@@ -19,3 +25,6 @@ if (media > 5) {
 } else {
     console.log('A média foi menor do que 5')
 }
+
+// console é um objeto, log é um metódo (funcionalidades dentro de um objeto se chamam métodos)
+console.log()
