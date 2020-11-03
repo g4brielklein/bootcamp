@@ -31,14 +31,20 @@ const alunosDaTurmaB = [
     {
         nome: 'Jim',
         nota: 9
+    },
+    {
+        nome: 'Pam',
+        nota: 10
     }
 ]
 
-const mediaA = (alunosDaTurmaA[0].nota + alunosDaTurmaA[1].nota + alunosDaTurmaA[2].nota) / 3
-const mediaB = (alunosDaTurmaA[0].nota + alunosDaTurmaB[1].nota + alunosDaTurmaB[2].nota) / 3
-
 function calculaMedia(alunos) {
-    return (alunos[0].nota + alunos[1].nota + alunos[2].nota) / 3
+    let totalNotas = 0
+
+    for (let i = 0; i < alunos.length; i++) {
+        totalNotas = totalNotas + alunos[i].nota
+    }
+    return totalNotas / alunos.length
 }
 
 const media1 = calculaMedia(alunosDaTurmaA)
