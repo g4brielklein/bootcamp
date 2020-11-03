@@ -1,5 +1,5 @@
 // Criar um programa que calcula a média
-// das notas entre os alunos e envia
+// das turmas de alunos e envia
 // uma mensagem do cáculo da média.
 
 // Array de objetos
@@ -19,16 +19,14 @@ const alunosDaTurmaA = [
     }
 ]
 
-const nomesDeAlunos = ['Pam', 'Angela', 'Kelly']
-
 const alunosDaTurmaB = [
     {
         nome: 'Michael',
-        nota: 5.1
+        nota: 2.1
     },
     {
         nome: 'Dwight',
-        nota: 5
+        nota: 1
     },
     {
         nome: 'Jim',
@@ -36,18 +34,24 @@ const alunosDaTurmaB = [
     }
 ]
 
-console.log(alunosDaTurmaB[2])
-
-const media = (alunosDaTurmaA[0].nota + alunosDaTurmaA[1].nota + alunosDaTurmaA[2].nota) / 3
+const mediaA = (alunosDaTurmaA[0].nota + alunosDaTurmaA[1].nota + alunosDaTurmaA[2].nota) / 3
 const mediaB = (alunosDaTurmaA[0].nota + alunosDaTurmaB[1].nota + alunosDaTurmaB[2].nota) / 3
 
-
-// Se a média for maior que 5, parabenizar a turma
-if (media > 5) {
-    console.log(`A média foi de ${media}. Parabéns!`)
-} else {
-    console.log('A média foi menor do que 5')
+function calculaMedia(alunos) {
+    return (alunos[0].nota + alunos[1].nota + alunos[2].nota) / 3
 }
 
-// console é um objeto, log é um metódo (funcionalidades dentro de um objeto se chamam métodos)
-console.log()
+const media1 = calculaMedia(alunosDaTurmaA)
+const media2 = calculaMedia(alunosDaTurmaB)
+
+function enviaMensagem(media, turma) {
+    // Se a média for maior que 5, parabenizar a turma
+    if (media > 5) {
+        console.log(`A média da turma ${turma} foi de ${media}. Parabéns!`)
+    } else {
+        console.log(`A média da turma ${turma} foi menor do que 5 :(`)
+    }
+}
+
+enviaMensagem(media1, 'A')
+enviaMensagem(media2, 'B')
