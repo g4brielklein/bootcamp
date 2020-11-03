@@ -2,22 +2,45 @@
 // das notas entre os alunos e envia
 // uma mensagem do cáculo da média.
 
-const aluno01 = {
-    nome: 'Gabriel',
-    nota: 9
-}
+// Array de objetos
+const alunosDaTurmaA = [
+    // Objeto dentro do array
+    {
+        nome: 'Gabriel',
+        nota: 9
+    },
+    {
+        nome: 'Diego',
+        nota: 10
+    },
+    {
+        nome: 'Mayk',
+        nota: 9.8
+    }
+]
 
-const aluno02 = {
-    nome: 'Diego',
-    nota: 10
-}
+const nomesDeAlunos = ['Pam', 'Angela', 'Kelly']
 
-const aluno03 = {
-    nome: 'Mayk',
-    nota: 9.8
-}
+const alunosDaTurmaB = [
+    {
+        nome: 'Michael',
+        nota: 5.1
+    },
+    {
+        nome: 'Dwight',
+        nota: 5
+    },
+    {
+        nome: 'Jim',
+        nota: 9
+    }
+]
 
-const media = (aluno01.nota + aluno01.nota + aluno03.nota) / 3
+console.log(alunosDaTurmaB[2])
+
+const media = (alunosDaTurmaA[0].nota + alunosDaTurmaA[1].nota + alunosDaTurmaA[2].nota) / 3
+const mediaB = (alunosDaTurmaA[0].nota + alunosDaTurmaB[1].nota + alunosDaTurmaB[2].nota) / 3
+
 
 // Se a média for maior que 5, parabenizar a turma
 if (media > 5) {
