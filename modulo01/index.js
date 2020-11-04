@@ -40,7 +40,7 @@ const alunosDaTurmaB = [
 
 function calculaMedia(alunos) {
     let totalNotas = 0
-
+    
     for (let i = 0; i < alunos.length; i++) {
         totalNotas = totalNotas + alunos[i].nota
     }
