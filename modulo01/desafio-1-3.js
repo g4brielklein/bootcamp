@@ -11,9 +11,9 @@ const usuarios = [
 // Percorra a lista de usuários com uma estrutura de repetição 
 // imprimindo em tela as informações dos usuários:
 
-// for (i = 0; i < usuarios.length; i++) {
-//     console.log(`${usuarios[i].nome} trabalha com ${usuarios[i].tecs.join(', ')}`)
-// }
+for (i = 0; i < usuarios.length; i++) {
+    console.log(`${usuarios[i].nome} trabalha com ${usuarios[i].tecs.join(', ')}`)
+}
 
 // Baseado no desafio anterior, utilize a mesma lista de usuários construída.
 
@@ -30,7 +30,7 @@ function checaSeTrabalhaComCSS(usuario) {
 
 for (let j = 0; j < usuarios.length; j++) {
     if (checaSeTrabalhaComCSS(usuarios[j])) {
-        // console.log(`O usuário ${usuarios[j].nome} trabalha com CSS!`)
+        console.log(`O usuário ${usuarios[j].nome} trabalha com CSS!`)
     }
 }
 
