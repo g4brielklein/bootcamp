@@ -1,88 +1,81 @@
-// Criar um programa que calcula a média
-// das turmas de alunos e envia
-// uma mensagem do cáculo da média.
-
-// Array de objetos
-const alunosDaTurmaA = [
-    // Objeto dentro do array
-    {
-        nome: 'Gabriel',
-        nota: 9
-    },
-    {
-        nome: 'Diego',
-        nota: 10
-    },
-    {
-        nome: 'Mayk',
-        nota: 9.8
-    }
-]
-
-const alunosDaTurmaB = [
+const classA = [
     {
         nome: 'Michael',
-        nota: 2.1
+        grade: 4.7
     },
     {
         nome: 'Dwight',
-        nota: 1
+        grade: 3
     },
     {
-        nome: 'Jim',
-        nota: 9
-    },
-    {
-        nome: 'Pam',
-        nota: 10
+        name: 'Ryan',
+        grade: 6.8
     }
 ]
 
-function calculaMedia(alunos) {
-    let totalNotas = 0
-    
-    for (let i = 0; i < alunos.length; i++) {
-        totalNotas = totalNotas + alunos[i].nota
+const classB = [
+    {
+        nome: 'Jim',
+        grade: 9
+    },
+    {
+        nome: 'Pam',
+        grade: 10
+    },
+    {
+        nome: 'Oscar',
+        grade: 9
+    },
+    {
+        nome: 'Kelly',
+        grade: 10
     }
-    return totalNotas / alunos.length
+]
+
+function calculateAverage(students) {
+    let sumGrades = 0
+
+    for (let i = 0; i < students.length; i++) {
+        sumGrades = sumGrades + students[i].grade
+    }
+
+    return sumGrades / students.length
 }
 
-const media1 = calculaMedia(alunosDaTurmaA)
-const media2 = calculaMedia(alunosDaTurmaB)
-
-function enviaMensagem(media, turma) {
-    // Se a média for maior que 5, parabenizar a turma
-    if (media > 5) {
-        console.log(`A média da turma ${turma} foi de ${media}. Parabéns!`)
+function sendMessage(average, nameClass) {
+    if (average > 5) {
+        console.log(`${nameClass} average: ${average.toFixed(2)}. Congrats!`)
     } else {
-        console.log(`A média da turma ${turma} foi menor do que 5 :(`)
+        console.log(`${nameClass} average: ${average.toFixed(2)}. Not so good :(`)
     }
 }
 
-enviaMensagem(media1, 'A')
-enviaMensagem(media2, 'B')
+function tagAsFlunked(student) {
+    student.flunked = false
 
-// Marcar alunos como reprovado se a nota for menos
-// do que 5, e, também, enviar uma mensagem.
-function marcaComoReprovado(aluno) {
-    aluno.reprovado = false
-    if (aluno.nota < 5) {
-        aluno.reprovado = true
+    if (student.grade < 5) {
+        student.flunked = true
     }
 }
 
-function enviaMensagemReprovado(aluno) {
-    if (aluno.reprovado) {
-        console.log(`O aluno ${aluno.nome} foi reprovado!`)
+function sendMessageFlunked(student) {
+    if (student.flunked) {
+        console.log(`${student.nome} flunked!`)
     }
 }
 
-function alunoReprovado(turma) {
-    for (let aluno of turma) {
-        marcaComoReprovado(aluno)
-        enviaMensagemReprovado(aluno)
+function studentsFlunked(students) {
+    for (let student of students) {
+        tagAsFlunked(student)
+        sendMessageFlunked(student)
     }
 }
 
-alunoReprovado(alunosDaTurmaA)
-alunoReprovado(alunosDaTurmaB)
+const average1 = calculateAverage(classA)
+const average2 = calculateAverage(classB)
+
+sendMessage(average1, 'A')
+sendMessage(average2, 'B')
+
+studentsFlunked(classA)
+studentsFlunked(classB)
