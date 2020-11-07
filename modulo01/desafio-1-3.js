@@ -20,17 +20,18 @@ for (i = 0; i < usuarios.length; i++) {
 // Crie uma função que recebe os dados de um objeto de usuário e retorna 
 // SE o usuário trabalha com CSS ou não. Essa função deve retornar um boolean true/false.
 function checaSeTrabalhaComCSS(usuario) {
-    for (let i = 0; i < usuario.tecs.length; i++) {
-        if (usuario.tecs[i] == 'CSS') {
+    for (let tec of usuario.tecs) {
+        // ou (let i = 0; i < usuario.tecs.length; i++)
+        if (tec == 'CSS') {
             return true
         }
     }
     return false
 }
 
-for (let j = 0; j < usuarios.length; j++) {
-    if (checaSeTrabalhaComCSS(usuarios[j])) {
-        console.log(`O usuário ${usuarios[j].nome} trabalha com CSS!`)
+for (let usuario of usuarios) {
+    if (checaSeTrabalhaComCSS(usuario)) {
+        console.log(`O usuário ${usuario.nome} trabalha com CSS!`)
     }
 }
 
@@ -44,12 +45,12 @@ const funcionarios = [
 
 // Percorra o array de usuários e para cada usuário chame uma função chamada calculaSaldo que 
 // recebe como parâmetro as receitas e despesas do usuário:
-for (let k = 0; k < funcionarios.length; k++) {
-    const saldo = (calculaSaldo(funcionarios[k].receitas, funcionarios[k].despesas))
+for (let funcionario of funcionarios) {
+    const saldo = (calculaSaldo(funcionario.receitas, funcionario.despesas))
     if (saldo >= 0) {
-        console.log(`${funcionarios[k].nome} possui saldo POSITIVO de ${saldo}`)
+        console.log(`${funcionario.nome} possui saldo POSITIVO de ${saldo.toFixed(2)}`)
     } else {
-        console.log(`${funcionarios[k].nome} possui saldo NEGATIVO de ${saldo}`)
+        console.log(`${funcionario.nome} possui saldo NEGATIVO de ${saldo.toFixed(2)}`)
     }
 }
 
@@ -66,8 +67,8 @@ function calculaSaldo(receitas, despesas) {
 function somaNumeros(numeros) {
     let soma = 0
 
-    for (let i = 0; i < numeros.length; i++) {
-        soma = soma + numeros[i]
+    for (let numero of numeros) {
+        soma = soma + numero
     }
 
     return soma
