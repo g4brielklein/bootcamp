@@ -1,37 +1,35 @@
-// Desafio 1-4: Aplicação: Operações bancária
+// Desafio 1-4: Aplicação: Operações bancárias
 
 // Crie um programa para realizar operações bancárias na conta de um usuário.
 // Comece criando um objeto com o nome do usuário, suas transações e saldo.
 // As transações (transactions) devem iniciar como um array vazio [] e o saldo (balance) em 0 (zero).
 const user = {
-    nome: 'Michael',
+    name: 'Michael',
     transactions: [],
-    balance: 0
+    balance: 0 
 }
 
-// Crie uma função createTransaction para adicionar uma nova transação no array de transações de um usuário,
-// essa função deve receber como parâmetro um objeto de transação que tem o seguinte formato:
-// {
-//     type: 'credit',
-//     value: 50.5
-// }
-
+// Crie uma função createTransaction para adicionar uma nova transação no array de transações 
+// de um usuário, essa função deve receber como parâmetro um objeto de transação que tem o seguinte formato:
 function createTransaction(transaction) {
+    user.transactions.push(transaction)
+
     if (transaction.type == 'credit') {
-        user.transactions.push(transaction)
         user.balance = user.balance + transaction.value
     }
 
     if (transaction.type == 'debit') {
-        user.transactions.push(transaction)
-        user.balance = user.balance - transaction.value
+        user.balance = user.balance - transaction.value 
     }
 }
 
-// Crie uma função chamada getHigherTransactionByType que recebe como parâmetro o tipo de transação 
-// credit/debit, percorre as transações do usuário e retorna o objeto da transação de maior 
-// valor com aquele tipo:
+// O type pode ser credit para créditos e debit para débitos da conta do usuário.
+// Quanto uma transação for do tipo credit ela deve também somar o valor do crédito no saldo (balance) do usuário.
+// Se for uma transação do tipo debit ela deve subtrair o valor do débito no saldo (balance) do usuário.
 
+// Crie uma função chamada getHigherTransactionByType que recebe como parâmetro o tipo de 
+// transação credit/debit, percorre as transações do usuário e retorna o objeto da transação 
+// de maior valor com aquele tipo:
 function getHigherTransactionByType(type) {
     let higherTransaction = 0
 
@@ -45,52 +43,52 @@ function getHigherTransactionByType(type) {
 }
 
 // Crie uma função chamada getAverageTransactionValue que retorna o valor médio das transações 
-// // de um usuário independente do seu tipo:
+// de um usuário independente do seu tipo:
 function getAverageTransactionValue() {
-    let totalTransactions = 0
+    let sum = 0
 
     for (let transaction of user.transactions) {
-        totalTransactions = totalTransactions + transaction.value
+        sum = sum + transaction.value
     }
 
-    const averageTransaction = totalTransactions / user.transactions.length
-
-    console.log(averageTransaction.toFixed(2))
+    const average = sum / user.transactions.length
+    
+    console.log(average.toFixed(2))
 }
 
-// Crie uma função chamada getTransactionsCount que retorna o número de transações de cada 
-// tipo credit/debit, o retorno da função deve ser um objeto e seguir 
-// exatamente como o modelo apresentado abaixo:
+// Crie uma função chamada getTransactionsCount que retorna o número de transações de cada tipo credit/debit, 
+// o retorno da função deve ser um objeto e seguir exatamente como o modelo apresentado abaixo:
 function getTransactionsCount() {
-    let transactionsCount = { credit: 0, debit: 0 }
+    let transactionsCounter = { credit: 0, debit: 0 }
 
     for (let transaction of user.transactions) {
         if (transaction.type == 'credit') {
-            transactionsCount.credit++
+            transactionsCounter.credit++
         }
 
         if (transaction.type == 'debit') {
-            transactionsCount.debit++
+            transactionsCounter.debit++
         }
     }
 
-    console.log(transactionsCount)
+    console.log(transactionsCounter) 
 }
 
-console.log(user)
-createTransaction({ type: 'credit', value: 12.99 })
-createTransaction({ type: 'credit', value: 6020.00 })
-createTransaction({ type: 'debit', value: 1595.00 })
-createTransaction({ type: 'credit', value: 2100.00 })
-createTransaction({ type: 'credit', value: 55.12 })
-createTransaction({ type: 'debit', value: 50.5 })
-createTransaction({ type: 'debit', value: 41.72 })
-createTransaction({ type: 'credit', value: 550.00 })
-console.log(user)
+createTransaction({ type: 'credit', value: 50.5 })
+createTransaction({ type: 'debit', value: 9 })
+createTransaction({ type: 'credit', value: 15.5 })
+createTransaction({ type: 'debit', value: 80 })
+createTransaction({ type: 'credit', value: 51.6 })
+createTransaction({ type: 'debit', value: 20 })
+createTransaction({ type: 'credit', value: 2400 })
+createTransaction({ type: 'credit', value: 50.5 })
+createTransaction({ type: 'debit', value: 9 })
+createTransaction({ type: 'credit', value: 15.5 })
+createTransaction({ type: 'debit', value: 80 })
+createTransaction({ type: 'credit', value: 51.6 })
+createTransaction({ type: 'debit', value: 20 })
 
-getHigherTransactionByType('credit')
 getHigherTransactionByType('debit')
-
+getHigherTransactionByType('credit')
 getAverageTransactionValue()
-
 getTransactionsCount()
