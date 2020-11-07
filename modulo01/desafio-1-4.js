@@ -31,11 +31,11 @@ function createTransaction(transaction) {
 // transação credit/debit, percorre as transações do usuário e retorna o objeto da transação 
 // de maior valor com aquele tipo:
 function getHigherTransactionByType(type) {
-    let higherTransaction = 0
+    let higherTransaction = { type: type, value: 0 }
 
     for (let transaction of user.transactions) {
-        if (transaction.type == type && transaction.value > higherTransaction) {
-            higherTransaction = transaction.value
+        if (transaction.type == type && transaction.value > higherTransaction.value) {
+            higherTransaction.value = transaction.value
         }
     }
 
@@ -88,7 +88,7 @@ createTransaction({ type: 'debit', value: 80 })
 createTransaction({ type: 'credit', value: 51.6 })
 createTransaction({ type: 'debit', value: 20 })
 
-getHigherTransactionByType('debit')
 getHigherTransactionByType('credit')
+getHigherTransactionByType('debit')
 getAverageTransactionValue()
 getTransactionsCount()
