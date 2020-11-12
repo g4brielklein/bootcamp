@@ -45,3 +45,24 @@ header div a:hover {
     border: 5px solid #50fa7b;
     margin-bottom: 32px;
 }
+
+#wrapper h1 {
+    font-size: 42px;
+    line-height: 52px;
+    font-weight: bold;
+}
+
+#wrapper h2 {
+    font-size: 24px;
+    line-height: 34px;
+    font-weight: normal;
+    margin-top: 8px;
+    opacity: 0.8;
+}
+
+#wrapper p {
+    font-size: 24px;
+    line-height: 34px;
+    max-width: 500px;
+    margin: 32px auto;
+}
