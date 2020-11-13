@@ -81,3 +81,19 @@ header {
 footer .links a:hover{
     border-bottom: 1px solid var(--orange);
 }
+
+/* --- CARDS --- */
+.card {
+    height: 250px;
+    width: 356px;
+    background: white;
+}
+
+.card img {
+    height: 200px;
+}
+
+.card__info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
