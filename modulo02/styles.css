@@ -83,17 +83,20 @@ footer .links a:hover{
 }
 
 /* --- CARDS --- */
+.cards {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
 .card {
-    height: 250px;
-    width: 356px;
-    background: white;
+    background-color: #7159c1;
 }
 
-.card img {
-    height: 200px;
+.card__image-container img {
+    width: 100%;
 }
 
+.card__content,
 .card__info {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    padding: 24px;
 }
