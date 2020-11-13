@@ -2,6 +2,7 @@
 
 :root {
     --color-green: #50fa7b;
+    --orange: rgb(231, 130, 35);
 }
 
 * {
@@ -22,11 +23,11 @@ header {
     background: rgba(0, 0, 0, 0.1)
 }
 
-header div {
+.links {
     text-align: center;
 }
 
-header div a {
+.links a {
     color: white;
     font-size: 18px;
     line-height: 28px;
@@ -34,8 +35,8 @@ header div a {
     text-decoration: none;
 }
 
-header div a:hover {
-    color: var(--color-green);
+.links a:hover {
+    color: var(--orange);
     transition: color 200ms;
 }
 
@@ -46,8 +47,9 @@ header div a:hover {
 
 #wrapper img {
     border-radius: 50%;
-    border: 5px solid var(--color-green);
+    border: 5px solid var(--orange);
     margin-bottom: 32px;
+    height: 300px;
 }
 
 #wrapper h1 {
@@ -72,6 +74,10 @@ header div a:hover {
 }
 
 #wrapper h2 a {
-    color: var(--color-green);
+    color: var(--orange);
     text-decoration: none;
+}
+
+footer .links a:hover{
+    border-bottom: 1px solid var(--orange);
 }
