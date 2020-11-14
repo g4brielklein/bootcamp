@@ -3,6 +3,7 @@
 :root {
     --color-green: #50fa7b;
     --orange: rgb(231, 130, 35);
+    --roxo: #7159c1;
 }
 
 * {
@@ -86,10 +87,17 @@ footer .links a:hover{
 .cards {
     max-width: 800px;
     margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
 }
 
 .card {
-    background-color: #7159c1;
+    background-color: var(--roxo);
+}
+
+.card:hover {
+    transform: scale(1.03);
 }
 
 .card__image-container img {
@@ -99,4 +107,17 @@ footer .links a:hover{
 .card__content,
 .card__info {
     padding: 24px;
+}
+
+.card__info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.card__price {
+    background-color: var(--roxo);
+    filter: brightness(90%);
+    border-radius: 20px;
+    padding: 5px;
+    text-align: center;
 }
