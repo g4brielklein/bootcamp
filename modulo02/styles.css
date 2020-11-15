@@ -129,6 +129,8 @@ footer .links a:hover{
     height: 100%;
     top: 0;
     position: fixed;
+    opacity: 0;
+    visibility: hidden;
 }
 
 .modal {
@@ -145,4 +147,9 @@ footer .links a:hover{
     right: 0;
     padding: 5px;
     cursor: pointer;
+}
+
+.modal-overlay.active {
+    opacity: 1;
+    visibility: visible;
 }
