@@ -5,6 +5,7 @@ const iframe = modalOverlay.querySelector('iframe')
 
 for (let card of cards) {
     card.addEventListener('click', function() {
+        modal.classList.remove('maximize')
         modalOverlay.classList.add('active')
         const id = card.getAttribute('id')
         iframe.src = `https://blog.rocketseat.com.br/${id}`
