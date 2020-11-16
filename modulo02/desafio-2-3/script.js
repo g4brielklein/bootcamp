@@ -23,4 +23,4 @@ modal.querySelector('.maximize-modal').addEventListener('click', function() {
     } else {
         modal.classList.add('maximize')
     }
-})  
+})
