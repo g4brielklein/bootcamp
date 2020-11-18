@@ -67,9 +67,12 @@ header .links a {
     margin: 66px 100px 0 624px;
 }
 
-.recepis-title {
+.title {
     width: 940px;
     margin: 50px auto;
+    font-size: 24px;
+    line-height: 28px;
+    color: #111111;
 }
 
 .recepis recepis-title h1 {
@@ -84,10 +87,6 @@ header .links a {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
-}
-
-.recepi {
-
 }
 
 .recepi-image img {
@@ -116,5 +115,14 @@ footer {
     font-size: 14px;
     line-height: 16px;
     color: #999999;
+}
+
+/* --- ABOUT --- */
+.content {
+    width: 940px;
+    margin: 0 auto;
+    font-size: 18px;
+    line-height: 28px;
+    color: #444444;
 }
 
