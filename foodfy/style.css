@@ -124,12 +124,16 @@ header .links a {
 }
 
 footer {
-    background: #EEEEEE;
-    text-align: center;
-    padding: 23px;
+    background-color: #EEEEEE;
+    margin-top: 50px;
+}
+
+footer p {
     font-size: 14px;
     line-height: 16px;
     color: #999999;
+    text-align: center;
+    padding: 23px 0;
 }
 
 /* --- ABOUT --- */
