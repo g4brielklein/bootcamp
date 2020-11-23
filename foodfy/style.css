@@ -10,8 +10,6 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-/* ------------------------------ */
-
 header {
     width: 940px;
     margin: 0 auto;
@@ -34,19 +32,16 @@ header .links a {
     margin: 0 15px;
 }
 
-/* ------------------------------ */
-
 .main {
     background-color: #FBDFDB;
     width: 940px;
     height: 366px;
     margin: 0 auto;
-    margin-bottom: 30px;
     border-radius: 30px;
     position: relative;
 }
 
-.main .main-text h1 {
+.main-text h1 {
     margin: 117px 575px 211px 60px;
     position: absolute;
     font-size: 32px;
@@ -54,7 +49,7 @@ header .links a {
     color: #111111;
 }
 
-.main .main-text p {
+.main-text p {
     margin: 165px 564px 117px 60px;
     position: absolute;
     font-size: 18px;
@@ -62,31 +57,29 @@ header .links a {
     opacity: 0.7;
 }
 
-.main .main-image img {
+.main-image img {
     position: absolute;
     margin: 66px 100px 0 624px;
 }
 
-.main-title h1 {
+.recepis-title {
     width: 940px;
-    margin: 20px auto;
-    font-size: 24px;
-    line-height: 28px;
-    color: #111111;
-
+    margin: 0 auto;
+    margin-bottom: 20px;
+    margin-top: 50px;
 }
 
-.title {
-    width: 940px;
-    margin: 50px auto;
+.recepis-title h1 {
     font-size: 24px;
     line-height: 28px;
     color: #111111;
 }
+
+/* ------------------------------ */
 
 .recepis {
     max-width: 940px;
-    margin: 20px auto;
+    margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
@@ -97,12 +90,6 @@ header .links a {
     cursor: pointer;
 }
 
-.recepis recepis-title h1 {
-    color: #111111;
-    font-size: 24px;
-    line-height: 28px;
-}
-
 .recepi-image img {
     width: 100%;
     border-radius: 15px;
@@ -110,6 +97,10 @@ header .links a {
 
 .recepi-content {
     margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.recepi-content {
     font-size: 18px;
     line-height: 21px;
 }
@@ -119,8 +110,9 @@ header .links a {
     color: #777777;
     font-size: 14px;
     line-height: 16px;
-    margin-bottom: 10px;
 }
+
+/* ------------------------------ */
 
 footer {
     background-color: #EEEEEE;
@@ -136,6 +128,15 @@ footer p {
 }
 
 /* --- ABOUT --- */
+
+.title {
+    width: 940px;
+    margin: 50px auto;
+    font-size: 24px;
+    line-height: 28px;
+    color: #111111;
+}
+
 .content {
     width: 940px;
     margin: 0 auto;
