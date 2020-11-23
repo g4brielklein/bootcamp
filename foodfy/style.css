@@ -10,32 +10,31 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+/* ------------------------------ */
+
 header {
     width: 940px;
-    height: 93px;
     margin: 0 auto;
-    position: relative;
+    padding: 38px 0 36px 0;
 }
 
 .logo {
     position: absolute;
-    margin-top: 36.1px;
-    margin-bottom: 30px;
 }
 
 header .links {
-    position: absolute;
-    margin-top: 38px;
-    margin-left: 152px;
+    margin-left: 213px;
 }
 
 header .links a {
-    color: #111111;
-    text-decoration: none;
     font-size: 16px;
     line-height: 19px;
+    color: #111111;
+    text-decoration: none;
     margin: 0 15px;
 }
+
+/* ------------------------------ */
 
 .main {
     background-color: #FBDFDB;
