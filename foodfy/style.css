@@ -127,26 +127,35 @@ footer p {
     padding: 23px 0;
 }
 
-/* --- ABOUT --- */
+span {
+    font-weight: bold;
+}
 
-.title {
-    width: 940px;
-    margin: 50px auto;
+.about-content {
+    max-width: 940px;
+    margin: 0 auto;
+}
+
+#main-title p {
     font-size: 24px;
     line-height: 28px;
+}
+
+.title {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.title p {
+    font-size: 20px;
+    line-height: 24px;
     color: #111111;
 }
 
-.content {
-    width: 940px;
-    margin: 0 auto;
+.content p {
     font-size: 18px;
     line-height: 28px;
     color: #444444;
-}
-
-span {
-    font-weight: bold;
 }
 
 /* --- MODAL --- */
