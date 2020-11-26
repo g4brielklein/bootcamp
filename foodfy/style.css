@@ -100,12 +100,12 @@ header .links a {
     margin-bottom: 10px;
 }
 
-.recepi-content {
+.recepi-content p {
     font-size: 18px;
     line-height: 21px;
 }
 
-.recepi-author {
+.recepi-content .recepi-author {
     margin-top: 5px;
     color: #777777;
     font-size: 14px;
@@ -218,11 +218,15 @@ iframe {
 .modal-recepi-content {
     text-align: center;
     margin-top: 20px;
+}
+
+.modal-recepi-content p {
     font-size: 24px;
     line-height: 28px;
 }
 
-.modal-recepi-author {
+.modal-recepi-content .modal-recepi-author {
+    margin-top: 5px;
     font-size: 18px;
     line-height: 21px;
     color: #777777;
