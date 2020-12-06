@@ -12,11 +12,11 @@ nunjucks.configure('views', {
 })
 
 server.get('/', function(req, res) {
-    return res.render('about')
+    return res.render('courses')
 })
 
-server.get('/courses', function(req, res) {
-    return res.render('courses')
+server.get('/about', function(req, res) {
+    return res.render('about')
 })
 
 server.use(function(req, res) {
