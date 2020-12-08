@@ -94,6 +94,7 @@ footer .links a:hover{
 
 .card {
     background-color: var(--roxo);
+    display: grid;
 }
 
 .card:hover {
@@ -112,6 +113,7 @@ footer .links a:hover{
 .card__info {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    align-items: center;
 }
 
 .card__price {
