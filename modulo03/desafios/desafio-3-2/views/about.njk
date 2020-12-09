@@ -1,0 +1,25 @@
+{% extends "layout.njk" %}}
+
+{% block content %}
+
+    <div id="wrapper">
+        <img src={{ about.image }} alt="Rocketseat" />
+        <h1>{{ about.id }}</h1>
+        <h2>{{ about.title }}</h2>
+        <p>{{ about.title_tecs }}</p>
+        {% for tec in about.tecs %}
+        <ul>
+            <li>{{ tec }}</li>
+        </ul>
+        {% endfor %}
+    </div>
+
+    <footer>
+        <div class="links">
+            <a href="https://github.com/rocketseat" target="_blank">Github</a>
+            <a href="https://instagram.com/rocketseat_oficial" target="_blank">Instagram</a>
+            <a href="https://facebook.com/rocketseat" target="_blank">Facebook</a>
+        </div>
+    </footer>
+    
+{% endblock %}
