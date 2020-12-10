@@ -24,16 +24,30 @@ server.get('/about', function(req, res) {
         title_tecs: 'Principais tecnologias utilizadas:',
         tecs: [
             {
-                tec: 'JavaScript'
+                name: 'JavaScript'
             },
             {
-                tec: 'Node.js'
+                name: 'Node.js'
             },
             {
-                tec: 'React.js'
+                name: 'React.js'
             },
             {
-                tec: 'React Native'
+                name: 'React Native'
+            }
+        ],
+        links: [
+            {
+                name: 'GitHub',
+                url: 'https://github.com/rocketseat'
+            },
+            {
+                name: 'Instagram',
+                url: 'https://instagram.com/rocketseat_oficial'
+            },
+            {
+                name: 'Facebook',
+                url: 'https://facebook.com/rocketseat'
             }
         ]
     }
