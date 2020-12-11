@@ -39,6 +39,11 @@ server.get('/portfolio', function(req, res) {
     return res.render('portfolio', { items: videos })
 })
 
+server.get('/video', function(req, res) {
+    const id = req.query.id
+    res.send(id)
+})
+
 server.use(function(req, res) {
     res.status(404).render("not-found");
   });
