@@ -9,16 +9,16 @@
     <section class="cards">
 
         {% for course in courses %}
-        <div class="card" id={{course.id}}>
+        <div class="card" id={{ course.id }}>
             <div class="card__image-container">
-                <img src={{course.image}} alt={{course.title}} />
+                <img src={{ course.image }} alt={{ course.title }} />
             </div>
             <div class="card__content">
-                <p>{{course.title}}</p>
+                <p>{{ course.title }}</p>
             </div>
             <div class="card__info">
-                <p>{{course.duration}}</p>
-                <p class="card__author">{{course.author}}</p>
+                <p>{{ course.duration }}</p>
+                <p class="card__author">{{ course.author }}</p>
             </div>
         </div>
         {% endfor %}
