@@ -102,10 +102,6 @@ footer .links a:hover{
     cursor: pointer;
 }
 
-.card__image-container {
-    position: relative;
-}
-
 .card__image-container img {
     width: 100%;
 }
@@ -171,6 +167,10 @@ iframe {
 }
 
 /* --- FEATURED --- */
+.featured-wrapper.card__image-container {
+    position: relative;
+}
+
 .featured {
     background: #f7d05f;
     color: #111;
