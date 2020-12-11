@@ -3,7 +3,8 @@ module.exports = [
         id: 'HN1UjzRSdBk',
         title: 'Desvendando CSS Grid na Prática',
         duration: '36 min',
-        price: 'Free'
+        price: 'Free',
+        featured: true
     },
     {
         id: '2alg7MQ6_sI',
@@ -21,7 +22,8 @@ module.exports = [
         id: 'GykTLqODQuU',
         title: 'Formulário animado com JS e CSS',
         duration: '57 min',
-        price: 'Free'
+        price: 'Free',
+        featured: true
     },
     {
         id: 'GSqR2i-Pq6o',
@@ -33,6 +35,7 @@ module.exports = [
         id: 'ghTrp1x_1As',
         title: 'O que é API? REST e RESTFUL?',
         duration: '33 min',
-        price: 'Free'
+        price: 'Free',
+        featured: true
     },
 ]
