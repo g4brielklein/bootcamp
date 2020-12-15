@@ -181,3 +181,9 @@ iframe {
     border-radius: 16px;
     font-weight: bold;
 }
+
+/* --- VIDEO PAGE --- */
+.video {
+    margin: 0 auto;
+    max-width: 800px;
+}
