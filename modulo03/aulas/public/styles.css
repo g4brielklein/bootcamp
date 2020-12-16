@@ -95,11 +95,11 @@ footer .links a:hover{
 .card {
     background-color: var(--roxo);
     display: grid;
+    cursor: pointer;
 }
 
 .card:hover {
     transform: scale(1.03);
-    cursor: pointer;
 }
 
 .card__image-container img {
@@ -198,4 +198,8 @@ iframe {
     height: 100%;
     position: absolute;
     top: 0;
+}
+
+.card.video {
+    transform: none;
 }
