@@ -1,0 +1,46 @@
+{% extends "layout.njk" %}
+
+{% block content %}
+
+    <div id="wrapper">
+        <h1>Posts</h1>
+    </div>
+
+    <section class="cards">
+
+        {% for course in courses %}
+        <div class="card" id={{ course.id }}>
+            <div class="card__image-container">
+                <img src={{ course.image }} alt={{ course.title }} />
+            </div>
+            <div class="card__content">
+                <p>{{ course.title }}</p>
+            </div>
+            <div class="card__info">
+                <p>{{ course.duration }}</p>
+                <p class="card__author">{{ course.author }}</p>
+            </div>
+        </div>
+        {% endfor %}
+
+    </section>
+
+    <div class="modal-overlay">
+        <div class="modal maximize">
+            <div class="close-modal">
+                <span class="material-icons">close</span>
+            </div>
+
+            <div class="maximize-modal">
+                <span class="material-icons">maximize</span>
+            </div>
+
+            <div class="modal-content">
+                <iframe src="" frameborder="0"></iframe>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+{% endblock %}

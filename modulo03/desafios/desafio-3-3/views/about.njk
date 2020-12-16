@@ -1,0 +1,25 @@
+{% extends "layout.njk" %}}
+
+{% block content %}
+
+    <div id="wrapper">
+        <img src={{ about.image }} alt={{ about.name }} />
+        <h1>{{ about.name }}</h1>
+        <h2>{{ about.title }}</h2>
+        <p>{{ about.title_tecs }}</p>
+        {% for tec in about.tecs %}
+        <ul>
+            <li>{{ tec.name }}</li>
+        </ul>
+        {% endfor %}
+    </div>
+
+    <footer>
+        <div class="links">
+            {% for link in about.links %}
+            <a href={{ link.url }} target="_blank">{{ link.name }}</a>
+            {% endfor %}
+        </div>
+    </footer>
+    
+{% endblock %}
