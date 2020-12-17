@@ -56,6 +56,20 @@ server.get('/about', function(req, res) {
     return res.render('about', { about })
 })
 
+server.get('post', function(req, res) {
+    const id = req.query.id
+
+    const post = posts.find(function(post) {
+        return post.id == id
+    })
+
+    if (!post) {
+        return res.send('post not found!')
+    }
+
+    return res.render('post', { item: post })
+})
+
 server.use(function(req, res) {
     res.status(404).render("not-found");
 });
