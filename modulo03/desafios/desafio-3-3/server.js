@@ -56,7 +56,7 @@ server.get('/about', function(req, res) {
     return res.render('about', { about })
 })
 
-server.get('post', function(req, res) {
+server.get('/post', function(req, res) {
     const id = req.query.id
 
     const post = posts.find(function(post) {

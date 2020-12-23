@@ -6,15 +6,20 @@
         <h1>{{item.title}}</h1>
     </div>
 
-    <section class="cards">
+    <section class="post">
 
-        {% for course in courses %}
-        <div class="card" id={{ course.id }}>
-            <div class="card__image-container">
-                <iframe src="https://rocketseat.com.br/{{ item.id }}" frameborder="0"></iframe>
+        <div class="card post" id={{item.id}}>
+            <div class="card__post-container">
+                <iframe src="https://blog.rocketseat.com.br/{{ item.id }}" frameborder="0"></iframe>
+            </div>
+            <div class="card__content">
+                <p>{{item.title}}</p>
+            </div>
+            <div class="card__info">
+                <p>{{item.duration}}</p>
+                <p class="card__price">{{item.author}}</p>
             </div>
         </div>
-        {% endfor %}
 
     </section>
 
