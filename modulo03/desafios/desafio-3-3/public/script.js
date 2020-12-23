@@ -4,6 +4,6 @@ const cards = document.querySelectorAll('.card')
 for (let card of cards) {
     card.addEventListener('click', function() {
         const id = card.getAttribute('id')
-        window.location.href = `/post?id=${id}`
+        window.locaion.href = `/post?id=${id}`
     })
 }

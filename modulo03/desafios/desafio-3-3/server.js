@@ -17,7 +17,7 @@ server.get('/', function(req, res) {
     return res.render('courses', { courses })
 })
 
-server.get('/about', function(req, res) {
+server.get('about', function(req, res) {
     const about = {
         image: 'https://avatars0.githubusercontent.com/u/28929274?s=200&v=4',
         name: 'Rocketseat',
