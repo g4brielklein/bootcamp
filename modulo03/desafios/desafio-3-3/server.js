@@ -59,7 +59,7 @@ server.get('/about', function(req, res) {
 server.get('/post', function(req, res) {
     const id = req.query.id
 
-    const post = posts.find(function(post) {
+    const post = courses.find(function(post) {
         return post.id == id
     })
 

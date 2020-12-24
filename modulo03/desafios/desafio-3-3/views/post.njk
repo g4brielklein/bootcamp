@@ -8,16 +8,16 @@
 
     <section class="post">
 
-        <div class="card post" id={{item.id}}>
-            <div class="card__post-container">
-                <iframe src="https://blog.rocketseat.com.br/{{ item.id }}" frameborder="0"></iframe>
+        <div class="card" id={{ course.id }}>
+            <div class="card__image-container">
+                <img src={{ course.image }} alt={{ course.title }} />
             </div>
             <div class="card__content">
-                <p>{{item.title}}</p>
+                <p>{{ course.title }}</p>
             </div>
             <div class="card__info">
-                <p>{{item.duration}}</p>
-                <p class="card__price">{{item.author}}</p>
+                <p>{{ course.duration }}</p>
+                <p class="card__author">{{ course.author }}</p>
             </div>
         </div>
 
