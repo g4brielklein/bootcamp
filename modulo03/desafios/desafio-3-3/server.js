@@ -2,7 +2,7 @@ const express = require('express')
 const nunjucks = require('nunjucks')
 
 const server = express()
-const courses = require('./courses')
+const posts = require('./posts')
 
 server.use(express.static('public'))
 
@@ -14,7 +14,7 @@ nunjucks.configure('views', {
 })
 
 server.get('/', function(req, res) {
-    return res.render('courses', { courses })
+    return res.render('posts', { posts })
 })
 
 server.get('/about', function(req, res) {
@@ -56,25 +56,19 @@ server.get('/about', function(req, res) {
     return res.render('about', { about })
 })
 
-// server.get('/posts', function(req, res) {
-//     const id = req.params.id
+server.get('/posts/:id', function(req, res) {
+    const id = req.params.id
 
-//     const post = courses.find(function(post) {
-//         return post.id == id
-//     })
+    const post = posts.find(function(post) {
+        return post.id == id
+    })
 
-//     if (!post) {
-//         return res.send('post not found!')
-//     }
+    if (!post) {
+        return res.send('Post not found!')
+    }
 
-//     return res.render('post', { item: post })
-// })
-
-server.get("/courses/:id", function(req, res) {
-    const id = req.params.id;
-  
-    return res.send(`O id fornecido na rota é: ${id}`);
-});
+    return res.render('post', { item: post })
+})
 
 server.use(function(req, res) {
     res.status(404).render("not-found");
