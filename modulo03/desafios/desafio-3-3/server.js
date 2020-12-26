@@ -56,19 +56,19 @@ server.get('/about', function(req, res) {
     return res.render('about', { about })
 })
 
-server.get('/posts', function(req, res) {
-    const id = req.query.id
+// server.get('/posts', function(req, res) {
+//     const id = req.params.id
 
-    const post = courses.find(function(post) {
-        return post.id == id
-    })
+//     const post = courses.find(function(post) {
+//         return post.id == id
+//     })
 
-    if (!post) {
-        return res.send('post not found!')
-    }
+//     if (!post) {
+//         return res.send('post not found!')
+//     }
 
-    return res.render('post', { item: post })
-})
+//     return res.render('post', { item: post })
+// })
 
 server.get("/courses/:id", function(req, res) {
     const id = req.params.id;
