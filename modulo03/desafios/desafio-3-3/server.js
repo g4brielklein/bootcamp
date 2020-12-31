@@ -10,7 +10,8 @@ server.set('view engine', 'njk')
 
 nunjucks.configure('views', {
     express: server,
-    autoescape: false
+    autoescape: false,
+    noCache: true
 })
 
 server.get('/', function(req, res) {
@@ -56,7 +57,7 @@ server.get('/about', function(req, res) {
     return res.render('about', { about })
 })
 
-server.get('/posts/:id', function(req, res) {
+server.get('/post/:id', function(req, res) {
     const id = req.params.id
 
     const post = posts.find(function(post) {
