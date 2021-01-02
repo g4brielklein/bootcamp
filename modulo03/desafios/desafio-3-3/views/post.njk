@@ -2,22 +2,22 @@
 
 {% block content %}
 
-    <div id="wrapper">
-        <h1>Posts</h1>
+    <div id="wrapper" class="post">
+        <h1>{{ item.title }}</h1>
     </div>
 
     <section class="cards">
 
-        <div class="card" id={{ post.id }}>
-            <div class="card__image-container">
-                <img src={{ post.image }} alt={{ post.title }} />
+        <div class="card post" id={{ item.id }}>
+            <div class="card__post-container">
+                <iframe src="https://blog.rocketseat.com.br/{{ item.id }}" frameborder="0"></iframe>
             </div>
             <div class="card__content">
-                <p>{{ post.title }}</p>
+                <p>{{ item.title }}</p>
             </div>
             <div class="card__info">
-                <p>{{ post.duration }}</p>
-                <p class="card__author">{{ post.author }}</p>
+                <p>{{ item.duration }}</p>
+                <p class="card__author">{{ item.author }}</p>
             </div>
         </div>
 
