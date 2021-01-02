@@ -177,12 +177,13 @@ iframe {
 /* --- VIDEO PAGE --- */
 .post {
     margin: 0 auto;
-    max-width: 800px;
+    max-width: 1200px;
 }
 
 .card__post-container {
     position: relative;
     padding-top: 62.5%;
+    margin-bottom: 20px;
 }
 
 .card__post-container iframe {
