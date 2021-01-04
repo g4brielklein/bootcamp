@@ -8,11 +8,12 @@ server.use(express.static('public'))
 server.set('view engine', 'html')
 
 nunjucks.configure('views', {
-    express:server
+    express:server,
+    noCache: true
 })
 
 server.get('/', function(req, res) {
-    return res.render('index')
+    return res.render('about')
 })
 
 server.get('/portfolio', function(req, res) {
