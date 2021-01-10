@@ -1,22 +1,23 @@
 {% extends 'layout.njk' %}
 
 {% block head %}
-    <title>Sobre - Gabriel Klein</title>
+    <title>Sobre - {{ data.name }}</title>
 {% endblock %}
 
 {% block content %}
 
         <div id="wrapper">
-            <img src="https://avatars0.githubusercontent.com/u/22963494?s=460&u=3f020d4a9f9041ada4585a645cd8721b99a9fcc0&v=4" alt="Gabriel Klein" />
-            <h1>Gabriel Klein</h1>
-            <h2>Data Engineer at <a href="http://cadastra.com" target="_blank">Cadastra</a></h2>
-            <p>Student at Rocketseat and Information Tecnology Student at Ulbra</p>
+            <img src="{{ data.avatar_url }}" alt="Imagem de {{ data.name }}" />
+            <h1>{{ data.name }}</h1>
+            <h2>{{ data.role }}</h2>
+            <p>{{ data.description }}</p>
         </div>
 
         <footer>
             <div class="links">
-                <a href="https://github.com/g4brielklein" target="_blank">GitHub</a>
-                <a href="https://linkedin.com/in/g4brielklein" target="_blank">LinkedIn</a>
+                {% for link in data.links %}
+                    <a href="{{ link.url }}" target="_blank">{{ link.name }}</a>
+                {% endfor %}
             </div>
         </footer>
 
