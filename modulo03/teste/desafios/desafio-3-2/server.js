@@ -15,11 +15,24 @@ nunjucks.configure('views', {
 })
 
 server.get('/', function(req, res) {
-    return res.render('contents', { items: posts })
+    return res.render('contents', { posts })
 })
 
 server.get('/about', function(req, res) {
-    return res.render('about')
+    const about = {
+        img_url: 'https://avatars0.githubusercontent.com/u/28929274?s=200&v=4',
+        name: 'Rocketseat',
+        title: 'Evolua rápido como a tecnologia.',
+        title_tecs: 'Principais tecnologias utilizadas: ',
+        tecs: ['JavaScript', 'Node.js', 'React.js', 'React Native'],
+        links: [
+            { url: 'https://github.com/rocketseat', name: 'Github' },
+            { url: 'https://instagram.com/rocketseat_oficial', name: 'Instagram' },
+            { url: 'https://facebook.com/rocketseat', name:'Facebook' }
+        ]
+    }
+
+    return res.render('about', { about })
 })
 
 server.use(function(req, res) {
