@@ -3,7 +3,8 @@ module.exports = [
         id: 'HN1UjzRSdBk',
         title: 'Desvendando CSS Grid na Prática',
         duration: '36 min',
-        price: 'Free'
+        price: 'Free',
+        featured: true
     },
     {
         id: '2alg7MQ6_sI',
@@ -15,7 +16,8 @@ module.exports = [
         id: 'vqrjFnq3-uo',
         title: 'Criando player de áudio',
         duration: '105 min',
-        price: 'Free'
+        price: 'Free',
+        featured: true
     },
     {
         id: 'GykTLqODQuU',
@@ -27,7 +29,8 @@ module.exports = [
         id: 'GSqR2i-Pq6o',
         title: 'Desvendando a variável this',
         duration: '48 min',
-        price: 'Free'
+        price: 'Free',
+        featured: true
     },
     {
         id: 'ghTrp1x_1As',
