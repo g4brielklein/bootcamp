@@ -1,0 +1,32 @@
+{% extends 'layout.njk' %}
+
+{% block head %}
+    <title>Example Post</title>
+{% endblock %}
+
+{% block content %}
+
+    <div id="wrapper">
+        <h1>Example post</h1>
+    </div>
+
+    <section class="cards">
+
+            <div class="card" id="{{ post.id }}">
+                <div class="card__image-container">
+                    <img src="{{ post.img_url }}" alt="{{ post.title }}" />
+                </div>
+                <div class="card__content">
+                    <p>{{ post.title }}</p>
+                </div>
+                <div class="card__info">
+                    <p>{{ post.duration }}</p>
+                    <p class="card__author">{{ post.author }}</p>
+                </div>
+            </div>
+
+    </section>
+
+    <script src="script.js"></script>
+    
+{% endblock %}
