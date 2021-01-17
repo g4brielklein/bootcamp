@@ -34,9 +34,17 @@ app.get('/about', function(req, res) {
 })
 
 app.use('/post/:id', function(req, res) {
-    const id = req.params.id
+    const id = req.query.id
 
-    return res.send(id)
+    const post = posts.find(function(post) {
+        return post.id == id
+    })
+
+    if (!post) {
+        return res.send('Post not found!')
+    }
+
+    return res.render('post', {item: post})
 })
 
 app.use(function(req, res) {
