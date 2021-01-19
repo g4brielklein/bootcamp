@@ -34,7 +34,7 @@ app.get('/about', function(req, res) {
 })
 
 app.use('/post/:id', function(req, res) {
-    const id = req.query.id
+    const id = req.params.id
 
     const post = posts.find(function(post) {
         return post.id == id
@@ -44,7 +44,7 @@ app.use('/post/:id', function(req, res) {
         return res.send('Post not found!')
     }
 
-    return res.render('post', {item: post})
+    return res.render('post', { item: post })
 })
 
 app.use(function(req, res) {
