@@ -1,5 +1,4 @@
 const express = require('express')
-const { Server } = require('http')
 const nunjucks = require('nunjucks')
 
 const app = express()
