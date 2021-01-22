@@ -4,7 +4,7 @@ const modalOverlay = document.querySelector('.modal-overlay')
 for (let recepi of recepis) {
     recepi.addEventListener('click', function() {
         const id = recepi.getAttribute('id')
-        modalOverlay.querySelector('iframe').src = `recepis/${id}.html`
+        modalOverlay.querySelector('iframe').src = `recepis/${id}.njk`
         modalOverlay.classList.add('active')
     })
 }

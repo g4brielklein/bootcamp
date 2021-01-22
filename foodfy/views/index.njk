@@ -43,65 +43,17 @@
 
         <div class="recepis">
             
-            <div class="recepi" id="burger">
-                <div class="recepi-image">
-                    <img src="/assets/burger.png" alt="Burguer" />
+            {% for data in data %}
+                <div class="recepi" id="burger">
+                    <div class="recepi-image">
+                        <img src="{{ data.image }}" alt="Burguer" />
+                    </div>
+                    <div class="recepi-content">
+                        <p>{{ data.title }}</p>
+                        <p class="recepi-author">{{ data.author }}</p>
+                    </div>
                 </div>
-                <div class="recepi-content">
-                    <p>Triplo bacon burger</p>
-                    <p class="recepi-author">por Jorge Relato</p>
-                </div>
-            </div>
-
-            <div class="recepi" id="pizza">
-                <div class="recepi-image">
-                    <img src="/assets/pizza.png" alt="Burguer" />
-                </div>
-                <div class="recepi-content">
-                    <p>Pizza 4 estações</p>
-                    <p class="recepi-author">por Fabiana Melo</p>
-                </div>
-            </div>
-
-            <div class="recepi" id="espaguete">
-                <div class="recepi-image">
-                    <img src="/assets/espaguete.png" alt="Burguer" />
-                </div>
-                <div class="recepi-content">
-                    <p>Espaguete ao alho</p>
-                    <p class="recepi-author">por Júlia Kinoto</p>
-                </div>
-            </div>
-
-            <div class="recepi" id="lasanha">
-                <div class="recepi-image">
-                    <img src="/assets/lasanha.png" alt="Burguer" />
-                </div>
-                <div class="recepi-content">
-                    <p>Lasanha mac n' cheese</p>
-                    <p class="recepi-author">por Juliano Vieira</p>
-                </div>
-            </div>
-
-            <div class="recepi" id="doce">
-                <div class="recepi-image">
-                    <img src="/assets/doce.png" alt="Burguer" />
-                </div>
-                <div class="recepi-content">
-                    <p>Docinhos pão-do-céu</p>
-                    <p class="recepi-author">por Ricardo Golvea</p>
-                </div>
-            </div>
-
-            <div class="recepi" id="asinhas">
-                <div class="recepi-image">
-                    <img src="/assets/asinhas.png" alt="Burguer" />
-                </div>
-                <div class="recepi-content">
-                    <p>Asinhas de frango ao barbecue</p>
-                    <p class="recepi-author">por Vania Steroski</p>
-                </div>
-            </div>
+            {% endfor %}
 
         </div>
 
