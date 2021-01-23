@@ -21,7 +21,7 @@ app.get('/about', function(req, res) {
 })
 
 app.get('/recepis', function(req, res) {
-    return res.render('recepis')
+    return res.render('recepis', { data })
 })
 
 app.get('/recepi:id', function(req, res) {
