@@ -1,81 +1,52 @@
-<!DOCTYPE html>
-<html>
+{% extends 'layout.njk' %}
 
-    <head>
-        <title>Foodfy</title>
-        <link rel="stylesheet" href="/style.css" />
-    </head>
+{% block content %}
+    <div class="main">
 
-    <body>
-
-        <header>
-
-            <div class="logo">
-                <a href="/"><img src="/assets/logo.png" alt="Logo" /></a>
-            </div>
-
-            <div class="links">
-                <a href="/about">Sobre</a>
-                <a href="/recepis">Receitas</a>
-            </div>
-
-        </header>
-
-        <div class="main">
-
-            <div class="main-text">
-                <h1>As melhores receitas</h1>
-                <p>Aprenda a construir os melhores pratos
-                    com receitas criadas por profissionais
-                    do mundo inteiro.
-                </p>
-            </div>
-
-            <div class="main-image">
-                <img src="/assets/chef.png" alt="Chef" />
-            </div>
-
+        <div class="main-text">
+            <h1>As melhores receitas</h1>
+            <p>Aprenda a construir os melhores pratos
+                com receitas criadas por profissionais
+                do mundo inteiro.
+            </p>
         </div>
 
-        <div class="recepis-title">
-            <h1>Mais acessadas</h1>
+        <div class="main-image">
+            <img src="/assets/chef.png" alt="Chef" />
         </div>
 
-        <div class="recepis">
-            
-            {% for data in data %}
-                <div class="recepi" id="burger">
-                    <div class="recepi-image">
-                        <img src="{{ data.image }}" alt="Burguer" />
-                    </div>
-                    <div class="recepi-content">
-                        <p>{{ data.title }}</p>
-                        <p class="recepi-author">{{ data.author }}</p>
-                    </div>
+    </div>
+
+    <div class="recepis-title">
+        <h1>Mais acessadas</h1>
+    </div>
+
+    <div class="recepis">
+        
+        {% for data in data %}
+            <div class="recepi" id="burger">
+                <div class="recepi-image">
+                    <img src="{{ data.image }}" alt="Burguer" />
                 </div>
-            {% endfor %}
-
-        </div>
-
-        <div class="modal-overlay">
-            <div class="modal">
-
-                <div class="modal-content">
-                    <iframe src=""></iframe>
-                </div>
-
-                <div class="close-modal">
-                    <p>Fechar modal</p>
+                <div class="recepi-content">
+                    <p>{{ data.title }}</p>
+                    <p class="recepi-author">{{ data.author }}</p>
                 </div>
             </div>
+        {% endfor %}
+
+    </div>
+
+    <div class="modal-overlay">
+        <div class="modal">
+
+            <div class="modal-content">
+                <iframe src=""></iframe>
+            </div>
+
+            <div class="close-modal">
+                <p>Fechar modal</p>
+            </div>
         </div>
-
-        <footer>
-            <p>Todos direitos reservados, receitas Foodfy.</p>
-        </footer>
-
-        <script src="/script.js"></script>
-
-    </body>
-
-</html>
+    </div>
+{% endblock %}
