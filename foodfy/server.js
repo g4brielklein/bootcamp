@@ -9,7 +9,9 @@ app.use(express.static('public'))
 app.set('view engine', 'njk')
 
 nunjucks.configure('views', {
-    express:app
+    express:app,
+    autoescape: false,
+    noCache: true
 })
 
 app.get('/', function(req, res)  {
@@ -31,20 +33,6 @@ app.get('/about', function(req, res) {
 
 app.get('/recepis', function(req, res) {
     return res.render('recepis', { data })
-})
-
-app.get('/recepi', function(req, res) {
-    const id = req.query.id;
-
-    const recepi = data.find(function(recepi) {
-        return recepi.id == id
-    })
-
-    if (!recepi) {
-        return res.send('Recepi not found! :(')
-    }
-
-    return res.render('recepi', { item: data })
 })
 
 app.get("/recipes/:index", function (req, res) {
