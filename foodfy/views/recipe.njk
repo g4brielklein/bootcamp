@@ -2,15 +2,25 @@
 
 {% block content %}
 
-    <div>
-        <img src="{{ item.image }}" alt="Imagem de {{ item.title }}" />
-        <p>{{ item.title }}</p>
-        <br/><br/>
-        {{ item.ingredients }}
-        <br/><br/>
-        {{ item.preparation }}
-        <br/><br/>
-        {{ item.information }}
+    <div class="recipe-details">
+        <div class="image-container">
+            <img src="{{ item.image }}" alt="Imagem de {{ item.title }}" />
+        </div>
+        <div class="title-container">
+            <p>{{ item.title }}</p>
+        </div>
+        <div class="author-content">
+            <p>{{ item.author }}</p>
+        </div>
+        <div class="ingredients-container">
+            <p>{{ item.ingredients }}</p>
+        </div>
+        <div class="preparation-container">
+            <p>{{ item.preparation }}</p>
+        </div>
+        <div class="information-container">
+            <p>{{ item.information }}</p>
+        </div>
     </div>
 
 {% endblock %}

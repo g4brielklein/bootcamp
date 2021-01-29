@@ -229,3 +229,13 @@ iframe {
     line-height: 21px;
     color: #777777;
 }
+
+/* === RECIPE PAGE === */
+.recipe-details {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.recipe-details .image-container img {
+    border-radius: 15px;
+}
