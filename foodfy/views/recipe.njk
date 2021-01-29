@@ -1,0 +1,16 @@
+{% extends 'layout.njk' %}
+
+{% block content %}
+
+    <div>
+        <img src="{{ item.image }}" alt="Imagem de {{ item.title }}" />
+        <p>{{ item.title }}</p>
+        <br/><br/>
+        {{ item.ingredients }}
+        <br/><br/>
+        {{ item.preparation }}
+        <br/><br/>
+        {{ item.information }}
+    </div>
+
+{% endblock %}

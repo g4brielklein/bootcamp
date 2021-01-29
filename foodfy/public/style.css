@@ -62,20 +62,20 @@ header .links a {
     margin: 66px 100px 0 624px;
 }
 
-.recepis-title {
+.recipes-title {
     width: 940px;
     margin: 0 auto;
     margin-bottom: 20px;
     margin-top: 50px;
 }
 
-.recepis-title h1 {
+.recipes-title h1 {
     font-size: 24px;
     line-height: 28px;
     color: #111111;
 }
 
-.recepis {
+.recipes {
     max-width: 940px;
     margin: 0 auto;
     display: grid;
@@ -83,27 +83,27 @@ header .links a {
     gap: 20px;
 }
 
-.recepi:hover {
+.recipe:hover {
     transform: scale(1.01);
     cursor: pointer;
 }
 
-.recepi-image img {
+.recipe-image img {
     width: 100%;
     border-radius: 15px;
 }
 
-.recepi-content {
+.recipe-content {
     margin-top: 20px;
     margin-bottom: 10px;
 }
 
-.recepi-content p {
+.recipe-content p {
     font-size: 18px;
     line-height: 21px;
 }
 
-.recepi-content .recepi-author {
+.recipe-content .recipe-author {
     margin-top: 5px;
     color: #777777;
     font-size: 14px;
@@ -114,7 +114,7 @@ header .links a {
 
 footer {
     background-color: #EEEEEE;
-    margin-top: 50px;
+    margin-top: 128px;
 }
 
 footer p {
@@ -201,29 +201,29 @@ iframe {
     position: absolute;
 }
 
-/*--- MODAL RECEPI---*/
-.modal-recepi-image {
+/*--- MODAL recipe---*/
+.modal-recipe-image {
     text-align: center;
     margin-top: 30px;
 }
 
-.modal-recepi-image img{
+.modal-recipe-image img{
     border-radius: 15px;
     width: 600px;
     height: 200px;
 }
 
-.modal-recepi-content {
+.modal-recipe-content {
     text-align: center;
     margin-top: 20px;
 }
 
-.modal-recepi-content p {
+.modal-recipe-content p {
     font-size: 24px;
     line-height: 28px;
 }
 
-.modal-recepi-content .modal-recepi-author {
+.modal-recipe-content .modal-recipe-author {
     margin-top: 5px;
     font-size: 18px;
     line-height: 21px;

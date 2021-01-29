@@ -17,20 +17,20 @@
 
     </div>
 
-    <div class="recepis-title">
+    <div class="recipes-title">
         <h1>Mais acessadas</h1>
     </div>
 
-    <div class="recepis">
+    <div class="recipes">
         
         {% for data in data %}
-            <div class="recepi" id="burger">
-                <div class="recepi-image">
+            <div class="recipe" id="burger">
+                <div class="recipe-image">
                     <img src="{{ data.image }}" alt="Burguer" />
                 </div>
-                <div class="recepi-content">
+                <div class="recipe-content">
                     <p>{{ data.title }}</p>
-                    <p class="recepi-author">{{ data.author }}</p>
+                    <p class="recipe-author">{{ data.author }}</p>
                 </div>
             </div>
         {% endfor %}
