@@ -35,12 +35,8 @@ app.get('/recipes', function(req, res) {
     return res.render('recipes', { data })
 })
 
-app.get('/recipe', function(req, res) {
-    return res.render('recipe', { data })
-})
-
 app.get("/recipe/:index", function (req, res) {
-    const recipes = data; // Array de receitas carregadas do data.js
+    const recipes = data;
     const recipeIndex = req.params.index;
   
     return res.render('recipe', { item: recipes[recipeIndex] })
