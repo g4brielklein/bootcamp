@@ -162,8 +162,13 @@ span {
     margin: 0 auto;
 }
 
-.recipe-details .image-container img {
+.image-container {
+    position: relative;
+}
+
+.image-container img {
     border-radius: 15px;
+    position: absolute;
 }
 
 .title-container {
