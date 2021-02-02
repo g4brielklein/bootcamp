@@ -14,7 +14,11 @@
         </div>
         <div class="ingredients-container">
             <h1>Ingredientes</h1>
-            <p>{{ item.ingredients }}</p>
+            <ul>
+                {% for ingredient in item.ingredients %}
+                    <li>{{ ingredient }};</li>
+                {% endfor %}
+            </ul>
         </div>
         <div class="preparation-container">
             <h1>Modo de preparo</h1>

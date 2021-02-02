@@ -77,7 +77,7 @@ header .links a {
 
 .recipes {
     max-width: 940px;
-    margin: 0 auto;
+    margin: 30px auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
@@ -114,7 +114,7 @@ header .links a {
 
 footer {
     background-color: #EEEEEE;
-    margin-top: 128px;
+    margin-top: 30px;
 }
 
 footer p {
@@ -158,17 +158,12 @@ span {
 
 /* === RECIPE PAGE === */
 .recipe-details {
-    max-width: 800px;
+    max-width: 940px;
     margin: 0 auto;
-}
-
-.image-container {
-    position: relative;
 }
 
 .image-container img {
     border-radius: 15px;
-    position: absolute;
 }
 
 .title-container {
@@ -195,7 +190,7 @@ span {
     font-family: 'Roboto-Regular', sans-serif;
 }
 
-.ingredients-container p,
+.ingredients-container ul,
 .preparation-container p,
 .information-container p {
     font-size: 18px;
@@ -203,6 +198,10 @@ span {
     color: #444444;
     font-family: 'Roboto-Regular', sans-serif;
     margin-top: 1.6%;
+}
+
+.ingredients-container ul {
+    margin-left: 15px;
 }
 
 .ingredients-container h1,
