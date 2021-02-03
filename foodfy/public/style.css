@@ -77,7 +77,7 @@ header .links a {
 
 .recipes {
     max-width: 940px;
-    margin: 30px auto;
+    margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
@@ -114,7 +114,7 @@ header .links a {
 
 footer {
     background-color: #EEEEEE;
-    margin-top: 30px;
+    margin-top: 37px;
 }
 
 footer p {
@@ -223,4 +223,8 @@ span {
 
 .information-container {
     margin-top: 3.7%;
+}
+
+.space {
+    margin-top: 500px;
 }
