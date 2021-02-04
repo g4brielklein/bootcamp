@@ -13,7 +13,10 @@
             <p>por {{ item.author }}</p>
         </div>
         <div class="ingredients-container">
-            <h1>Ingredientes</h1>
+            <div class="container-contents">
+                <h1>Ingredientes</h1>
+                <p class="hide-show">ESCONDER</p>
+            </div>
             <ul>
                 {% for ingredient in item.ingredients %}
                     <li>{{ ingredient }};</li>
@@ -21,13 +24,19 @@
             </ul>
         </div>
         <div class="preparation-container">
-            <h1>Modo de preparo</h1>
+            <div class="container-contents">
+                <h1>Modo de preparo</h1>
+                <p class="hide-show">ESCONDER</p>
+            </div>
             <p>{{ item.preparation }}</p>
         </div>
         <div class="information-container">
-            <h1>Informações adicionais</h1>
+            <div class="container-contents">
+                <h1>Informações adicionais</h1>
+                <p class="hide-show">ESCONDER</p>
+            </div>
             <p>{{ item.information }}</p>
         </div>
     </div>
-
+    
 {% endblock %}

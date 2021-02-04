@@ -228,3 +228,16 @@ span {
 .space {
     margin-top: 500px;
 }
+
+.container-contents {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+}
+
+.container-contents p {
+    font-weight: bold;
+    font-size: 12px;
+    color: #999999;
+    cursor: pointer;
+}
