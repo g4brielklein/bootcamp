@@ -1,5 +1,3 @@
-alert('entrou!')
-
 const recipes = document.querySelectorAll('.recipe')
 
 for (let i = 0; i < recipes.length; i++) {
@@ -8,6 +6,11 @@ for (let i = 0; i < recipes.length; i++) {
     })
 }
 
-document.querySelector('.hide-show').addEventListener('click', function() {
-    alert('clicou!')
+document.querySelector('.title-container').addEventListener('click', function() {
+    alert('boa')
+})
+
+var test = document.querySelector('.hide-show').addEventListener('click', function() {
+    // alert('holly sh*t')
+    document.querySelector('.hide-show').innerHTML = "MOSTRAR"
 })
