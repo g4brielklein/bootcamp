@@ -191,6 +191,7 @@ span {
 }
 
 .ingredients-container ul,
+.ingredients-container p,
 .preparation-container p,
 .information-container p {
     font-size: 18px;
@@ -229,15 +230,15 @@ span {
     margin-top: 500px;
 }
 
-.container-contents {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    align-items: center;
+.container-contents h1 {
+    display: inline-block;
 }
 
 .container-contents p {
+    display: inline;
+    color: #999999;
     font-weight: bold;
     font-size: 12px;
-    color: #999999;
+    margin-left: 0.6%;
     cursor: pointer;
 }

@@ -1,4 +1,5 @@
-alert('clicou!')
+alert('entrou!')
+
 const recipes = document.querySelectorAll('.recipe')
 
 for (let i = 0; i < recipes.length; i++) {
