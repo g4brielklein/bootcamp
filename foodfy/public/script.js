@@ -1,4 +1,5 @@
 const recipes = document.querySelectorAll('.recipe')
+const details = document.querySelector('.recipe-details')
 
 for (let i = 0; i < recipes.length; i++) {
     recipes[i].addEventListener('click', function() {
@@ -6,11 +7,15 @@ for (let i = 0; i < recipes.length; i++) {
     })
 }
 
-document.querySelector('.title-container').addEventListener('click', function() {
-    alert('boa')
-})
+const buttons = document.querySelectorAll('.button')
 
-var test = document.querySelector('.hide-show').addEventListener('click', function() {
-    // alert('holly sh*t')
-    document.querySelector('.hide-show').innerHTML = "MOSTRAR"
+for (let button of buttons) {
+    button.addEventListener('click', function() {
+        button.innerHTML = "MOSTRAR"
+        details.classList.remove('.content')
+    })
+}
+
+details.addEventListener('click', function() {
+    alert('recipes')
 })

@@ -1,11 +1,5 @@
 {% extends 'layout.njk' %}
 
-{# {% block head %}
-    <script>
-        
-    </script>
-{% endblock %} #}
-
 {% block content %}
 
     <div class="recipe-details">
@@ -21,25 +15,27 @@
         <div class="ingredients-container">
             <div class="container-contents">
                 <h1>Ingredientes</h1>
-                <p class="hide-show">ESCONDER</p>
+                <p class="button">ESCONDER</p>
             </div>
-            <ul>
-                {% for ingredient in item.ingredients %}
-                    <li>{{ ingredient }};</li>
-                {% endfor %}
-            </ul>
+            <div class="content">
+                <ul>
+                    {% for ingredient in item.ingredients %}
+                        <li>{{ ingredient }};</li>
+                    {% endfor %}
+                </ul>
+            <div>
         </div>
         <div class="preparation-container">
             <div class="container-contents">
                 <h1>Modo de preparo</h1>
-                <p class="hide-show">ESCONDER</p>
+                <p class="button">ESCONDER</p>
             </div>
             <p>{{ item.preparation }}</p>
         </div>
         <div class="information-container">
             <div class="container-contents">
                 <h1>Informações adicionais</h1>
-                <p class="hide-show">ESCONDER</p>
+                <p class="button">ESCONDER</p>
             </div>
             <p>{{ item.information }}</p>
         </div>
