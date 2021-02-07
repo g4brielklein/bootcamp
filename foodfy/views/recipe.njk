@@ -17,27 +17,31 @@
                 <h1>Ingredientes</h1>
                 <p class="button">ESCONDER</p>
             </div>
-            <div class="content">
+            <div class="button-content">
                 <ul>
                     {% for ingredient in item.ingredients %}
                         <li>{{ ingredient }};</li>
                     {% endfor %}
                 </ul>
-            <div>
+            </div>
         </div>
         <div class="preparation-container">
             <div class="container-contents">
                 <h1>Modo de preparo</h1>
                 <p class="button">ESCONDER</p>
             </div>
-            <p>{{ item.preparation }}</p>
+            <div class="button-content">
+                <p>{{ item.preparation }}</p>
+            </div>
         </div>
         <div class="information-container">
             <div class="container-contents">
                 <h1>Informações adicionais</h1>
                 <p class="button">ESCONDER</p>
             </div>
-            <p>{{ item.information }}</p>
+            <div class="button-content">
+                <p>{{ item.preparation }}</p>
+            </div>
         </div>
     </div>
 
