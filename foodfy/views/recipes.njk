@@ -7,6 +7,28 @@
 
 {% block content %}
 
+    <div class="nav">
+        <ul class="menu">
+            <li class="mnativo"><a href="#">teste<i class="fa fa-bars"></i></a></li>
+            <li><a href="#" onclick="acao()"><i class="fa fa-home">clique aqui</i></a></li>
+            <li><a href="#"><i class="fa fa-star-o">teste</i></a></li>
+            <li><a href="#"><i class="fa fa-play">teste</i></a></li>
+        </ul>
+    </div>
+
+    <div class="conteudo" id="submenu" style="display:none;">
+        <nav>
+            <ul class="submenu">
+                <li><a href="#">Todas</a></li>
+                <li><a href="#">Todas</a></li>
+                <li><a href="#">Todas</a></li>
+                <li><a href="#">Todas</a></li>
+                <li><a href="#">Todas</a></li>
+                <li><a href="#">Todas</a></li>
+            </ul>
+        </nav>
+    </div>
+
     <div class="recipes">
 
         {% for data in data %}
