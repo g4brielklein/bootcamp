@@ -15,9 +15,9 @@
         <div class="ingredients-container">
             <div class="container-contents">
                 <h1>Ingredientes</h1>
-                <p class="button" onlick="action()">ESCONDER</p>
+                <p class="button">ESCONDER</p>
             </div>
-            <div class="button-content" id="content" style="display:none;">
+            <div class="button-content" style="display:block;">
                 <ul>
                     {% for ingredient in item.ingredients %}
                         <li>{{ ingredient }};</li>
@@ -28,9 +28,9 @@
         <div class="preparation-container">
             <div class="container-contents">
                 <h1>Modo de preparo</h1>
-                <p class="button" onclick="action()">ESCONDER</p>
+                <p class="button">ESCONDER</p>
             </div>
-            <div class="button-content" id="content" style="display:none;">
+            <div class="button-content">
                 <p>{{ item.preparation }}</p>
             </div>
         </div>
