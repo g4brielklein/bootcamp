@@ -6,34 +6,18 @@
 {% endblock %}
 
 {% block content %}
+
     <div class="about-content">
 
-        <div class="title" id="main-title">
-            <p>{{ data.title_1 }}</p>
-        </div>
-        <div class="content">
-            <p>
-                {{ data.about }}
-            </p>
-        </div>
-
-        <div class="title">
-            <p>{{ data.title_2 }}</p>
-        </div>
-        <div class="content">
-            <p>
-                {{ data.start }}
-            </p>
-        </div>
-
-        <div class="title">
-            <p>{{ data.title_3 }}</p>
-        </div>
-        <div class="content">
-            <p>
-                {{ data.recipes }}
-            </p>
-        </div>
+        {% for content in data.contents %}
+            <div class="title">
+                <p>{{ content.title }}</p>
+            </div>
+            <div class="content">
+                <p>{{ content.text }}</p>
+            </div>
+        {% endfor %}
 
     </div>
+    
 {% endblock %}
