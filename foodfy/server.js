@@ -42,5 +42,5 @@ app.get("/recipe/:index", function (req, res) {
   })
 
 app.listen(5000, function() {
-    console.log('server is running!')
+    console.log('Server is running!')
 })

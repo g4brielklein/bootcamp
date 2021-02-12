@@ -1,13 +1,13 @@
 {
   "name": "foodfy",
   "version": "1.0.0",
-  "description": "",
+  "description": "Rocketseat's Foody App",
   "main": "data.js",
   "scripts": {
     "start": "nodemon server.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "gabrielklein",
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1",

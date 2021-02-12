@@ -20,7 +20,7 @@
             <div class="button-content">
                 <ul>
                     {% for ingredient in item.ingredients %}
-                        <li>{{ ingredient }};</li>
+                        <li>{{ ingredient }};</li> // Isso é um array
                     {% endfor %}
                 </ul>
             </div>
@@ -40,7 +40,7 @@
                 <p class="button">ESCONDER</p>
             </div>
             <div class="button-content">
-                <p>{{ item.information }}</p>
+                <p>{{ item.information }}</p> // Isso também é um array
             </div>
         </div>
     </div>
