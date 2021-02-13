@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        {% block head %}
+            <title>Gabriel Klein</title>
+        {% endblock %}
+        <link href="/styles.css" rel="stylesheet" />
+    </head>
+
+    <body>
+
+        <header>
+            <div class="links">
+                <a href="/">Sobre</a>
+                <a href="/portfolio">Portfólio</a>
+            </div>
+        </header>
+
+        {% block content %}{% endblock %}
+
+    </body>
+</html>
