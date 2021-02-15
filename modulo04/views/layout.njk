@@ -13,7 +13,9 @@
 
         <header>
             <div class="links">
-                <a href="/">Instructors</a>
+                {% block header %}
+                    <a href="/">Instructors</a>
+                {% endblock %}
                 <a href="/members">Members</a>
             </div>
         </header>
