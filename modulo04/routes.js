@@ -17,8 +17,18 @@ routes.get('/instructors/create', function(req, res) {
     return res.render('instructors/create')
 })
 
-routes.post('/instructors', function(re1, res) {
-    return res.send('recebido')
+routes.post('/instructors', function(req, res) {
+    // Validação dos dados
+    const keys = Object.keys(req.body)
+
+    for (key of keys) {
+        // req.body.key == ""
+        if (req.body[key] == '') {
+            return res.send(`Please, fill the ${key} field.`)
+        }
+    }
+
+    return res.send(req.body)
 })
 
 module.exports = routes
