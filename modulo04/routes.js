@@ -1,5 +1,6 @@
 const express = require('express')
 const routes = express.Router()
+const instructors = require('./instructors')
 
 routes.get('/', function(req, res) {
     return res.redirect('/instructors')
@@ -17,18 +18,6 @@ routes.get('/instructors/create', function(req, res) {
     return res.render('instructors/create')
 })
 
-routes.post('/instructors', function(req, res) {
-    // Validação dos dados
-    const keys = Object.keys(req.body)
-
-    for (key of keys) {
-        // req.body.key == ""
-        if (req.body[key] == '') {
-            return res.send(`Please, fill the ${key} field.`)
-        }
-    }
-
-    return res.send(req.body)
-})
+routes.post('/instructors', instructors.post)
 
 module.exports = routes
