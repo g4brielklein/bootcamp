@@ -1,1 +1,20 @@
-{"avatar_url":"https://github.com","name":"Mayk Brito","birth":"1999-05-06","gender":"M","services":"cardio, yoga"}
+{
+  "instructors": [
+    {
+      "avatar_url": "https://youtube.com",
+      "name": "Usuário teste",
+      "birth": "1992-06-16",
+      "gender": "M",
+      "services": "musculação, cardio",
+      "created_at": 1614131446112
+    },
+    {
+      "avatar_url": "https://github.com",
+      "name": "Gabriel",
+      "birth": 925948800000,
+      "gender": "M",
+      "services": "Desenvolvimento de Software",
+      "created_at": 1614131817182
+    }
+  ]
+}
