@@ -1,20 +1,13 @@
 {
   "instructors": [
     {
-      "avatar_url": "https://youtube.com",
-      "name": "Usuário teste",
-      "birth": "1992-06-16",
-      "gender": "M",
-      "services": "musculação, cardio",
-      "created_at": 1614131446112
-    },
-    {
-      "avatar_url": "https://github.com",
-      "name": "Gabriel",
+      "id": 1,
+      "avatar_url": "https://avatars.githubusercontent.com/u/22963494?s=460&u=3f020d4a9f9041ada4585a645cd8721b99a9fcc0&v=4",
+      "name": "Gabriel Klein",
       "birth": 925948800000,
       "gender": "M",
-      "services": "Desenvolvimento de Software",
-      "created_at": 1614131817182
+      "services": "Software Development",
+      "created_at": 1614194025585
     }
   ]
 }
