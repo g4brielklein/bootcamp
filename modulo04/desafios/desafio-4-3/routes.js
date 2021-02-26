@@ -1,5 +1,10 @@
 const express = require('express')
 const routes = express.Router()
+const fs = require('fs')
+const { stringify } = require('querystring')
+const teachers = require('./teachers')
+
+const data = require('./data.json')
 
 routes.get('/', function(req, res) {
     return res.redirect('teachers')
@@ -18,7 +23,11 @@ routes.get('/teachers/create', function(req, res) {
 })
 
 routes.post('/teachers', function(req, res) {
-    return res.send('Salvo!')
+    fs.writeFile('data.json', JSON.stringify(data, null, 2), function(err) {
+        if (err) {
+            return res.send('Houston we have a problem')
+        }
+    })
 })
 
 module.exports = routes
