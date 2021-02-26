@@ -23,11 +23,7 @@ routes.get('/teachers/create', function(req, res) {
 })
 
 routes.post('/teachers', function(req, res) {
-    fs.writeFile('data.json', JSON.stringify(data, null, 2), function(err) {
-        if (err) {
-            return res.send('Houston we have a problem')
-        }
-    })
+    return res.send('Recebido!')
 })
 
 module.exports = routes
