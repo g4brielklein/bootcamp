@@ -134,3 +134,44 @@ header {
     font-size: 16px;
     color: white;
 }
+
+/* form */
+input {
+    width: 100%;
+    outline: none;
+    color: #555;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+input::placeholder {
+    font-size: 16px;
+    font-weight: normal;    
+}
+
+input[type="radio"] {
+    width: initial;
+    margin-right: 4px;
+}
+
+select {
+    font-size: 16px;
+    font-weight: bold;
+    color: #555;
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 10px 0;
+    background-color: var(--secondary-color);
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 16px;
+    margin-top: 32px;
+}
+
+button:hover {
+    background-color: var(--primary-color);
+    cursor: pointer;
+}
