@@ -1,1 +1,21 @@
-{"avatar_url":"https://google.com","name":"Gabriel Klein","birth":"1232-03-31","education":"Ensino Médio Completo","gender":"Pre","subjects":"Software Development"}
+{
+  "teachers": [
+    {
+      "id": 1,
+      "avatar_url": "https://google.com",
+      "name": "Gabriel Klein",
+      "birth": "3434-03-04",
+      "education": "Ensino Médio Completo",
+      "subjects": "Software Development"
+    },
+    {
+      "id": 2,
+      "avatar_url": "https://google.com",
+      "name": "Gabriel Klein",
+      "birth": "3434-03-04",
+      "education": "Ensino Médio Completo",
+      "type": "Pre",
+      "subjects": "Software Development"
+    }
+  ]
+}
