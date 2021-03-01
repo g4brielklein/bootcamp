@@ -7,44 +7,45 @@
 {% block content %}
 
     <div class="card">
-        <section class="image" style="background: url(https://source.unsplash.com/collection/1486124/500x500) no-repeat center center / cover"></section>
-        <section class="details">
 
-            <h3>Detalhes</h3>
+        {% for teacher in data.teachers %}
 
-            <div class="item">
-                <div>Nome completo</div>
-                <div>Yuhal Noah Harrari</div>
-            </div>
+            <section class="image" style="background: url({{ teacher.avatar_url }}) no-repeat center center / cover"></section>
+            <section class="details">
 
-            <div class="item">
-                <div>Idade</div>
-                <div>45</div>
-            </div>
+                <h3>Detalhes</h3>
 
-            <div class="item">
-                <div>Grau de escolaridade</div>
-                <div>Pós-Doutorado</div>
-            </div>
-
-            <div class="item">
-                <div>Tipo de aula</div>
-                <div>Presencial</div>
-            </div>
-
-            <div class="item">
-                <div>Acompanhamento</div>
-                <div>
-                    <span>História</span>
-                    <span>Psicologia</span>
+                <div class="item">
+                    <div>Nome completo</div>
+                    <div>{{ teacher.name }}</div>
                 </div>
-            </div>
 
-            <div class="item">
-                <div>Desde</div>
-                <div>19/02/2021</div>
-            </div>
+                <div class="item">
+                    <div>Idade</div>
+                    <div>{{ teacher.birth }}</div>
+                </div>
 
-        </section>
+                <div class="item">
+                    <div>Grau de escolaridade</div>
+                    <div>{{ teacher.education }}</div>
+                </div>
+
+                <div class="item">
+                    <div>Tipo de aula</div>
+                    <div>{{ teacher.type }}</div>
+                </div>
+
+                <div class="item">
+                    <div>Área de atuação</div>
+                    <div>
+                        <span>{{ teacher.subjects }}</span>
+                    </div>
+                </div>
+
+            </section>
+
+        {% endfor %}
+   
     </div>
+
 {% endblock %}
