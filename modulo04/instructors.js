@@ -1,6 +1,21 @@
 const fs = require('fs')
 const data = require('./data.json')
 
+// show
+exports.show = function(req, res) {
+    const { id } = req.params
+
+    const foundInstructor = data.instructors.find(function(instructor) {
+        return instructor.id == id
+    })
+
+    if (!foundInstructor) {
+        return res.send('Instructor not found!')
+    }
+
+    return res.send(foundInstructor)
+}
+
 // create
 exports.post = function(req, res) {
     // Validação dos dados
@@ -26,7 +41,7 @@ exports.post = function(req, res) {
         birth,
         gender,
         services,
-        created_at, 
+        created_at,
     })
 
     fs.writeFile('data.json', JSON.stringify(data, null, 2), function(err) {

@@ -1,13 +1,13 @@
 {
   "instructors": [
     {
-      "id": 1,
-      "avatar_url": "https://avatars.githubusercontent.com/u/22963494?s=460&u=3f020d4a9f9041ada4585a645cd8721b99a9fcc0&v=4",
-      "name": "Gabriel Klein",
-      "birth": 925948800000,
+      "id": 2,
+      "avatar_url": "https://www.ynharari.com/wp-content/uploads/2019/01/website-homepage-slider-option-1-edited.png",
+      "name": "Yuval Noah Harari",
+      "birth": 193968000000,
       "gender": "M",
-      "services": "Software Development",
-      "created_at": 1614194025585
+      "services": "History",
+      "created_at": 1614605169414
     }
   ]
 }
