@@ -13,7 +13,16 @@ exports.show = function(req, res) {
         return res.send('Instructor not found!')
     }
 
-    return res.send(foundInstructor)
+    const instructor = {
+        // Spread Operator
+        ...foundInstructor,
+        age: "",
+        gender: "",
+        services: "",
+        created_at: ""
+    }
+
+    return res.render('instructors/show', { instructor })
 }
 
 // create
