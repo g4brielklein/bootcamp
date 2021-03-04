@@ -15,7 +15,7 @@
       "name": "Gabriel Klein",
       "birth": 925948800000,
       "gender": "M",
-      "services": ["Software Development", "Data Engineering"],
+      "services": "Software Development, Data Engineering",
       "created_at": 1614689508602
     }
   ]

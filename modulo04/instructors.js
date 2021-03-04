@@ -17,8 +17,7 @@ exports.show = function(req, res) {
         // Spread Operator
         ...foundInstructor,
         age: "",
-        gender: "",
-        services: "",
+        services: foundInstructor.services.split(','),
         created_at: ""
     }
 
