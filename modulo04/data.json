@@ -17,6 +17,15 @@
       "gender": "M",
       "services": "Software Development, Data Engineering",
       "created_at": 1614689508602
+    },
+    {
+      "id": 3,
+      "avatar_url": "https://cadastra.com",
+      "name": "Instrutor Teste",
+      "birth": 942364800000,
+      "gender": "M",
+      "services": "Software Development",
+      "created_at": 1615042967518
     }
   ]
 }

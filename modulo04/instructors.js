@@ -15,17 +15,14 @@ exports.show = function(req, res) {
     }
 
     function created_at(timestamp) {
-        const creation_date = new Date(timestamp).toLocaleDateString('pt-BR')
-
-        return creation_date
+        return creation_date = new Date(timestamp).toLocaleDateString('pt-BR')
     }
     
     const instructor = {
-        // Spread Operator
-        ...foundInstructor,
+        ...foundInstructor, // Spread Operator
         age: age(foundInstructor.birth),
         services: foundInstructor.services.split(','),
-        created_at: created_at(foundInstructor.created_at)
+        created_at: new Intl.DateTimeFormat('pt-BR').format(foundInstructor.created_at)
     }
 
     return res.render('instructors/show', { instructor })
