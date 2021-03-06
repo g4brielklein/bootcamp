@@ -1,6 +1,5 @@
 const fs = require('fs')
 const data = require('./data.json')
-const { age } = require('./utils')
 
 // show
 exports.show = function(req, res) {
@@ -14,12 +13,6 @@ exports.show = function(req, res) {
         return res.send('Instructor not found!')
     }
     
-    function created_at(timestamp) {
-        const creation_date = new Date(timestamp).toLocaleDateString('pt-BR')
-
-        return creation_date
-    }
-
     const instructor = {
         // Spread Operator
         ...foundInstructor,
