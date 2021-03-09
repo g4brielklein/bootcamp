@@ -11,5 +11,16 @@ module.exports = {
         }
     
         return age
-    }   
+    },
+    date: function(timestamp) {
+        let birthDate = new Date(timestamp)
+
+        const year = birthDate.getFullYear()
+        let month = birthDate.getMonth() + 1
+        let day = birthDate.getDate() + 1
+
+        birthDate =  year + '-' + month + '-' + day
+
+        return birthDate
+    }
 }
