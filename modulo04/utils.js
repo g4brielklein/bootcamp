@@ -16,10 +16,10 @@ module.exports = {
         let birthDate = new Date(timestamp)
 
         const year = birthDate.getFullYear()
+        let month = birthDate.getMonth() + 1
+        let day = birthDate.getDate() + 1
 
-        let month = `0${birthDate.getMonth() + 1}`.slice(-2)
-
-        let day = `0${birthDate.getDate() + 1}`.slice(-2)
+        
 
         birthDate =  year + '-' + month + '-' + day
 
