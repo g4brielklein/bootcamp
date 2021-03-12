@@ -35,6 +35,39 @@ exports.post = function(req, res) {
     })
 }
 
+// show
 exports.show = function(req, res) {
+    const { id } = req.params
+
+    let findTeacher = function(id) {
+        for (let teacher in data.teachers) {
+            if (teacher.id == id) {
+                return teacher
+            }
+        }     
+    }
     
+
+    // return res.render('teachers/show')
+    return res.send(`nome do professor: ${findTeacher.name}`)
 }
+
+// // edit
+// exports.edit = function(req, res) {
+//     const { id } = req.params
+
+//     const foundInstructor = data.instructors.find(function(instructor) {
+//         return instructor.id == id
+//     })
+
+//     if (!foundInstructor) {
+//         return res.send('Instructor not found!')
+//     }
+
+//     const instructor = {
+//         ...foundInstructor,
+//         birth: date(foundInstructor.birth)
+//     }
+
+//     return res.render('instructors/edit', { instructor })
+// }
