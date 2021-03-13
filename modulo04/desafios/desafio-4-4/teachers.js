@@ -39,17 +39,15 @@ exports.post = function(req, res) {
 exports.show = function(req, res) {
     const { id } = req.params
 
-    let findTeacher = function(id) {
-        for (let teacher in data.teachers) {
-            if (teacher.id == id) {
-                return teacher
-            }
-        }     
+    const findTeacher = data.teachers.find(function(teacher) {
+        return teacher.id == id
+    })
+
+    if (!findTeacher) {
+        return res.send('Teacher not found!')
     }
     
-
-    // return res.render('teachers/show')
-    return res.send(`nome do professor: ${findTeacher.name}`)
+    return res.render('teachers/show', { teacher: findTeacher })
 }
 
 // // edit
