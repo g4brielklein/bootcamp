@@ -8,6 +8,15 @@
       "education": "Ensino Médio Completo",
       "type": "Pre",
       "subjects": "Software Development"
+    },
+    {
+      "id": 2,
+      "avatar_url": "https://avatars.githubusercontent.com/u/2254731?s=460&u=4fcc8ca9672eeb41ea800271831b7c687bc17054&v=4",
+      "name": "Diego Fernandes",
+      "birth": "1995-12-19",
+      "education": "Ensino Superior Completo",
+      "type": "EAD",
+      "subjects": "Software Development"
     }
   ]
 }
