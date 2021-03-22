@@ -44,28 +44,8 @@ exports.show = function(req, res) {
     })
 
     if (!findTeacher) {
-        return res.send('Teacher not found!')
+        return res.send('Teacher ${ id } not found!')
     }
     
     return res.render('teachers/show', { teacher: findTeacher })
 }
-
-// // edit
-// exports.edit = function(req, res) {
-//     const { id } = req.params
-
-//     const foundInstructor = data.instructors.find(function(instructor) {
-//         return instructor.id == id
-//     })
-
-//     if (!foundInstructor) {
-//         return res.send('Instructor not found!')
-//     }
-
-//     const instructor = {
-//         ...foundInstructor,
-//         birth: date(foundInstructor.birth)
-//     }
-
-//     return res.render('instructors/edit', { instructor })
-// }
