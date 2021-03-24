@@ -17,6 +17,15 @@
       "education": "Ensino Superior Completo",
       "type": "EAD",
       "subjects": "Software Development"
+    },
+    {
+      "id": 3,
+      "avatar_url": "https://avatars.githubusercontent.com/u/10366880?s=460&u=f21bdee8448f98722450b6fbef401505d76b7f60&v=4",
+      "name": "Guilherme Rodz",
+      "birth": "1998-12-03",
+      "education": "Ensino Superior Completo",
+      "type": "EAD",
+      "subjects": "Software Development"
     }
   ]
 }

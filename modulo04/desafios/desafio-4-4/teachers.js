@@ -49,3 +49,8 @@ exports.show = function(req, res) {
     
     return res.render('teachers/show', { teacher: findTeacher })
 }
+
+// edit
+exports.edit = function(req, res) {
+    return res.send('Edit')
+}
