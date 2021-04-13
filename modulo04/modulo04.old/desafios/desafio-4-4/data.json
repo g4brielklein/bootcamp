@@ -1,0 +1,31 @@
+{
+  "teachers": [
+    {
+      "id": 1,
+      "avatar_url": "https://avatars.githubusercontent.com/u/22963494?s=460&u=3f020d4a9f9041ada4585a645cd8721b99a9fcc0&v=4",
+      "name": "Gabriel Klein",
+      "birth": "1999-05-06",
+      "education": "Ensino Médio Completo",
+      "type": "Pre",
+      "subjects": "Software Development"
+    },
+    {
+      "id": 2,
+      "avatar_url": "https://avatars.githubusercontent.com/u/2254731?s=460&u=4fcc8ca9672eeb41ea800271831b7c687bc17054&v=4",
+      "name": "Diego Fernandes",
+      "birth": "1995-12-19",
+      "education": "Ensino Superior Completo",
+      "type": "EAD",
+      "subjects": "Software Development"
+    },
+    {
+      "id": 3,
+      "avatar_url": "https://avatars.githubusercontent.com/u/10366880?s=460&u=f21bdee8448f98722450b6fbef401505d76b7f60&v=4",
+      "name": "Guilherme Rodz",
+      "birth": "1998-12-03",
+      "education": "Ensino Superior Completo",
+      "type": "EAD",
+      "subjects": "Software Development"
+    }
+  ]
+}
