@@ -1,0 +1,53 @@
+{% extends 'layout.njk' %}
+
+{% block header %}
+    <a href="/" class="active">Instructors</a>
+{% endblock %}
+
+{% block content %}
+
+    <div class="card">
+        {% for data in data.instructors %}
+            <section class="avatar" style="background: url({{ data.avatar_url }}) no-repeat center center / cover"></section>
+        {% endfor %}
+        <section class="details">
+
+            <h3>Detalhes</h3>
+
+            {% for data in data.instructors %}
+
+
+                <div class="item">
+                    <div>Instrutor</div>
+                    <div>{{data.name}}</div>
+                </div>
+
+                <div class="item">
+                    <div>Idade</div>
+                    <div>{{data.birth}}</div>
+                </div>
+
+                <div class="item">
+                    <div>Sexo</div>
+                    <div>{{data.gender}}</div>
+                </div>
+
+                <div class="item">
+                    <div>Acompanhamento</div>
+                    <div>
+                        <span>{{ data.services }}</span>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div>Desde</div>
+                    <div>{{data.created_at}}</div>
+                </div>
+
+            {% endfor %}
+
+        </section>
+        
+    </div>
+    
+{% endblock %}
