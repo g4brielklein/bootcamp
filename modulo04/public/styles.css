@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
+:root {
+    --rocketseat-color: #7159c1;
+}
+
 * {
     margin: 0;
     border: 0;
@@ -7,7 +11,7 @@
 }
 
 body {
-    background-color: #7159c1;
+    background-color: var(--rocketseat-color);
     font-family: 'Roboto', sans-serif;
 }
 
@@ -15,6 +19,7 @@ header {
     background-color: white;
     width: 100%;
     padding: 32px;
+    box-sizing: border-box;
     text-align: center;
 }
 
@@ -22,7 +27,20 @@ header {
     font-size: 22px;
 }
 
+.links a + a {
+    margin-left: 32px;
+}
+
 .links a {
     text-decoration: none;
-    margin-left: 32px;
+    color: #777;
+}
+
+.links a.active {
+    font-weight: bold;
+    color: var(--rocketseat-color);
+}
+
+.links a:hover {
+    border-bottom: 2px solid var(--rocketseat-color);
 }
