@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+:root {
+    --rocketseat-color: #d87e2a;
+}
+
+* {
+    margin: 0;
+    border: 0;
+    padding: none;
+}
+
+body {
+    background-color: var(--rocketseat-color);
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    background-color: white;
+    width: 100%;
+    padding: 32px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.links {
+    font-size: 22px;
+}
+
+.links a + a {
+    margin-left: 32px;
+}
+
+.links a {
+    text-decoration: none;
+    color: #777;
+    position: relative;
+}
+
+.links a.active {
+    font-weight: bold;
+    color: var(--rocketseat-color);
+}
+
+.links a:hover {
+    color: var(--rocketseat-color);
+}
+
+.links a::after {
+    content: "";
+    width: 0;
+    height: 2px;
+    background-color: var(--rocketseat-color);
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+}
+
+.links a:hover::after {
+    width: 100%;
+    transition: width 200ms ease-in-out;
+}
+
+/* === CARD === */
+
+.card {
+    background-color: white;
+    width: 800px;
+    height: 400px;
+
+    margin: 45px auto;
+}
