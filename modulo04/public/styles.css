@@ -68,8 +68,13 @@ header {
     width: 800px;
     height: 400px;
 
+    /* espaçamento ao centro */
     margin: 45px auto;
 
+    /* grid dividido ao meio*/
     display: grid;
     grid-template-columns: 1fr 1fr;
+
+    /* sombra */
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, .4);
 }
