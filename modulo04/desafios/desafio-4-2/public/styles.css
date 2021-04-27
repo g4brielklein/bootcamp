@@ -2,6 +2,7 @@
 
 :root {
     --primary-color: #ca8d54;
+    --secondary-color: #000090;
 }
 
 * {
@@ -66,7 +67,63 @@ header {
 /* === CARDS === */
 .card {
     width: 800px;
-    height: 400px;
+    min-height: 400px;
     background-color: white;
     margin: 50px auto;
+
+    display: grid;
+    grid-template-columns: 40% 60%;
+
+    box-shadow: 8px 8px  8px rgba(0, 0, 0, .4);
+
+    animation: up 400ms ease;
+}
+
+@keyframes up {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.details {
+    padding: 32px;
+}
+
+.details .item {
+    margin: 16px 0;
+    border-top: 1px solid #777;
+}
+
+.details .item:nth-child(1) {
+    border: none;
+}
+
+.details .item div:nth-child(1) {
+    color: #777;
+}
+
+.details h3,
+.details .item div:nth-child(2) {
+    color: #555;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: bold;
+}
+
+.details .item span {
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 4px 16px;
+    border-radius: 16px;
+    display: inline-block;
+}
+
+.details h3 {
+    text-transform: uppercase;
+    letter-spacing: 0.7px;
 }
