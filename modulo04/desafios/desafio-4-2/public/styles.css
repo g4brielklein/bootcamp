@@ -95,23 +95,26 @@ header {
 }
 
 .details .item {
-    margin: 16px 0;
-    border-top: 1px solid #777;
+    padding: 16px 0;
+    border-top: 1px solid rgba(0, 0, 0, .4);
 }
 
-.details .item:nth-child(1) {
+.details .item:first-of-type {
     border: none;
 }
 
+.details h3,
 .details .item div:nth-child(1) {
+    font-size: 14px;
+    line-height: 24px;
     color: #777;
+    letter-spacing: 0.7px;
+    font-weight: normal;
 }
 
-.details h3,
 .details .item div:nth-child(2) {
     color: #555;
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 18px;
     font-weight: bold;
 }
 
@@ -119,11 +122,16 @@ header {
     background-color: var(--secondary-color);
     color: white;
     padding: 4px 16px;
+    margin-right: 4px;
+    margin-top: 8px;
     border-radius: 16px;
+    font-size: 12px;
     display: inline-block;
 }
 
 .details h3 {
     text-transform: uppercase;
     letter-spacing: 0.7px;
+    color: var(--secondary-color);
+    font-weight: bold;
 }
