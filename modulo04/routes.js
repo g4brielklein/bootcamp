@@ -18,7 +18,9 @@ routes.get('/instructors/create', function(req, res) {
 })
  
 routes.post('/instructors', function(req, res) {
-    return res.send('Recebido!')
+    // const data = req.body.name;
+
+    return res.send(req.body)
 })
 
 module.exports = routes
