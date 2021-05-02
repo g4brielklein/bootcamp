@@ -1,1 +1,18 @@
-{"avatar_url":"https://google.com","name":"Gabriel Klein","birth":"275760-04-05","gender":"M","services":"musculação, cardio"}
+{
+  "instructors": [
+    {
+      "avatar_url": "https://github.com/g4brielklein",
+      "name": "Gabriel Klein",
+      "birth": "1999-05-06",
+      "gender": "M",
+      "services": "Software Development"
+    },
+    {
+      "avatar_url": "https://github.com/diego3g",
+      "name": "Diego Fernandes",
+      "birth": "1995-04-23",
+      "gender": "M",
+      "services": "Software Development"
+    }
+  ]
+}
