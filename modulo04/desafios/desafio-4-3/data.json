@@ -2,11 +2,11 @@
   "instructors": [
     {
       "id": 1,
-      "avatar_url": "https://google.com",
-      "name": "Matt D'Avella",
+      "avatar_url": "https://ynh.com",
+      "name": "Yuval Noah Harari",
       "birth": 925948800000,
       "gender": "M",
-      "services": "Filmmaking",
+      "services": "History of Humanity",
       "created_at": 1620068002111
     }
   ]
