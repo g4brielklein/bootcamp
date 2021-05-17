@@ -11,7 +11,7 @@ exports.post = function(req, res) {
         }
     }
 
-    let { avatar_url, birth, name, services, gender } = req.body
+    let { avatar_url, birth, name, subject, gender } = req.body
 
     birth = Date.parse(birth)
     const created_at = Date.now()
@@ -23,7 +23,7 @@ exports.post = function(req, res) {
         name,
         birth,
         gender,
-        services,
+        subject,
         created_at,
     })
 
