@@ -11,20 +11,19 @@ exports.post = function(req, res) {
         }
     }
 
-    let { avatar_url, birth, name, services, gender } = req.body
+    let { full_name, age, education, class_modality, subjects } = req.body
 
-    birth = Date.parse(birth)
     const created_at = Date.now()
     const id = Number(data.teachers.length + 1)
 
     data.teachers.push({
         id,
-        avatar_url,
-        name,
-        birth,
-        gender,
-        services,
-        created_at,
+        full_name,
+        age,
+        education,
+        class_modality,
+        subjects,
+        created_at
     })
 
     fs.writeFile('data.json', JSON.stringify(data, null, 2), function(err) {
