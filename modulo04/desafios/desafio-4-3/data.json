@@ -8,15 +8,6 @@
       "gender": "M",
       "services": "History of Humanity",
       "created_at": 1620068002111
-    },
-    {
-      "id": 2,
-      "avatar_url": "https://github.com/g4brielklein/",
-      "name": "Gabriel Klein",
-      "bith": 98749872389,
-      "gender": "M",
-      "services": "Software Development",
-      "created_at": 36747862473
     }
   ]
 }

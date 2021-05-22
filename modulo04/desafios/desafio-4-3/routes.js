@@ -1,7 +1,7 @@
 const express = require('express')
 const routes = express.Router()
 
-const data = require('./data.json')
+const data = require('./data')
 
 routes.get('/', function(req, res) {
     return res.redirect('teachers')

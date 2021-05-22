@@ -1,7 +1,7 @@
 const fs = require('fs')
 const data = require('./data.json')
 
-// create
+// Create new teacher
 exports.post = function(req, res) {
     const keys = Object.keys(req.body)
 
