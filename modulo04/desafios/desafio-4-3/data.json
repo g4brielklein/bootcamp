@@ -8,15 +8,6 @@
       "gender": "M",
       "services": "History of Humanity",
       "created_at": 1620068002111
-    },
-    {
-      "id": 2,
-      "avatar_url": "https://mattdavella.com",
-      "name": "Matt D'Avella",
-      "birth": 3687467863478,
-      "gender": "M",
-      "services": "Filmmaking",
-      "created_at": 43678637443
     }
   ]
 }
