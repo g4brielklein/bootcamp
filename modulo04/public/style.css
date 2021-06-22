@@ -24,6 +24,7 @@ header {
 
 .links {
     font-size: 20px;
+    position: relative;
 }
 
 .links a {
@@ -35,11 +36,17 @@ header {
     margin-left: 15px;
 }
 
-.links a:hover {
-    border-bottom: 2px solid white;
-}
-
 .links a.active {
     font-weight: bold;
     color: var(--primary-color);
+}
+
+.links a::after {
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: var(--primary-color);
+    left: 0;
+    bottom: -2px;
+    position: absolute;
 }
