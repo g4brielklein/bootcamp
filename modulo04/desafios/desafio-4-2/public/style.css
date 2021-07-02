@@ -55,3 +55,41 @@ header {
     width: 100%;
     transition: width 200ms ease;
 }
+
+/* === card ==== */
+
+.card {
+    background-color: white;
+    min-height: 400px;
+    width: 800px;
+    margin: 50px auto;
+
+    display: grid;
+    grid-template-columns: 40% 60%;
+}
+
+.details {
+    margin: 20px;
+}
+
+.details .item {
+    margin: 20px 0;
+    padding: 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+    line-height: 18px;
+}
+
+.details .item:last-child {
+    border-bottom: none;
+}
+
+.details .item div:nth-child(1) {
+    color: #777;
+    letter-spacing: 0.7px;
+}
+
+.details .item div:nth-child(2) {
+    color: #555;
+    font-weight: bold;
+}
+
