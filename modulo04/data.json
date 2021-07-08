@@ -1,0 +1,20 @@
+{
+  "instructors": [
+    {
+      "avatar_url": "https://google.com",
+      "name": "hahaaha",
+      "birth": "3433-02-04",
+      "gender": "M",
+      "services": "ewrewf34",
+      "created_at": 1625709492327
+    },
+    {
+      "avatar_url": "https://github.com/g4brielklein",
+      "name": "sadasdasd",
+      "birth": 11431324800000,
+      "gender": "M",
+      "services": "Software Development",
+      "created_at": 1625709689912
+    }
+  ]
+}
