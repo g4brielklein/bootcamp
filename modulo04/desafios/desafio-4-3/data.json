@@ -1,0 +1,63 @@
+{
+  "teachers": [
+    {
+      "avatar_url": "https://github.com/g4brielklein",
+      "name": "Gabriel Klein",
+      "birth": "9999-05-05",
+      "education": "Bachelor",
+      "modality": "Distance Learning",
+      "classes": "Software Development"
+    },
+    {
+      "avatar_url": "https://github.com/g4brielklein",
+      "name": "Ferusadbkjsd",
+      "birth": "9999-05-05",
+      "education": "Bachelor",
+      "modality": "Distance Learning",
+      "classes": "Software Development"
+    },
+    {
+      "avatar_url": "https://github.com/g4brielklein",
+      "name": "Ferusadbkjsd",
+      "birth": "9999-05-05",
+      "education": "Bachelor",
+      "modality": "Distance Learning",
+      "classes": "Software Development"
+    },
+    {
+      "avatar_url": "https://github.com/g4brielklein",
+      "name": "OOPFJD",
+      "birth": "9999-05-05",
+      "education": "Bachelor",
+      "modality": "Distance Learning",
+      "classes": "Software Development"
+    },
+    {
+      "avatar_url": "https://github.com/g4brielklein",
+      "name": "OOPFJD",
+      "birth": 253381478400000,
+      "education": "Bachelor",
+      "modality": "Distance Learning",
+      "classes": "Software Development"
+    },
+    {
+      "avatar_url": "https://github.com/g4brielklein",
+      "name": "OOPFJD",
+      "birth": 253381478400000,
+      "education": "Bachelor",
+      "modality": "Distance Learning",
+      "classes": "Software Development",
+      "created_at": 1625900911611
+    },
+    {
+      "id": 7,
+      "avatar_url": "https://github.com/g4brielklein",
+      "name": "OOPFJD",
+      "birth": 253381478400000,
+      "education": "Bachelor",
+      "modality": "Distance Learning",
+      "classes": "Software Development",
+      "created_at": 1625900959653
+    }
+  ]
+}
