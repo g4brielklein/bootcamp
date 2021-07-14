@@ -26,6 +26,15 @@
       "gender": "M",
       "services": "Software Development",
       "created_at": 1625873041549
+    },
+    {
+      "id": 4,
+      "avatar_url": "https://avatars.githubusercontent.com/u/22963494?v=4",
+      "name": "Gabriel Klein",
+      "birth": 925948800000,
+      "gender": "M",
+      "services": "Software Development",
+      "created_at": 1626222318197
     }
   ]
 }
