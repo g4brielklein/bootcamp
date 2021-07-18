@@ -13,7 +13,7 @@ exports.show = function(req, res) {
     if (!foundInstructor) {
         return res.send('Instructor not found')
     }
-
+    
     const instructor = {
         ...foundInstructor
         , age: age(foundInstructor.birth)

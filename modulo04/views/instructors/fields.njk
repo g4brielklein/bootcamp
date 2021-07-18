@@ -28,7 +28,7 @@
         <input
             type="date"
             name="birth"
-            value="{{ instructor.birth }}"
+            value="{{ instructor.date() }}"
         >
     </div>
 </div>
@@ -40,13 +40,18 @@
             type="radio"
             name="gender"
             value="M"
-            checked
+            {% if instructor.gender == 'M'%}
+                checked
+            {% endif %}
         >Masculino</span>
 
         <span><input
             type="radio"
             name="gender"
             value="F"
+            {% if instructor.gender == 'F'%}
+                checked
+            {% endif %}
         >Feminino</span>
     </div>
 </div>
