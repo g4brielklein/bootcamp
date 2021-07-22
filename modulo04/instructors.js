@@ -75,7 +75,7 @@ exports.edit = function(req, res) {
 
     const instructor = {
         ...foundInstructor
-        , birth: '1999-05-06'
+        , birth: date(foundInstructor.birth)
     }
 
     return res.render('instructors/edit', { instructor })
