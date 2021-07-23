@@ -1,0 +1,54 @@
+{
+  "teachers": [
+    {
+      "id": 7,
+      "avatar_url": "https://github.com/g4brielklein",
+      "name": "OOPFJD",
+      "birth": 253381478400000,
+      "education": "Bachelor",
+      "modality": "Distance Learning",
+      "classes": "Software Development",
+      "created_at": 1625900959653
+    },
+    {
+      "id": 8,
+      "avatar_url": "https://github.com/g4brielklein",
+      "name": "Gabriel Klein",
+      "birth": 925948800000,
+      "education": "Bachelor",
+      "modality": "Distance Learning",
+      "classes": "Software Development",
+      "created_at": 1626141012072
+    },
+    {
+      "id": 9,
+      "avatar_url": "https://youtube.com/nateobrien",
+      "name": "Nate O'Brien",
+      "birth": 889660800000,
+      "education": "Bachelor",
+      "modality": "Distance Learning",
+      "classes": "Finances",
+      "created_at": 1626141925475
+    },
+    {
+      "id": 10,
+      "avatar_url": "https://google.com",
+      "name": "Professor Test",
+      "birth": 1626825600000,
+      "education": "Bachelor",
+      "modality": "Distance Learning",
+      "classes": "A, B, C, D",
+      "created_at": 1626916031238
+    },
+    {
+      "id": 5,
+      "avatar_url": "https://i1.sndcdn.com/artworks-000371899050-m32dfo-t500x500.jpg",
+      "name": "Rogerinho do Ingá",
+      "birth": 1626825600000,
+      "education": "Master",
+      "modality": "In Person",
+      "classes": "Driving",
+      "created_at": 1626917775730
+    }
+  ]
+}

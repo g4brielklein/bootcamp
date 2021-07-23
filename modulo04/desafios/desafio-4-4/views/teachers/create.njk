@@ -1,0 +1,101 @@
+{% extends "layout.njk" %}
+
+{% block content %}
+    <div class="card">
+        <div class="avatar" style="background: url(https://source.unsplash.com/collection/4852103/800x800) no-repeat  center center / cover"></div>
+        <form class="details" method="post" action="/teachers">
+            
+            <h3>Details</h3>
+
+            <div class="item">
+                <div>Avatar URL</div>
+                <div>
+                    <input
+                        type = "url"
+                        name = "avatar_url"
+                        placeholder = "https://"
+                    >
+                </div>
+            </div>
+
+            <div class="item">
+                <div>Name</div>
+                <div>
+                    <input
+                        type = "text"
+                        name = "name"
+                        placeholder = "Full name"
+                    >
+                </div>
+            </div>
+
+            <div class="item">
+                <div>Birth Date</div>
+                <div>
+                    <input
+                        type = "date"
+                        name = "birth"
+                    >
+                </div>
+            </div>
+
+            <div class="item">
+                <div>Education</div>
+                <div>
+                    <span>
+                        <input
+                            type = "radio"
+                            name = "education"
+                            value = "Bachelor"
+                        >Bachelor
+                    </span>
+
+                    <span>
+                        <input
+                            type = "radio"
+                            name = "education"
+                            value = "Master"
+                        >Master
+                    </span>
+                </div>
+            </div>
+
+            <div class="item">
+                <div>Modality</div>
+                <div>
+                    <span>
+                        <input
+                            type = "radio"
+                            name = "modality"
+                            value = "In Person"
+                        > In Person
+                    </span>
+
+                    <span>
+                        <input
+                            type = "radio"
+                            name = "modality"
+                            value = "Distance Learning"
+                        > Distance Learning
+                    </span>
+                </div>
+            </div>
+
+            <div class="item">
+                <div>Classes</div>
+                <div>
+                    <input
+                        type = "text"
+                        name = "classes"
+                        placeholder = "Separate classes with comma"
+                    >
+                </div>
+            </div>
+
+            <div class="item">
+                <button type="submit">Submit</button>
+            </div>
+
+        </form>
+    </div>
+{% endblock content %}
