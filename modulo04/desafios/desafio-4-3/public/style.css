@@ -109,3 +109,33 @@ header {
     text-transform: uppercase;
     color: var(--primary-color);
 }
+
+/* form */
+input {
+    font-size: 18px;
+    font-weight: bold;
+    outline: none;
+    margin-top: 5px;
+    width: 100%;
+}
+
+input[type="radio"] {
+    margin-right: 4px;
+    width: initial;
+}
+
+button[type="submit"] {
+    font-size: 18px;
+    background-color: var(--secondary-color);
+    color: white;
+    border-radius: 8px;
+    padding: 8px 16px;
+    width: 100%;
+    cursor: pointer;
+    margin-top: 32px;
+    text-transform: uppercase;
+}
+
+button:hover {
+    background-color: var(--primary-color);
+}
