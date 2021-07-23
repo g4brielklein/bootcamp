@@ -40,16 +40,34 @@ exports.post = function(req, res) {
 
 // show
 exports.show = function(req, res) {
+    const { id } = req.params
+
+    const foundTeacher = data.teachers.find(function(teacher) {
+        return teacher.id == id
+    })
+
+    if (!foundTeacher) {
+        return res.send('Teacher not found.')
+    }
+
+    const teacher = {
+        ...foundTeacher
+        , created_at: foundTeacher.created_at
+    }
+
+    return res.render('teachers/show', { teacher })
+}
+
+// edit
+exports.edit = function(req, res) {
     const id = req.params.id;
 
     let foundTeacher = 0;
 
-        for (teacher of data.teachers) {
-            if (teacher.id == id) {
-                foundTeacher = teacher
-                return res.render('teachers/show', {teacher: foundTeacher})
-            }
+    for (teacher of data.teachers) {
+        if (teacher.id == id) {
+            foundTeacher = teacher
+            return res.render('teachers/edit', { teacher: foundTeacher })
         }
-
-    return res.send('Teacher not found.')
+    }
 }
