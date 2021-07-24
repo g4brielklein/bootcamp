@@ -2,7 +2,7 @@
 
 {% block content %}
     <div class="card">
-        <div class="avatar" style="background: url(https://source.unsplash.com/collection/4852103/800x800) no-repeat  center center / cover"></div>
+        <div class="avatar" style="background: url({{ teacher.avatar_url }}) no-repeat  center center / cover"></div>
         <form class="details" method="post" action="/teachers">
             
             <h3>Details</h3>

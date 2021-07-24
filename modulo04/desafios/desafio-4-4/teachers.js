@@ -52,7 +52,7 @@ exports.show = function(req, res) {
 
     const teacher = {
         ...foundTeacher
-        , created_at: foundTeacher.created_at
+        , created_at: new Intl.DateTimeFormat("pt-BR").format(foundTeacher.created_at)
     }
 
     return res.render('teachers/show', { teacher })
