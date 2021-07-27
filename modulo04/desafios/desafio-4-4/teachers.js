@@ -1,7 +1,7 @@
 const fs = require('fs')
 const { url } = require('inspector')
 const data = require('./data.json')
-const { date } = require('./utils')
+const { age } = require('./utils')
 
 // create
 exports.post = function(req, res) {
@@ -53,7 +53,7 @@ exports.show = function(req, res) {
 
     const teacher = {
         ...foundTeacher
-        , age = date(foundTeacher.birth)
+        , age: age(foundTeacher.birth)
         , created_at: new Intl.DateTimeFormat("pt-BR").format(foundTeacher.created_at)
     }
 
