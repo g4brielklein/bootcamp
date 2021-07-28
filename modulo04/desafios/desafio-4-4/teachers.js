@@ -1,5 +1,4 @@
 const fs = require('fs')
-const { url } = require('inspector')
 const data = require('./data.json')
 const { age, date } = require('./utils')
 
@@ -64,18 +63,18 @@ exports.show = function(req, res) {
 exports.edit = function(req, res) {
     const { id } = req.params;
 
-    // const foundTeacher = 
+    const foundTeacher = data.teachers.find(function(teacher) {
+        return teacher.id == id
+    })
+
+    if (!foundTeacher) {
+        return res.send('Teacher not found.')
+    }
 
     const teacher = {
         ...foundTeacher
         , birth: date(foundTeacher.birth)
     }
 
-    for (teacher of data.teachers) {
-        if (teacher.id == id) {
-            foundTeacher = teacher
-            return res.render('teachers/edit', { teacher })
-        }
-    }
-    
+    return res.render('teachers/edit', { teacher })
 }

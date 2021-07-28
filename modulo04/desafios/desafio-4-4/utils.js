@@ -12,11 +12,13 @@ module.exports = {
 
         return age
     },
+
     date: function(timestamp) {
-        const birthDate = new Date(timestamp)
-        const year = birthDate.getFullYear() // 1999
-        const month = birthDate.getMonth() // 05
-        const day = birthDate.getDate()
+        const date = new Date(timestamp)
+
+        const year = date.getUTCFullYear()
+        const month = `0${date.getUTCMonth() + 1}`.slice(-2)
+        const day = `0${date.getUTCDate()}`.slice(-2)
 
         return `${year}-${month}-${day}`
     }

@@ -1,64 +1,24 @@
 {
   "teachers": [
     {
-      "id": 7,
-      "avatar_url": "https://github.com/g4brielklein",
-      "name": "OOPFJD",
-      "birth": 253381478400000,
-      "education": "Bachelor",
-      "modality": "Distance Learning",
-      "classes": "Software Development",
-      "created_at": 1625900959653
-    },
-    {
-      "id": 8,
-      "avatar_url": "https://github.com/g4brielklein",
-      "name": "Gabriel Klein",
-      "birth": 925948800000,
-      "education": "Bachelor",
-      "modality": "Distance Learning",
-      "classes": "Software Development",
-      "created_at": 1626141012072
-    },
-    {
-      "id": 9,
-      "avatar_url": "https://youtube.com/nateobrien",
-      "name": "Nate O'Brien",
-      "birth": 889660800000,
-      "education": "Bachelor",
-      "modality": "Distance Learning",
-      "classes": "Finances",
-      "created_at": 1626141925475
-    },
-    {
-      "id": 10,
+      "id": 1,
       "avatar_url": "https://google.com",
-      "name": "Professor Test",
-      "birth": 1626825600000,
-      "education": "Bachelor",
-      "modality": "Distance Learning",
-      "classes": "A, B, C, D",
-      "created_at": 1626916031238
+      "name": "Yuval Noah Harari",
+      "birth": 216604800000,
+      "education": "Master",
+      "modality": "In Person",
+      "classes": "History",
+      "created_at": 1627442019737
     },
     {
-      "id": 5,
-      "avatar_url": "https://i1.sndcdn.com/artworks-000371899050-m32dfo-t500x500.jpg",
-      "name": "Rogerinho do Ingá",
+      "id": 2,
+      "avatar_url": "https://github.com/",
+      "name": "Neil De Grasse Tyson",
       "birth": 925948800000,
       "education": "Master",
       "modality": "In Person",
-      "classes": "Driving",
-      "created_at": 1626917775730
-    },
-    {
-      "id": 6,
-      "avatar_url": "https://i1.sndcdn.com/artworks-000371342050-m32dfo-t500x500.jpg",
-      "name": "Test",
-      "birth": 4324324234234234,
-      "education": "Master",
-      "modality": "In Person",
-      "classes": "Coding",
-      "created_at": 1627353376576
+      "classes": "Physics",
+      "created_at": 1627442281839
     }
   ]
 }
