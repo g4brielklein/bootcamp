@@ -1,8 +1,5 @@
 module.exports = {
     age: function(timestamp) {
-        // 278372738971932
-        // 06/05/1999
-    
         const today = new Date()
         const birthDate = new Date(timestamp)
     
@@ -14,5 +11,13 @@ module.exports = {
         }
 
         return age
+    },
+    date: function(timestamp) {
+        const birthDate = new Date(timestamp)
+        const year = birthDate.getFullYear() // 1999
+        const month = birthDate.getMonth() // 05
+        const day = birthDate.getDate()
+
+        return `${year}-${month}-${day}`
     }
 }
