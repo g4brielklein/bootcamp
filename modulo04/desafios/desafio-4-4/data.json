@@ -7,7 +7,7 @@
       "birth": 216604800000,
       "education": "Master",
       "modality": "In Person",
-      "classes": "History",
+      "classes": "History, Geography",
       "created_at": 1627442019737
     },
     {
@@ -19,6 +19,45 @@
       "modality": "In Person",
       "classes": "Physics",
       "created_at": 1627442281839
+    },
+    {
+      "id": 3,
+      "avatar_url": "https://picsum.photos/200/300/?blur",
+      "name": "Matt D'Avella",
+      "birth": 590025600000,
+      "education": "Bachelor",
+      "modality": "Distance Learning",
+      "classes": "Filmmaking, Editing",
+      "created_at": 1627600158343
+    },
+    {
+      "id": 4,
+      "avatar_url": "https://picsum.photos/200/300/?blur",
+      "name": "Nate O'Brien",
+      "birth": 925948800000,
+      "modality": "In Person",
+      "classes": "Finances",
+      "created_at": 1627601449488
+    },
+    {
+      "id": 5,
+      "avatar_url": "https://picsum.photos/200/300/?blur",
+      "name": "OOPFJD",
+      "birth": -1800489600000,
+      "education": "phd",
+      "modality": "In Person",
+      "classes": "Software Development",
+      "created_at": 1627601608929
+    },
+    {
+      "id": 6,
+      "avatar_url": "https://picsum.photos/200/300/?blur",
+      "name": "Nathaniel Drew",
+      "birth": 871344000000,
+      "education": "master",
+      "modality": "In Person",
+      "classes": "Photography",
+      "created_at": 1627602231453
     }
   ]
 }

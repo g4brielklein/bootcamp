@@ -30,9 +30,9 @@
             <div class="item">
                 <div>Classes</div>
                 <div>
-                    {# {% for class in teacher.classes %} #}
-                        <span>{{ teacher.classes }}</span>
-                    {# {% endfor %} #}
+                    {% for class in teacher.classes %}
+                        <span>{{ class }}</span>
+                    {% endfor %}
                 </div>
             </div>
 
