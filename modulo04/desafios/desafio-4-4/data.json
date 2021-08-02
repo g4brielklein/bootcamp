@@ -58,6 +58,16 @@
       "modality": "In Person",
       "classes": "Photography",
       "created_at": 1627602231453
+    },
+    {
+      "id": 7,
+      "avatar_url": "https://picsum.photos/200/300/?blur",
+      "name": "Matt D'Avella",
+      "birth": 925948800000,
+      "education": "phd",
+      "modality": "Distance Learning",
+      "classes": "Filmmaking",
+      "created_at": 1627866764683
     }
   ]
 }

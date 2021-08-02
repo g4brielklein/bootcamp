@@ -3,6 +3,7 @@
 {% block content %}
 
     <div class="card">
+
         <div class="avatar" style="background: url({{ teacher.avatar_url }}) no-repeat  center center / cover"></div>
         <form class="details" method="post" action="/teachers">
             
@@ -11,6 +12,7 @@
             {% include 'teachers/fields.njk' %}
 
         </form>
+        
     </div>
 
 {% endblock content %}
