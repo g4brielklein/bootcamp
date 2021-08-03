@@ -1,12 +1,12 @@
 const fs = require('fs')
 const data = require('./data.json')
-const { age, date } = require('./utils')
+const { age, date, graduation } = require('./utils')
 
 // create
 exports.post = function(req, res) {
-
     const keys = Object.keys(req.body)
-    for (key of keys) {
+
+    for (let key of keys) {
         if (req.body[key] == "") {
             return res.send("Fill all fields")
         }
@@ -47,7 +47,7 @@ exports.show = function(req, res) {
     })
 
     if (!foundTeacher) {
-        return res.send('Teacher not found.')
+        return res.send('Teacher not found :(')
     }
 
     const teacher = {
@@ -55,7 +55,7 @@ exports.show = function(req, res) {
         , age: age(foundTeacher.birth)
         , classes: foundTeacher.classes.split(", ")
         , created_at: new Intl.DateTimeFormat("pt-BR").format(foundTeacher.created_at)
-        , education: foundTeacher.education
+        , education: graduation(foundTeacher.education)
     }
 
     return res.render('teachers/show', { teacher })

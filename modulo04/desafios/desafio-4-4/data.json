@@ -68,6 +68,36 @@
       "modality": "Distance Learning",
       "classes": "Filmmaking",
       "created_at": 1627866764683
+    },
+    {
+      "id": 8,
+      "avatar_url": "https://picsum.photos/200/300/?blur",
+      "name": "Greg McKeown",
+      "birth": 553046400000,
+      "education": "phd",
+      "modality": "In Person",
+      "classes": "Productivity",
+      "created_at": 1627946542958
+    },
+    {
+      "id": 9,
+      "avatar_url": "https://picsum.photos/200/300/?blur",
+      "name": "Pedro Calabrez",
+      "birth": 674179200000,
+      "education": "master",
+      "modality": "Distance Learning",
+      "classes": "Psychology",
+      "created_at": 1627946650553
+    },
+    {
+      "id": 10,
+      "avatar_url": "https://picsum.photos/200/300/?blur",
+      "name": "Clóvis de Barros Filho",
+      "birth": 134006400000,
+      "education": "bachelor",
+      "modality": "Distance Learning",
+      "classes": "Ethics",
+      "created_at": 1627946731867
     }
   ]
 }

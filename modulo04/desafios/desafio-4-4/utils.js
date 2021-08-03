@@ -21,5 +21,15 @@ module.exports = {
         const day = `0${date.getUTCDate()}`.slice(-2)
 
         return `${year}-${month}-${day}`
+    },
+
+    graduation: function(education) {
+        if (education == 'bachelor') {
+            return 'Bachelor'
+        } else if (education == 'master') {
+            return 'Master'
+        } else if (education = 'phd') {
+            return 'Phd'
+        }
     }
 }

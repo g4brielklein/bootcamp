@@ -7,21 +7,21 @@ routes.get('/', function(req, res) {
 })
 
 routes.get('/teachers', function(req, res) {
-    return res.render("teachers/index")
+    return res.render("teachers/index", { teachers })
+})
+
+routes.get('/students', function(req, res) {
+    return res.send("students")
 })
 
 routes.get('/teachers/create', function(req, res) {
     return res.render('teachers/create')
 })
 
-routes.post('/teachers', teachers.post)
-
 routes.get('/teachers/:id', teachers.show)
 
 routes.get('/teachers/:id/edit', teachers.edit)
 
-routes.get('/students', function(req, res) {
-    return res.send("students")
-})
+routes.post('/teachers', teachers.post)
 
 module.exports = routes

@@ -37,9 +37,31 @@
     <div>Education</div>
     <div>
         <select name="education">
-            <option value="bachelor" {% if teacher.education == 'bachelor' %}checked{% endif %}>Bachelor</option>
-            <option value="master" {% if teacher.education == 'master' %}checked{% endif %}>Master</option>
-            <option value="phd" {% if teacher.education == 'phd' %}checked{% endif %}>Phd</option>
+
+            <option 
+                value="bachelor"
+                {% if teacher.education == 'bachelor' %}
+                    selected
+                {% endif %}
+                >Bachelor
+            </option>
+
+            <option
+                value="master"
+                {% if teacher.education == 'master' %}
+                    selected
+                {% endif %}
+                >Master
+             </option>
+
+            <option
+                value="phd"
+                {% if teacher.education == 'phd' %}
+                    selected
+                {% endif %}
+                >Phd
+             </option>
+             
         </select>
     </div>
 </div>
