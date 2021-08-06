@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+
+:root {
+    --primary-color: #d87e17;
+    --secondary-color: #1a1a85;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--primary-color);
+}
+
+header {
+    background-color: white;
+    padding: 30px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.links {
+    font-size: 20px;
+}
+
+.links a {
+    text-decoration: none;
+    color: #777;
+    position: relative;
+}
+
+.links a + a {
+    margin-left: 15px;
+}
+
+.links a.active {
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.links a::after {
+    content: "";
+    width: 0;
+    height: 2px;
+    background-color: var(--primary-color);
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+}
+
+.links a:hover::after {
+    width: 100%;
+    transition: width 200ms ease;
+}
+
+/* === card ==== */
+
+.card {
+    background-color: white;
+    min-height: 400px;
+    width: 800px;
+    margin: 50px auto;
+
+    display: grid;
+    grid-template-columns: 40% 60%;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, .4);
+}
+
+.details {
+    margin: 20px;
+}
+
+.details .item {
+    margin: 20px 0;
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+    line-height: 18px;
+}
+
+.details .item:first-child {
+    border-bottom: none;
+}
+
+.details h3,
+.details .item div:nth-child(1) {
+    color: #777;
+    letter-spacing: 0.7px;
+}
+
+.details .item div:nth-child(2) {
+    color: #555;
+    font-weight: bold;
+}
+
+.details .item div span {
+    background-color: var(--secondary-color);
+    border-radius: 16px;
+    color: white;
+    padding: 8px 16px;
+    display: inline-block;
+    margin-top: 8px;
+}
+
+.details h3 {
+    text-transform: uppercase;
+    color: var(--primary-color);
+}
+
+/* form */
+input {
+    font-size: 18px;
+    font-weight: bold;
+    outline: none;
+    margin-top: 5px;
+    width: 100%;
+}
+
+input[type="radio"] {
+    margin-right: 4px;
+    width: initial;
+}
+
+.button,
+button[type="submit"] {
+    font-size: 18px;
+    background-color: var(--secondary-color);
+    color: white;
+    border-radius: 8px;
+    padding: 8px 16px;
+    width: 100%;
+    cursor: pointer;
+    margin-top: 32px;
+    text-transform: uppercase;
+}
+
+button:hover {
+    background-color: var(--primary-color);
+}
