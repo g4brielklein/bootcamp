@@ -133,10 +133,14 @@ button[type="submit"] {
     padding: 8px 16px;
     width: 100%;
     cursor: pointer;
-    margin-top: 32px;
     text-transform: uppercase;
+    text-decoration: none;
 }
 
 button:hover {
     background-color: var(--primary-color);
+}
+
+#delete_button {
+    background-color: #990000;
 }

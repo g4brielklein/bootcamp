@@ -84,8 +84,6 @@ exports.edit = function(req, res) {
 // put
 exports.put = function(req, res) {
     const { id } = req.body
-    console.log('sdasd')
-    console.log(id)
     let index = 0
 
     const foundTeacher = data.teachers.find(function(teacher, foundIndex) {
@@ -118,5 +116,19 @@ exports.put = function(req, res) {
 
 // delete
 exports.delete = function(req, res) {
-    // delete code
+    const { id } = req.body
+
+    const filteredTeachers = data.teachers.filter(function(teacher) {
+        return teacher.id != id
+    })
+
+    data.teachers = filteredTeachers
+
+    fs.writeFile('data.json', JSON.stringify(data, null, 2), function(err) {
+        if(err) {
+            return res.send('Error writing file :(')
+        }
+
+        return res.redirect('/teachers')
+    })
 }

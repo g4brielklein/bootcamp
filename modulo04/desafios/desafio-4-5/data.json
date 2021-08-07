@@ -1,14 +1,14 @@
 {
   "teachers": [
     {
-      "id": "1",
+      "id": "2",
       "avatar_url": "https://picsum.photos/200/300/?blur",
-      "name": "Ronald L. Banks",
-      "birth": 578448000000,
+      "name": "Nathaniel Drew",
+      "birth": 860025600000,
       "education": "bachelor",
-      "modality": "In Person",
-      "classes": "Poetry",
-      "created_at": 1628218280942
+      "modality": "Distance Learning",
+      "classes": "Filmmaking, English, Spanish, Italian",
+      "created_at": 1628304904153
     }
   ]
 }
