@@ -81,8 +81,8 @@ exports.edit = function(req, res) {
     return res.render('teachers/edit', { teacher })
 }
 
-// put
-exports.put = function(req, res) {
+// update
+exports.update = function(req, res) {
     const { id } = req.body
     let index = 0
 
@@ -100,6 +100,7 @@ exports.put = function(req, res) {
     const teacher = {
         ...foundTeacher
         , ...req.body
+        , id: Number(req.body.id)
         , birth: Date.parse(req.body.birth)
     }
 
