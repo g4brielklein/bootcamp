@@ -57,8 +57,6 @@ exports.post = function(req, res) {
 
         return res.redirect("/instructors")
     })
-
-    // return res.send(req.body)
 }
 
 // edit
@@ -125,12 +123,15 @@ exports.delete = function(req, res) {
     data.instructors = filteredInstructors
 
     fs.writeFile('data.json', JSON.stringify(data, null, 2), function(err) {
-
         if (err) {
             return res.send('Write file error')
         }
 
         return res.redirect('/instructors')
-         
     })
+}
+
+// index
+exports.index = function(req, res) {
+    return res.render("instructors/index", { instructors: data.instructors })
 }

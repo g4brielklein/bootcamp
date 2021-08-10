@@ -127,6 +127,7 @@ input[type="radio"] {
 .button,
 button[type="submit"] {
     font-size: 18px;
+    text-align: center;
     background-color: var(--secondary-color);
     color: white;
     border-radius: 8px;
@@ -143,4 +144,10 @@ button:hover {
 
 #delete_button {
     background-color: #990000;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
 }
