@@ -1,0 +1,14 @@
+{
+  "teachers": [
+    {
+      "id": 2,
+      "avatar_url": "https://picsum.photos/200/300/?blur",
+      "name": "Nathaniel Drew",
+      "birth": 860025600000,
+      "education": "bachelor",
+      "modality": "Distance Learning",
+      "classes": "Filmmaking, English, Spanish, Italian",
+      "created_at": 1628304904153
+    }
+  ]
+}
