@@ -2,6 +2,16 @@ const fs = require('fs')
 const data = require('./data.json')
 const { age, date, graduation } = require('./utils')
 
+// index
+exports.index = function(req, res) {
+    // const teachers = {
+    //     ...data.teachers
+    //     , classes: data.teachers.classes.split(", ")
+    // }
+
+    return res.render("teachers/index", { data })
+}
+
 // create
 exports.post = function(req, res) {
     const keys = Object.keys(req.body)

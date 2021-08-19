@@ -6,9 +6,7 @@ routes.get('/', function(req, res) {
     return res.redirect("/teachers")
 })
 
-routes.get('/teachers', function(req, res) {
-    return res.render("teachers/index", { teachers })
-})
+routes.get('/teachers', teachers.index)
 
 routes.get('/students', function(req, res) {
     return res.send("students")
