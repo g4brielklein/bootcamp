@@ -1,4 +1,5 @@
 {
+  "members": [],
   "instructors": [
     {
       "id": 1,
@@ -44,6 +45,15 @@
       "gender": "M",
       "services": "Filmmaking",
       "created_at": 1629165810553
+    },
+    {
+      "id": 6,
+      "avatar_url": "https://picsum.photos/200/300/?blur",
+      "name": "Gabriel Klein",
+      "birth": 925948800000,
+      "gender": "M",
+      "services": "sfsdfsd",
+      "created_at": 1629572700020
     }
   ]
 }
