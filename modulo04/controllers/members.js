@@ -31,35 +31,19 @@ exports.post = function(req, res) {
         }
     }
 
-    let { avatar_url
-        , name
-        , email
-        , birth
-        , gender
-        , blood_type
-        , weight
-        , height
-    } = req.body
-
-    birth = Date.parse(birth)
+    birth = Date.parse(req.body.birth)
 
     let id = 1;
-    const lastId = data.members[data.members.lenght - 1].id
+    const lastMember = data.members[data.members.lenght - 1]
 
-    if (lastId) {
-        id = lastId + 1
+    if (lastMember) {
+        id = lastMember.id + 1
     }
 
     data.members.push({
         id
-        , avatar_url
-        , name
-        , email
+        , ...req.body
         , birth
-        , gender
-        , blood_type
-        , weight
-        , height
     }) 
 
     fs.writeFile("data.json", JSON.stringify(data, null, 2), function(err){
