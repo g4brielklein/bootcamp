@@ -22,6 +22,7 @@ exports.show = function(req, res) {
 }
 
 exports.post = function(req, res) {
+
     const keys = Object.keys(req.body)
 
     for (let key of keys) {
@@ -30,17 +31,35 @@ exports.post = function(req, res) {
         }
     }
 
-    let {avatar_url, name, birth, gender} = req.body
-
-    birth = Date.parse(birth)
-    const id = Number(data.members.length + 1)
-
-    data.members.push({
-        id 
-        , avatar_url
+    let { avatar_url
         , name
+        , email
         , birth
         , gender
+        , blood_type
+        , weight
+        , height
+    } = req.body
+
+    birth = Date.parse(birth)
+
+    let id = 1;
+    const lastId = data.members[data.members.lenght - 1].id
+
+    if (lastId) {
+        id = lastId + 1
+    }
+
+    data.members.push({
+        id
+        , avatar_url
+        , name
+        , email
+        , birth
+        , gender
+        , blood_type
+        , weight
+        , height
     }) 
 
     fs.writeFile("data.json", JSON.stringify(data, null, 2), function(err){

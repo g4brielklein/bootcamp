@@ -1,5 +1,24 @@
 {
-  "members": [],
+  "members": [
+    {
+      "id": 1,
+      "avatar_url": "https://picsum.photos/200/300/?blur",
+      "name": "Gabriel Klein",
+      "birth": 925948800000,
+      "gender": "M"
+    },
+    {
+      "id": 2,
+      "avatar_url": "https://picsum.photos/200/300/?blur",
+      "name": "Gabriel Klein",
+      "email": "gklein@cadastra.com",
+      "birth": 925948800000,
+      "gender": "M",
+      "blood_type": "AB1",
+      "weight": "80",
+      "height": "180"
+    }
+  ],
   "instructors": [
     {
       "id": 1,
