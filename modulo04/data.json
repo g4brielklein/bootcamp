@@ -1,17 +1,5 @@
 {
-  "members": [
-    {
-      "avatar_url": "https://picsum.photos/200/300/?blur",
-      "name": "Nathaniel Drew",
-      "email": "natedrew@bol.com",
-      "birth": 858124800000,
-      "gender": "M",
-      "blood_type": "AB1",
-      "weight": "88",
-      "height": "175",
-      "id": 1
-    }
-  ],
+  "members": [],
   "instructors": [
     {
       "id": 1,
