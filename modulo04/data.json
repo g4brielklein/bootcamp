@@ -1,5 +1,50 @@
 {
-  "members": [],
+  "members": [
+    {
+      "id": 1,
+      "avatar_url": "https://pbs.twimg.com/profile_images/1205921945583177728/UlBch10n_400x400.jpg",
+      "name": "Nathaniel Drew",
+      "email": "natedrew@bol.com",
+      "birth": 789868800000,
+      "gender": "M",
+      "blood_type": "AB1",
+      "weight": "74",
+      "height": "170"
+    },
+    {
+      "id": 1,
+      "avatar_url": "https://images.squarespace-cdn.com/content/v1/60133069ccdf254ecbbd6f57/1612587380054-9P9YNPYL0IEW1OB0VUWL/web-contact-4.jpg",
+      "name": "Matt D'Avella",
+      "email": "mattbiceps@gmail.com",
+      "birth": 568944000000,
+      "gender": "M",
+      "blood_type": "O1",
+      "weight": "87",
+      "height": "174"
+    },
+    {
+      "id": 1,
+      "avatar_url": "https://google.com",
+      "name": "Gabriel Klein",
+      "email": "gklein@cadastra.com",
+      "birth": 11137824000000,
+      "gender": "M",
+      "blood_type": "B1",
+      "weight": "32",
+      "height": "23"
+    },
+    {
+      "id": 1,
+      "avatar_url": "https://google.com",
+      "name": "Ronald Banks1",
+      "email": "fdf@gfdf.com",
+      "birth": -52001308800000,
+      "gender": "M",
+      "blood_type": "A1",
+      "weight": "232",
+      "height": "23"
+    }
+  ],
   "instructors": [
     {
       "id": 1,

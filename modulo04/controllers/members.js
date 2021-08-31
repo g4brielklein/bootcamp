@@ -2,23 +2,8 @@ const fs = require('fs')
 const data = require('../data.json')
 const { age, date } = require('../utils')
 
-exports.show = function(req, res) {
-    const { id } = req.params
-
-    const foundMember = data.members.find(function(member) {
-        return member.id == id
-    })
-
-    if (!foundMember) {
-        return res.send('Member not found')
-    }
-    
-    const member = {
-        ...foundMember
-        , age: age(foundMember.birth)
-    }
-
-    return res.render('members/show', { member })
+exports.create = function(req, res) {
+    return res.render('members/create')
 }
 
 exports.post = function(req, res) {
@@ -36,8 +21,9 @@ exports.post = function(req, res) {
     let id = 1;
     const lastMember = data.members[data.members.lenght - 1]
 
-    if (lastMember) {
-        id = lastMember.id + 1
+    if (lastMember != 0) {
+        id = lastMember + 1
+        console.log("oii")
     }
 
     data.members.push({
@@ -53,6 +39,46 @@ exports.post = function(req, res) {
 
         return res.redirect("/members")
     })
+}
+
+exports.show = function(req, res) {
+    const { id } = req.params
+
+    const foundMember = data.members.find(function(member) {
+        return member.id == id
+    })
+
+    if (!foundMember) {
+        return res.send('Member not found')
+    }
+
+    let blood_type = foundMember.blood_type
+
+    if (foundMember.blood_type == 'A1') {
+        blood_type = "A+"
+    } else if (foundMember.blood_type == 'A0') {
+        blood_type = "A-"
+    } else if (foundMember.blood_type == 'B1') {
+        blood_type = "B+"
+    } else if (foundMember.blood_type == 'B0') {
+        blood_type = "B-"
+    } else if (foundMember.blood_type == 'AB1') {
+        blood_type = "AB+"
+    } else if (foundMember.blood_type == 'AB0') {
+        blood_type = "AB-"
+    } else if (foundMember.blood_type == 'O0') {
+        blood_type = "O-"
+    } else if (foundMember.blood_type == 'O1') {
+        blood_type = "O+"
+    }
+    
+    const member = {
+        ...foundMember
+        , age: age(foundMember.birth)
+        , blood_type: blood_type
+    }
+
+    return res.render('members/show', { member })
 }
 
 exports.edit = function(req, res) {
@@ -127,8 +153,4 @@ exports.delete = function(req, res) {
 
 exports.index = function(req, res) {
     return res.render("members/index", { members: data.members })
-}
-
-exports.create = function(req, res) {
-    return res.render('members/create')
 }
