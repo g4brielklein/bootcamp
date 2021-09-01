@@ -1,6 +1,6 @@
 const fs = require('fs')
 const data = require('../data.json')
-const { age, date } = require('../utils')
+const { date } = require('../utils')
 
 exports.create = function(req, res) {
     return res.render('members/create')
@@ -76,6 +76,7 @@ exports.show = function(req, res) {
         ...foundMember
         , age: age(foundMember.birth)
         , blood_type: blood_type
+        , birth: date(foundMember.birth).birthDay
     }
 
     return res.render('members/show', { member })
