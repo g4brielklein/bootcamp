@@ -74,7 +74,6 @@ exports.show = function(req, res) {
     
     const member = {
         ...foundMember
-        , age: age(foundMember.birth)
         , blood_type: blood_type
         , birth: date(foundMember.birth).birthDay
     }
@@ -95,7 +94,7 @@ exports.edit = function(req, res) {
 
     const member = {
         ...foundMember
-        , birth: date(foundMember.birth)
+        , birth: date(foundMember.birth).iso
     }
 
     return res.render('members/edit', { member })
