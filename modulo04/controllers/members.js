@@ -21,9 +21,8 @@ exports.post = function(req, res) {
     let id = 1;
     const lastMember = data.members[data.members.lenght - 1]
 
-    if (lastMember != 0) {
-        id = lastMember + 1
-        console.log("oii")
+    if (lastMember) {
+        id = lastMember.id + 1
     }
 
     data.members.push({

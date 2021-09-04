@@ -10,45 +10,12 @@
       "blood_type": "O0",
       "weight": "73",
       "height": "170"
-    },
-    {
-      "id": 1,
-      "avatar_url": "https://images.squarespace-cdn.com/content/v1/60133069ccdf254ecbbd6f57/1612587380054-9P9YNPYL0IEW1OB0VUWL/web-contact-4.jpg",
-      "name": "Matt D'Avella",
-      "email": "mattbiceps@gmail.com",
-      "birth": 568944000000,
-      "gender": "M",
-      "blood_type": "O1",
-      "weight": "87",
-      "height": "174"
-    },
-    {
-      "id": 1,
-      "avatar_url": "https://google.com",
-      "name": "Gabriel Klein",
-      "email": "gklein@cadastra.com",
-      "birth": 11137824000000,
-      "gender": "M",
-      "blood_type": "B1",
-      "weight": "32",
-      "height": "23"
-    },
-    {
-      "id": 1,
-      "avatar_url": "https://google.com",
-      "name": "Ronald Banks1",
-      "email": "fdf@gfdf.com",
-      "birth": -52001308800000,
-      "gender": "M",
-      "blood_type": "A1",
-      "weight": "232",
-      "height": "23"
     }
   ],
   "instructors": [
     {
       "id": 1,
-      "avatar_url": "https://picsum.photos/200/300/?blur",
+      "avatar_url": "https://picsum.photos/200/300",
       "name": "Gabriel Klein",
       "birth": 925948800000,
       "gender": "M",
@@ -56,8 +23,8 @@
       "created_at": 1625872903528
     },
     {
-      "id": "2",
-      "avatar_url": "https://picsum.photos/200/300/?blur",
+      "id": 2,
+      "avatar_url": "https://picsum.photos/200/300",
       "name": "Rogerinho do Ingá",
       "birth": 902102400000,
       "gender": "M",
@@ -74,10 +41,10 @@
       "created_at": 1625873041549
     },
     {
-      "id": "4",
+      "id": 4,
       "avatar_url": "https://picsum.photos/200/300/?blur",
       "name": "Mayk Brito",
-      "birth": 708307200000,
+      "birth": 645148800000,
       "gender": "M",
       "services": "Software Development",
       "created_at": 1626222318197
@@ -90,15 +57,6 @@
       "gender": "M",
       "services": "Filmmaking",
       "created_at": 1629165810553
-    },
-    {
-      "id": 6,
-      "avatar_url": "https://picsum.photos/200/300/?blur",
-      "name": "Gabriel Klein",
-      "birth": 925948800000,
-      "gender": "M",
-      "services": "sfsdfsd",
-      "created_at": 1629572700020
     }
   ]
 }
