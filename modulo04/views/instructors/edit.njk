@@ -34,4 +34,15 @@
         
     </div>
 
+    <script>
+        // Delete confirmation message
+        const formDelete = document.querySelector("#form-delete")
+        formDelete.addEventListener("submit", function(event) {
+            const confirmation = confirm("Do you really want to delete this user?")
+            if (!confirmation) {
+                event.preventDefault()
+            }
+        })
+    </script>
+
 {% endblock content %}

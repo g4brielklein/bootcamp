@@ -10,6 +10,17 @@
       "blood_type": "O0",
       "weight": "73",
       "height": "170"
+    },
+    {
+      "id": 1,
+      "avatar_url": "https://picsum.photos/200/300/?blur",
+      "name": "Diego Fernandes",
+      "email": "dfernandes@rocketseat.com",
+      "birth": 724118400000,
+      "gender": "M",
+      "blood_type": "AB1",
+      "weight": "80",
+      "height": "183"
     }
   ],
   "instructors": [
