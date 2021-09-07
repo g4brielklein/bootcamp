@@ -25,17 +25,8 @@
   ],
   "instructors": [
     {
-      "id": 1,
-      "avatar_url": "https://picsum.photos/200/300",
-      "name": "Gabriel Klein",
-      "birth": 925948800000,
-      "gender": "M",
-      "services": "Software Development",
-      "created_at": 1625872903528
-    },
-    {
       "id": 2,
-      "avatar_url": "https://picsum.photos/200/300",
+      "avatar_url": "https://i1.sndcdn.com/artworks-000371899050-m32dfo-t500x500.jpg",
       "name": "Rogerinho do Ingá",
       "birth": 902102400000,
       "gender": "M",
