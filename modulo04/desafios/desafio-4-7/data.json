@@ -1,0 +1,52 @@
+{
+  "teachers": [
+    {
+      "id": 1,
+      "avatar_url": "https://picsum.photos/200/300/?blur",
+      "name": "Nathaniel Drew",
+      "birth": 860025600000,
+      "education": "bachelor",
+      "modality": "Distance Learning",
+      "classes": [
+        "Filmmaking"
+        , "English"
+        , "Spanish"
+        , "Italian"
+      ],
+      "created_at": 1628304904153
+    },
+    {
+      "id": 2,
+      "avatar_url": "https://picsum.photos/200/300/?blur",
+      "name": "Yuval Noah Harari",
+      "birth": 568944000000,
+      "education": "phd",
+      "modality": "In Person",
+      "classes": ["History"],
+      "created_at": 1629331379639
+    },
+    {
+      "id": 3,
+      "avatar_url": "https://picsum.photos/200/300/?blur",
+      "name": "Ronald Banks",
+      "birth": 668131200000,
+      "education": "master",
+      "modality": "Distance Learning",
+      "classes": ["Poetry"],
+      "created_at": 1629332467135
+    },
+    {
+      "id": 4,
+      "avatar_url": "https://picsum.photos/200/300/?blur",
+      "name": "Manuel Castells",
+      "birth": 174355200000,
+      "education": "phd",
+      "modality": "In Person",
+      "classes": [
+        "Sociology",
+        "History"
+      ],
+      "created_at": 1629570766341
+    }
+  ]
+}
