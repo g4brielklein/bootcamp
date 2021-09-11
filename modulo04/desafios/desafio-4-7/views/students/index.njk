@@ -12,18 +12,18 @@
                 </tr>
             </thead>
             <tbody>
-                {% for teacher in data.teachers %}
+                {% for student in data.students %}
                     <tr>
                         <td>
-                            <span style="background-image: url({{ teacher.avatar_url }})"></span>
-                            {{ teacher.name }}    
+                            <span style="background-image: url({{ student.avatar_url }})"></span>
+                            {{ student.name }}    
                         </td>
                         <td>
-                        {% for class in teacher.classes %}
+                        {% for class in student.classes %}
                             <span>{{ class }}</span>
                         {% endfor %}
                         </td>
-                        <td><a href="/teachers/{{ teacher.id }}">Show</a></td>
+                        <td><a href="/students/{{ student.id }}">Show</a></td>
                     </tr>   
                 {% endfor %}
             </tbody>

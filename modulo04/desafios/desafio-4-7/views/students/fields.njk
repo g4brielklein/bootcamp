@@ -5,7 +5,7 @@
             type = "url"
             name = "avatar_url"
             placeholder = "https://"
-            value = "{{ teacher.avatar_url }}"
+            value = "{{ student.avatar_url }}"
         >
     </div>
 </div>
@@ -17,7 +17,7 @@
             type = "text"
             name = "name"
             placeholder = "Full name"
-            value = "{{ teacher.name }}"
+            value = "{{ student.name }}"
         >
     </div>
 </div>
@@ -28,7 +28,7 @@
         <input
             type = "date"
             name = "birth"
-            value = "{{ teacher.birth }}"
+            value = "{{ student.birth }}"
         >
     </div>
 </div>
@@ -40,7 +40,7 @@
 
             <option 
                 value="bachelor"
-                {% if teacher.education == 'bachelor' %}
+                {% if student.education == 'bachelor' %}
                     selected
                 {% endif %}
                 >Bachelor
@@ -48,7 +48,7 @@
 
             <option
                 value="master"
-                {% if teacher.education == 'master' %}
+                {% if student.education == 'master' %}
                     selected
                 {% endif %}
                 >Master
@@ -56,7 +56,7 @@
 
             <option
                 value="phd"
-                {% if teacher.education == 'phd' %}
+                {% if student.education == 'phd' %}
                     selected
                 {% endif %}
                 >Phd
@@ -74,7 +74,7 @@
                 type = "radio"
                 name = "modality"
                 value = "In Person"
-                {% if teacher.modality == 'In Person' %}
+                {% if student.modality == 'In Person' %}
                     checked
                 {% endif %}
             > In Person
@@ -85,7 +85,7 @@
                 type = "radio"
                 name = "modality"
                 value = "Distance Learning"
-                {% if teacher.modality == 'Distance Learning' %}
+                {% if student.modality == 'Distance Learning' %}
                     checked
                 {% endif %}
             > Distance Learning
@@ -100,7 +100,7 @@
             type = "text"
             name = "classes"
             placeholder = "Separate classes with comma"
-            value = "{{ teacher.classes }}"
+            value = "{{ student.classes }}"
         >
     </div>
 </div>
