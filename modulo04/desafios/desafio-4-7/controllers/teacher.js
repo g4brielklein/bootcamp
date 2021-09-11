@@ -6,6 +6,10 @@ exports.index = function(req, res) {
     return res.render("teachers/index", { data })
 }
 
+exports.create = function(req, res) {
+    return res.render('teachers/create')
+}
+
 exports.post = function(req, res) {
     const keys = Object.keys(req.body)
 
