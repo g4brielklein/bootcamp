@@ -6,6 +6,10 @@ exports.index = function(req, res) {
     return res.render("students/index", { data })
 }
 
+exports.create = function(req, res) {
+    return res.render('students/create')
+}
+
 exports.post = function(req, res) {
     const keys = Object.keys(req.body)
 
@@ -18,19 +22,13 @@ exports.post = function(req, res) {
     let { avatar_url, name, birth, education, modality, classes } = req.body
 
     birth = Date.parse(birth)
-    const created_at = Date.now()
     const id = Number(data.students.length + 1)
-    classes = classes.split(", ")
 
     data.students.push({
         id
         , avatar_url
         , name
         , birth
-        , education
-        , modality
-        , classes
-        , created_at
     })
 
     fs.writeFile("data.json", JSON.stringify(data, null, 2), function(err) {

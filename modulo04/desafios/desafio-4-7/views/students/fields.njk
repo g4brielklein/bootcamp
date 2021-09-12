@@ -23,84 +23,12 @@
 </div>
 
 <div class="item">
-    <div>Birth Date</div>
+    <div>Birth</div>
     <div>
         <input
             type = "date"
             name = "birth"
             value = "{{ student.birth }}"
-        >
-    </div>
-</div>
-
-<div class="item">
-    <div>Education</div>
-    <div>
-        <select name="education">
-
-            <option 
-                value="bachelor"
-                {% if student.education == 'bachelor' %}
-                    selected
-                {% endif %}
-                >Bachelor
-            </option>
-
-            <option
-                value="master"
-                {% if student.education == 'master' %}
-                    selected
-                {% endif %}
-                >Master
-             </option>
-
-            <option
-                value="phd"
-                {% if student.education == 'phd' %}
-                    selected
-                {% endif %}
-                >Phd
-             </option>
-             
-        </select>
-    </div>
-</div>
-
-<div class="item">
-    <div>Modality</div>
-    <div>
-        <span>
-            <input
-                type = "radio"
-                name = "modality"
-                value = "In Person"
-                {% if student.modality == 'In Person' %}
-                    checked
-                {% endif %}
-            > In Person
-        </span>
-
-        <span>
-            <input
-                type = "radio"
-                name = "modality"
-                value = "Distance Learning"
-                {% if student.modality == 'Distance Learning' %}
-                    checked
-                {% endif %}
-            > Distance Learning
-        </span>
-    </div>
-</div>
-
-<div class="item">
-    <div>Classes</div>
-    <div>
-        <input
-            type = "text"
-            name = "classes"
-            placeholder = "Separate classes with comma"
-            value = "{{ student.classes }}"
         >
     </div>
 </div>

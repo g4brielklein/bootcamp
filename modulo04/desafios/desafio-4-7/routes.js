@@ -1,7 +1,7 @@
 const express = require('express')
 const routes = express.Router()
 const teachers = require('./controllers/teacher')
-const students = require('./controllers/students')
+const students = require('./controllers/student')
 
 routes.get('/', function(req, res) {
     return res.redirect("/teachers")
@@ -16,13 +16,11 @@ routes.put('/teachers', teachers.update)
 routes.delete('/teachers', teachers.delete)
 
 routes.get('/students', students.index)
-// routes.get('/students/create', function(req, res) {
-//     return res.render('students/create')
-// })
-// routes.get('/students/:id', students.show)s
-// routes.get('/students/:id/edit', students.edit)
-// routes.put('/students', students.update)
-// routes.delete('/students', students.delete)
-// routes.post('/students', students.post)
+routes.get('/students/create', students.create)
+routes.post('/students', students.post)
+routes.get('/students/:id', students.show)
+routes.get('/students/:id/edit', students.edit)
+routes.put('/students', students.update)
+routes.delete('/students', students.delete)
 
 module.exports = routes

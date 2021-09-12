@@ -1,5 +1,12 @@
 {
-  "students": [],
+  "students": [
+    {
+      "id": 1,
+      "avatar_url": "https://picsum.photos/200/300/?blur",
+      "name": "Gabriel Klein",
+      "birth": 925948800000
+    }
+  ],
   "teachers": [
     {
       "id": 1,
@@ -9,10 +16,10 @@
       "education": "bachelor",
       "modality": "Distance Learning",
       "classes": [
-        "Filmmaking"
-        , "English"
-        , "Spanish"
-        , "Italian"
+        "Filmmaking",
+        "English",
+        "Spanish",
+        "Italian"
       ],
       "created_at": 1628304904153
     },
@@ -23,7 +30,9 @@
       "birth": 568944000000,
       "education": "phd",
       "modality": "In Person",
-      "classes": ["History"],
+      "classes": [
+        "History"
+      ],
       "created_at": 1629331379639
     },
     {
@@ -33,7 +42,9 @@
       "birth": 668131200000,
       "education": "master",
       "modality": "Distance Learning",
-      "classes": ["Poetry"],
+      "classes": [
+        "Poetry"
+      ],
       "created_at": 1629332467135
     },
     {

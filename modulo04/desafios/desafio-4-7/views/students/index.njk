@@ -7,7 +7,6 @@
             <thead>
                 <tr>
                     <th>Full name</th>
-                    <th>Classes</th>
                     <th>Action</th>
                 </tr>
             </thead>
@@ -17,11 +16,6 @@
                         <td>
                             <span style="background-image: url({{ student.avatar_url }})"></span>
                             {{ student.name }}    
-                        </td>
-                        <td>
-                        {% for class in student.classes %}
-                            <span>{{ class }}</span>
-                        {% endfor %}
                         </td>
                         <td><a href="/students/{{ student.id }}">Show</a></td>
                     </tr>   
