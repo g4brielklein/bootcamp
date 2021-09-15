@@ -23,12 +23,9 @@
                 
             </form>
             
-            <form method="POST" action="/teachers?_method=DELETE">
-
-                    <button id="delete_button" type="submit">Delete</button>
-                </div>
-
+            <form id="form-delete" method="POST" action="/teachers?_method=DELETE">
                 <input type="hidden" name="id" value="{{ teacher.id }}">
+                <button id="delete_button" type="submit">Delete</button>
             </form>
 
         </div>

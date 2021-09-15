@@ -3,20 +3,14 @@
     {
       "id": 1,
       "avatar_url": "https://avatars.githubusercontent.com/u/22963494?v=4",
-      "name": "Gabriel Klein",
+      "name": "gklein",
       "birth": 925948800000
     },
     {
       "id": 2,
       "avatar_url": "https://jpimg.com.br/uploads/2019/04/Prof_Pedro_Calabrez-_Panico-8-1024x682.jpg",
       "name": "Pedro Calabrez",
-      "birth": 653184000000
-    },
-    {
-      "id": 3,
-      "avatar_url": "https://picsum.photos/200/300/?blur",
-      "name": "Joma",
-      "birth": "12/06"
+      "birth": "14/09"
     }
   ],
   "teachers": [
