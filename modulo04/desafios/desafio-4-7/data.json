@@ -3,7 +3,7 @@
     {
       "id": 1,
       "avatar_url": "https://avatars.githubusercontent.com/u/22963494?v=4",
-      "name": "gklein",
+      "name": "Gabriel Klein",
       "birth": 925948800000
     },
     {
@@ -11,59 +11,53 @@
       "avatar_url": "https://jpimg.com.br/uploads/2019/04/Prof_Pedro_Calabrez-_Panico-8-1024x682.jpg",
       "name": "Pedro Calabrez",
       "birth": "14/09"
+    },
+    {
+      "id": 3,
+      "avatar_url": "https://cdn.pensador.com/img/authors/le/an/leandro-karnal-l.jpg",
+      "name": "Leandro Karnal",
+      "birth": 1007596800000
     }
   ],
   "teachers": [
     {
       "id": 1,
-      "avatar_url": "https://picsum.photos/200/300/?blur",
+      "avatar_url": "https://pbs.twimg.com/profile_images/1205921945583177728/UlBch10n_400x400.jpg",
       "name": "Nathaniel Drew",
-      "birth": 860025600000,
+      "birth": null,
       "education": "bachelor",
       "modality": "Distance Learning",
-      "classes": [
-        "Filmmaking",
-        "English",
-        "Spanish",
-        "Italian"
-      ],
+      "classes": "Filmmaking,English,Spanish,Italian",
       "created_at": 1628304904153
     },
     {
       "id": 2,
-      "avatar_url": "https://picsum.photos/200/300/?blur",
+      "avatar_url": "https://pbs.twimg.com/profile_images/1034789978444886017/9GqAdkNk.jpg",
       "name": "Yuval Noah Harari",
-      "birth": 568944000000,
+      "birth": null,
       "education": "phd",
       "modality": "In Person",
-      "classes": [
-        "History"
-      ],
+      "classes": "History",
       "created_at": 1629331379639
     },
     {
       "id": 3,
-      "avatar_url": "https://picsum.photos/200/300/?blur",
+      "avatar_url": "https://yt3.ggpht.com/ytc/AKedOLRgH-RaBl6_Knkh7euEOuUpvv91NztslrFXk_oAaA=s900-c-k-c0x00ffffff-no-rj",
       "name": "Ronald Banks",
-      "birth": 668131200000,
+      "birth": null,
       "education": "master",
       "modality": "Distance Learning",
-      "classes": [
-        "Poetry"
-      ],
+      "classes": "Poetry",
       "created_at": 1629332467135
     },
     {
       "id": 4,
-      "avatar_url": "https://picsum.photos/200/300/?blur",
+      "avatar_url": "https://media.quatrocincoum.com.br/_original/articles-xwxbzz1ZXaPx5BY.jpg",
       "name": "Manuel Castells",
-      "birth": 174355200000,
+      "birth": null,
       "education": "phd",
       "modality": "In Person",
-      "classes": [
-        "Sociology",
-        "History"
-      ],
+      "classes": "Sociology,History",
       "created_at": 1629570766341
     }
   ]
