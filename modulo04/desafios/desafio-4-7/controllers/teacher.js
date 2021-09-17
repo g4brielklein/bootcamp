@@ -24,7 +24,7 @@ exports.post = function(req, res) {
     birth = Date.parse(birth)
     const created_at = Date.now()
     const id = Number(data.teachers.length + 1)
-    classes = classes.split(", ")
+    classes = classes.split(",")
 
     data.teachers.push({
         id
@@ -62,7 +62,6 @@ exports.show = function(req, res) {
         , age: age(foundTeacher.birth)
         , created_at: new Intl.DateTimeFormat("pt-BR").format(foundTeacher.created_at)
         , education: graduation(foundTeacher.education)
-        , classes: foundTeacher.classes.split(",")
     }
 
     return res.render('teachers/show', { teacher })
@@ -107,6 +106,7 @@ exports.update = function(req, res) {
         , ...req.body
         , id: Number(req.body.id)
         , birth: Date.parse(req.body.birth)
+        , classes: req.body.classes.split(",")
     }
 
     data.teachers[index] = teacher

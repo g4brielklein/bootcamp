@@ -10,13 +10,13 @@
       "id": 2,
       "avatar_url": "https://jpimg.com.br/uploads/2019/04/Prof_Pedro_Calabrez-_Panico-8-1024x682.jpg",
       "name": "Pedro Calabrez",
-      "birth": "14/09"
+      "birth": 653184000000
     },
     {
       "id": 3,
       "avatar_url": "https://cdn.pensador.com/img/authors/le/an/leandro-karnal-l.jpg",
       "name": "Leandro Karnal",
-      "birth": 1007596800000
+      "birth": 344908800000
     }
   ],
   "teachers": [
@@ -24,41 +24,82 @@
       "id": 1,
       "avatar_url": "https://pbs.twimg.com/profile_images/1205921945583177728/UlBch10n_400x400.jpg",
       "name": "Nathaniel Drew",
-      "birth": null,
+      "birth": 0,
       "education": "bachelor",
       "modality": "Distance Learning",
-      "classes": "Filmmaking,English,Spanish,Italian",
+      "classes": [
+        "Filmmaking",
+        "English",
+        "Spanish",
+        "Italian"
+      ],
       "created_at": 1628304904153
     },
     {
       "id": 2,
       "avatar_url": "https://pbs.twimg.com/profile_images/1034789978444886017/9GqAdkNk.jpg",
       "name": "Yuval Noah Harari",
-      "birth": null,
+      "birth": 0,
       "education": "phd",
       "modality": "In Person",
-      "classes": "History",
+      "classes": [
+        "History"
+      ],
       "created_at": 1629331379639
     },
     {
       "id": 3,
       "avatar_url": "https://yt3.ggpht.com/ytc/AKedOLRgH-RaBl6_Knkh7euEOuUpvv91NztslrFXk_oAaA=s900-c-k-c0x00ffffff-no-rj",
       "name": "Ronald Banks",
-      "birth": null,
+      "birth": 0,
       "education": "master",
       "modality": "Distance Learning",
-      "classes": "Poetry",
+      "classes": [
+        "Poetry"
+      ],
       "created_at": 1629332467135
     },
     {
       "id": 4,
       "avatar_url": "https://media.quatrocincoum.com.br/_original/articles-xwxbzz1ZXaPx5BY.jpg",
       "name": "Manuel Castells",
-      "birth": null,
+      "birth": 0,
       "education": "phd",
       "modality": "In Person",
-      "classes": "Sociology,History",
+      "classes": [
+        "Sociology",
+        "History"
+      ],
       "created_at": 1629570766341
+    },
+    {
+      "id": 5,
+      "avatar_url": "https://picsum.photos/200/300",
+      "name": "Teacher Teste",
+      "birth": 345427200000,
+      "education": "bachelor",
+      "modality": "In Person",
+      "classes": [
+        "JavaScript",
+        "HTML",
+        "CSS",
+        "Git"
+      ],
+      "created_at": 1631843180832
+    },
+    {
+      "id": 6,
+      "avatar_url": "https://picsum.photos/200/300/?blur",
+      "name": "Gabriel",
+      "birth": 925948800000,
+      "education": "bachelor",
+      "modality": "Distance Learning",
+      "classes": [
+        "SQL",
+        "Python",
+        "AWS"
+      ],
+      "created_at": 1631843490239
     }
   ]
 }
