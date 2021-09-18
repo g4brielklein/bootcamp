@@ -28,7 +28,7 @@ exports.post = function(req, res) {
         id
         , avatar_url
         , name
-        , birth: date(birth).birth
+        , birth
     })
 
     fs.writeFile("data.json", JSON.stringify(data, null, 2), function(err) {

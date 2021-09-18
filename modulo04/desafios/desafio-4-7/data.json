@@ -2,21 +2,27 @@
   "students": [
     {
       "id": 1,
-      "avatar_url": "https://avatars.githubusercontent.com/u/22963494?v=4",
-      "name": "Gabriel Klein",
-      "birth": 925948800000
-    },
-    {
-      "id": 2,
       "avatar_url": "https://jpimg.com.br/uploads/2019/04/Prof_Pedro_Calabrez-_Panico-8-1024x682.jpg",
       "name": "Pedro Calabrez",
-      "birth": 653184000000
+      "birth": 653529600000
     },
     {
       "id": 3,
       "avatar_url": "https://cdn.pensador.com/img/authors/le/an/leandro-karnal-l.jpg",
       "name": "Leandro Karnal",
-      "birth": 344908800000
+      "birth": 29289600000
+    },
+    {
+      "id": 4,
+      "avatar_url": "https://static.wixstatic.com/media/62f4f0_f476e44fcf75406f9984b179ecddc972~mv1.jpg/v1/fit/w_2500,h_1330,al_c/62f4f0_f476e44fcf75406f9984b179ecddc972~mv1.jpg",
+      "name": "Professor HOC",
+      "birth": 477014400000
+    },
+    {
+      "id": 5,
+      "avatar_url": "https://media.gazetadopovo.com.br/2017/04/f43f6c015361179760de6936d31cbebe-gpMedium.jpeg",
+      "name": "Clóvis de Barros Filho",
+      "birth": 200188800000
     }
   ],
   "teachers": [
