@@ -22,7 +22,14 @@ exports.post = function(req, res) {
     let { avatar_url, name, birth } = req.body
 
     birth = Date.parse(birth)
-    const id = Number(data.students.length + 1)
+
+    let id = 1;
+    const lastStudent = data.students[data.students.length - 1]
+    console.log(lastStudent)
+
+    if (lastStudent) {
+        id = lastStudent.id + 1
+    }
 
     data.students.push({
         id
