@@ -4,25 +4,43 @@
       "id": 1,
       "avatar_url": "https://static.wixstatic.com/media/62f4f0_f476e44fcf75406f9984b179ecddc972~mv1.jpg/v1/fit/w_2500,h_1330,al_c/62f4f0_f476e44fcf75406f9984b179ecddc972~mv1.jpg",
       "name": "Professor HOC",
-      "birth": 484185600000
+      "birth": 484185600000,
+      "email": "professorhoc@gmail.com"
     },
     {
       "id": 2,
       "avatar_url": "https://media.gazetadopovo.com.br/2017/04/f43f6c015361179760de6936d31cbebe-gpMedium.jpeg",
       "name": "Clóvis de Barros Filho",
-      "birth": 92016000000
+      "birth": 92016000000,
+      "email": "contato@profclovisdebarros.com"
     },
     {
       "id": 3,
       "avatar_url": "https://jpimg.com.br/uploads/2019/04/Prof_Pedro_Calabrez-_Panico-8-1024x682.jpg",
       "name": "Pedro Calabrez",
-      "birth": 619401600000
+      "birth": 619401600000,
+      "email": "pedro@neurovox.com"
     },
     {
       "id": 4,
       "avatar_url": "https://cdn.pensador.com/img/authors/le/an/leandro-karnal-l.jpg",
       "name": "Leandro Karnal",
-      "birth": 255225600000
+      "birth": 255225600000,
+      "email": "leandrokarnal@gmail.com"
+    },
+    {
+      "id": 5,
+      "avatar_url": "https://images.moviefit.me/p/b/755935-matt-d-avella.webp",
+      "name": "Matt D'Avella",
+      "birth": 702604800000,
+      "email": "matt@mattdavella.com"
+    },
+    {
+      "id": 6,
+      "avatar_url": "https://yt3.ggpht.com/ytc/AKedOLRpOIqf2Hwy6ejdohsIKR8O-aUndHKM1-teSoS5=s900-c-k-c0x00ffffff-no-rj",
+      "name": "Joey Schweitzer",
+      "birth": 744163200000,
+      "email": "joey@betterideas.com"
     }
   ],
   "teachers": [

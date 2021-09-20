@@ -19,7 +19,7 @@ exports.post = function(req, res) {
         }
     }
 
-    let { avatar_url, name, birth } = req.body
+    let { avatar_url, name, birth, email } = req.body
 
     birth = Date.parse(birth)
 
@@ -36,6 +36,7 @@ exports.post = function(req, res) {
         , avatar_url
         , name
         , birth
+        , email
     })
 
     fs.writeFile("data.json", JSON.stringify(data, null, 2), function(err) {
