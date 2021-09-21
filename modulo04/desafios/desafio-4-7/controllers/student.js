@@ -86,6 +86,25 @@ exports.edit = function(req, res) {
     return res.render('students/edit', { student })
 }
 
+exports.edit = function(req, res) {
+    const { id } = req.params;
+
+    const foundStudent = data.students.find(function(student) {
+        return student.id == id
+    })
+
+    if (!foundStudent) {
+        return res.send('Student not found.')
+    }
+
+    const student = {
+        ...foundStudent
+        , birth: date(foundStudent.birth).iso
+    }
+
+    return res.render('students/edit', { student })
+}
+
 exports.update = function(req, res) {
     const { id } = req.body
     let index = 0
