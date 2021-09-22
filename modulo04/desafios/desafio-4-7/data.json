@@ -41,6 +41,13 @@
       "name": "Joey Schweitzer",
       "birth": 744163200000,
       "email": "joey@betterideas.com"
+    },
+    {
+      "id": 7,
+      "avatar_url": "https://miro.medium.com/max/900/1*mtHW77kkH16QAMQ66UmDAQ.jpeg",
+      "name": "Filipe Deschamps",
+      "birth": 596937600000,
+      "email": "contato@micheltelo.com"
     }
   ],
   "teachers": [
@@ -95,6 +102,19 @@
         "History"
       ],
       "created_at": 1629570766341
+    },
+    {
+      "id": 5,
+      "avatar_url": "https://yt3.ggpht.com/ytc/AKedOLTFLnUPOScnD78_Lz7YCbp0PXSpPgBTI4HA0pA8=s900-c-k-c0x00ffffff-no-rj",
+      "name": "Joma Tech",
+      "birth": 844646400000,
+      "education": "master",
+      "modality": "Distance Learning",
+      "classes": [
+        "Software Engineer",
+        "Data Science"
+      ],
+      "created_at": 1632273733275
     }
   ]
 }

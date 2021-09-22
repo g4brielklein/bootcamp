@@ -25,7 +25,6 @@ exports.post = function(req, res) {
 
     let id = 1;
     const lastStudent = data.students[data.students.length - 1]
-    console.log(lastStudent)
 
     if (lastStudent) {
         id = lastStudent.id + 1
@@ -65,25 +64,6 @@ exports.show = function(req, res) {
     }
 
     return res.render('students/show', { student })
-}
-
-exports.edit = function(req, res) {
-    const { id } = req.params;
-
-    const foundStudent = data.students.find(function(student) {
-        return student.id == id
-    })
-
-    if (!foundStudent) {
-        return res.send('Student not found.')
-    }
-
-    const student = {
-        ...foundStudent
-        , birth: date(foundStudent.birth).iso
-    }
-
-    return res.render('students/edit', { student })
 }
 
 exports.edit = function(req, res) {
