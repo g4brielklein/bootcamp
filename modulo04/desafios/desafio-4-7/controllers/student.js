@@ -118,39 +118,6 @@ exports.update = function(req, res) {
     })
 }
 
-exports.update2 = function(req, res) {
-    const { id } = req.body
-    let index = 0
-
-    const foundStudent = data.students.find(function(student, foundIndex) {
-        if (id == student.id) {
-            index = foundIndex
-            return true
-        }
-    })
-
-    if (!foundStudent) {
-        return res.send('Student not found! :(')
-    }
-
-    const student = {
-        ...foundStudent
-        , ...req.body
-        , id: Number(req.body.id)
-        , birth: Date.parse(req.body.birth)
-    }
-
-    data.students[index] = student
-
-    fs.writeFile('data.json', JSON.stringify(data, null, 2), function(err) {
-        if (err) {
-            return res.send('Error writing file :(')
-        }
-
-        return res.redirect(`/students/${id}`)
-    })
-}
-
 exports.delete = function(req, res) {
     const { id } = req.body
 
