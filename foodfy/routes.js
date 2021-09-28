@@ -1,3 +1,8 @@
+const express = require('express')
+const routes = express.Router()
+const user = require('./controllers/user')
+const admin = require('./controllers/admin')
+
 routes.get('/', user.index)
 routes.get('/about', user.about)
 routes.get('/recipes', user.recipes)
