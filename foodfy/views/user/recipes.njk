@@ -1,0 +1,30 @@
+{% extends 'layout.njk' %}
+
+{% block span %}
+    <a href="/about">Sobre</a>
+    <a href="/recipes"><span>Receitas</span></a>
+{% endblock %}
+
+{% block content %}
+
+    <div class="recipes">
+
+        {% for recipe in data %}
+            <div class="recipe" id="burger">
+                <div class="recipe-image">
+                    <img src="{{ recipe.image }}" alt="Imagem de {{ recipe.title }}" />
+                </div>
+                <div class="recipe-content">
+                    <p>{{ recipe.title }}</p>
+                    <p class="recipe-author">{{ recipe.author }}</p>
+                </div>
+            </div>
+        {% endfor %}
+
+    </div>
+
+    <div class="space"></div>
+
+    <script src="/script.js"></script>
+    
+{% endblock %}
