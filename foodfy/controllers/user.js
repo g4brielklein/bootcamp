@@ -1,7 +1,7 @@
 const data = require('../data')
 
 exports.index = function(req, res)  {
-    return res.render('index', { data })
+    return res.render('./user/index', { data })
 }
 
 exports.about = function(req, res) {
@@ -13,16 +13,16 @@ exports.about = function(req, res) {
         ]
     }
 
-    return res.render('about', { data })
+    return res.render('./user/about', { data })
 }
 
 exports.recipes = function(req, res) {
-    return res.render('recipes', { data })
+    return res.render('./user/recipes', { data })
 }
 
 exports.recipesIndex = function (req, res) {
     const recipes = data;
     const recipeIndex = req.params.index;
   
-    return res.render('recipe', { item: recipes[recipeIndex] })
+    return res.render('./user/recipe', { item: recipes[recipeIndex] })
 }

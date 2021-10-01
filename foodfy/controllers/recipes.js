@@ -1,5 +1,7 @@
+const data = require('../data')
+
 exports.index = function (req, res) {
-    return res.send('// Mostrar a lista de receitas')
+    return res.render('./recipes/recipes', { data })
 }
 
 exports.create = function (req, res) {

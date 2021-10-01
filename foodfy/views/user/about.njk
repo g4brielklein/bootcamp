@@ -1,0 +1,23 @@
+{% extends 'layout.njk' %}
+
+{% block span %}
+    <a href="/about"><span>Sobre</span></a>
+    <a href="/recipes">Receitas</a>
+{% endblock %}
+
+{% block content %}
+
+    <div class="about-content">
+
+        {% for content in data.contents %}
+            <div class="title">
+                <p>{{ content.title }}</p>
+            </div>
+            <div class="content">
+                <p>{{ content.text }}</p>
+            </div>
+        {% endfor %}
+
+    </div>
+    
+{% endblock %}
