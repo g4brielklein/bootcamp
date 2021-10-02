@@ -22,7 +22,7 @@ exports.recipes = function(req, res) {
 
 exports.recipesIndex = function (req, res) {
     const recipes = data;
-    const recipeIndex = req.params.index;
+    const recipeIndex = req.params.id;
   
     return res.render('./user/recipe', { item: recipes[recipeIndex] })
 }

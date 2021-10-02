@@ -8,8 +8,12 @@ exports.create = function (req, res) {
     return res.send('// Mostrar formulário de nova receita')
 }
 
-exports.show = function (res, res) {
-    return res.send('// Exibir detalhes de uma receita')
+exports.show = function (req, res) {
+    const recipes = data;
+    const recipeIndex = req.params.id;
+    console.log(recipeIndex)
+  
+    return res.render('./recipes/recipe', { item: recipes[recipeIndex] })
 }
 
 exports.edit = function(req, res) {
