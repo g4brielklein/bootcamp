@@ -5,13 +5,12 @@ exports.index = function (req, res) {
 }
 
 exports.create = function (req, res) {
-    return res.send('// Mostrar formulário de nova receita')
+    return res.render('./recipes/create')
 }
 
 exports.show = function (req, res) {
     const recipes = data;
     const recipeIndex = req.params.id;
-    console.log(recipeIndex)
   
     return res.render('./recipes/recipe', { item: recipes[recipeIndex] })
 }
