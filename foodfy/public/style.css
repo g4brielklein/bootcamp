@@ -242,3 +242,9 @@ span {
     margin-left: 0.6%;
     cursor: pointer;
 }
+
+/* form */
+.card {
+    padding: 0 50%;
+    background-color: grey;
+}

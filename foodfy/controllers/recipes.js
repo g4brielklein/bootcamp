@@ -30,20 +30,3 @@ exports.put = function (req, res) {
 exports.delete = function (req, res) {
     return res.send('// Deletar uma receita')
 }
-
-// -----
-
-exports.index = function (req, res) {
-    return res.render('./recipes/recipes', { data })
-}
-
-exports.create = function (req, res) {
-    return res.render('./recipes/create')
-}
-
-exports.show = function (req, res) {
-    const recipes = data;
-    const recipeIndex = req.params.id;
-  
-    return res.render('./recipes/recipe', { item: recipes[recipeIndex] })
-}
