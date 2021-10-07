@@ -20,7 +20,19 @@ exports.edit = function(req, res) {
 }
 
 exports.post = function (req, res) {
-    return res.send('// Cadastrar nova receita')
+    const recipe = req.body;
+
+    let fields = Object.keys(req.body)
+
+    for (field of fields) {
+        if (req.body.field == '') {
+            return res.send('Por favor, preencha todos os campos. :)')
+        } else {
+            return res.send('Tuudo ok!! :)')
+        }
+    }
+
+    // return res.send(fields)
 }
 
 exports.put = function (req, res) {
