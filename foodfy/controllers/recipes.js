@@ -20,19 +20,17 @@ exports.edit = function(req, res) {
 }
 
 exports.post = function (req, res) {
-    const recipe = req.body;
+    const fields = Object.keys(req.body)
 
-    let fields = Object.keys(req.body)
-
-    for (field of fields) {
-        if (req.body.field == '') {
+    for (let field of fields) {
+        if (req.body[field] == "") {
             return res.send('Por favor, preencha todos os campos. :)')
-        } else {
-            return res.send('Tuudo ok!! :)')
         }
     }
 
-    // return res.send(fields)
+    let { image_url, recipe_name, author_name, ingredients, preparation, more_info } = req.body
+
+    return res.send(req.body)
 }
 
 exports.put = function (req, res) {
