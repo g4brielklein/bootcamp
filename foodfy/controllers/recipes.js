@@ -1,4 +1,6 @@
 const data = require('../data')
+const test = require('../test.json')
+const fs = require('fs')
 
 exports.index = function (req, res) {
     return res.render('./recipes/recipes', { data })
@@ -30,7 +32,22 @@ exports.post = function (req, res) {
 
     let { image_url, recipe_name, author_name, ingredients, preparation, more_info } = req.body
 
-    return res.send(req.body)
+    test.recipes.push({
+        image_url 
+        , recipe_name
+        , author_name
+        , ingredients
+        , preparation
+        , more_info
+    }) 
+
+    fs.writeFile("data.json", JSON.stringify(test, null, 2), function(err){
+        if (err) {
+            return res.send("Write file error")
+        }
+
+        return res.redirect("/admin/recipes")
+    })
 }
 
 exports.put = function (req, res) {
