@@ -1,9 +1,9 @@
 const data = require('../data')
-const test = require('../test.json')
+const test = require('../data.json')
 const fs = require('fs')
 
 exports.index = function (req, res) {
-    return res.render('./recipes/recipes', { data })
+    return res.render('./recipes/recipes', { test })
 }
 
 exports.create = function (req, res) {
@@ -26,19 +26,21 @@ exports.post = function (req, res) {
 
     for (let field of fields) {
         if (req.body[field] == "") {
-            return res.send('Por favor, preencha todos os campos. :)')
+            return res.send("Por favor, preencha todos os campos. :) ")
         }
     }
 
-    let { image_url, recipe_name, author_name, ingredients, preparation, more_info } = req.body
+    let { image, title, author, ingredients, preparation, information } = req.body
+
+    ingredients = ingredients.split(",")
 
     test.recipes.push({
-        image_url 
-        , recipe_name
-        , author_name
+        image 
+        , title
+        , author
         , ingredients
         , preparation
-        , more_info
+        , information
     }) 
 
     fs.writeFile("data.json", JSON.stringify(test, null, 2), function(err){
