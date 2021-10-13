@@ -11,7 +11,7 @@ exports.create = function (req, res) {
 }
 
 exports.show = function (req, res) {
-    const recipes = data;
+    const recipes = test.recipes;
     const recipeIndex = req.params.id;
   
     return res.render('./recipes/recipe', { item: recipes[recipeIndex] })

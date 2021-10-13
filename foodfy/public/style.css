@@ -177,6 +177,8 @@ span {
 
 .image-container img {
     border-radius: 15px;
+    height: 200px;
+    width: 1000px;
 }
 
 .title-container {

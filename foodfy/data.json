@@ -4,7 +4,12 @@
       "image": "https://www.cruzeirodovale.com.br/imgs/noticias/36397/images/miojo.jpg",
       "title": "Miojo",
       "author": "Gabriel Klein",
-      "ingredients": "despreparo culinário, fomo, miojo, água quente",
+      "ingredients": [
+        "despreparo culinário",
+        "fomo",
+        "miojo",
+        "água quente"
+      ],
       "preparation": "Na parte traseira da embalagem",
       "information": ":)"
     },
@@ -12,7 +17,10 @@
       "image": "https://blog.gsuplementos.com.br/wp-content/uploads/2020/03/iStock-1097126662.jpg",
       "title": "Pipoca",
       "author": "Paulo Nestor",
-      "ingredients": "Milho,oléo",
+      "ingredients": [
+        "Milho",
+        "Oléo"
+      ],
       "preparation": "Junte o milho e o oléo na panela e mecha até estourar",
       "information": "Sal à gosto"
     },
@@ -20,7 +28,12 @@
       "image": "https://i.ytimg.com/vi/wm_C0Un8QSU/maxresdefault.jpg",
       "title": "Lasanha",
       "author": "Fernando da Fonseca",
-      "ingredients": "500 g de massa de lasanha,500 g de carne moída,2 caixas de creme de leite,3 colheres de manteiga",
+      "ingredients": [
+        "500 g de massa de lasanha",
+        "500 g de carne moída",
+        "2 caixas de creme de leite",
+        "3 colheres de manteiga"
+      ],
       "preparation": "Cozinhe a massa segundo as orientações do fabricante, despeje em um refratário com água gelada para não grudar e reserve.  Molho à bolonhesa  Refogue o alho, a cebola, a carne moída, o molho de tomate, deixe cozinhar por 3 minutos e reserve.  Molho branco  Derreta a margarina, coloque as 3 colheres de farinha de trigo e mexa.  Despeje o leite aos poucos e continue mexendo.  Por último, coloque o creme de leite, mexa por 1 minuto e desligue o fogo.",
       "information": "Você sabia que a lasanha é um prato superfamoso no mundo inteiro? Ela pode ter vários molhos e recheios. Seu nome deriva da sua montagem em camadas: lasanha significa \"pote de cozinhar\".  Receita de lasanha nunca tem certo ou errado, cada um tem a sua, normalmente passada de geração em geração, certo? "
     },
@@ -50,6 +63,19 @@
       ],
       "preparation": "Coloque as carnes de molho por 36 horas ou mais, vá trocando a água várias vezes, se for ambiente quente ou verão, coloque gelo por cima ou em camadas frias. Coloque para cozinhar passo a passo: as carnes duras, em seguida as carnes moles. Quando estiver mole coloque o feijão, e retire as carnes. Finalmente tempere o feijão.",
       "information": "A feijoada é um prato típico do Rio de Janeiro e é muito consumido em todo Brasil. Apesar de ser um prato com muitas variações, a típica feijoada completa é aquela que leva todas as carnes salgadas (costela, linguiças variadas, carne seca, pé, orelha, rabo, lombo, bacon) e é servira com rodelas de laranja, couve refogada no alho, arroz e farofa. "
+    },
+    {
+      "image": "https://soubh.uai.com.br/uploads/post/image/11558/main_destaque_Alexandr_Popel.jpg",
+      "title": "Hamburguer",
+      "author": "Claudia Cristina Soares",
+      "ingredients": [
+        "3 kg de carne moída (escolha uma carne magra e macia)",
+        "300 g de bacon moído",
+        "1 ovo",
+        "3 colheres (sopa) de farinha de trigo"
+      ],
+      "preparation": "Misture todos os ingredientes muito bem e amasse para que fique tudo muito bem misturado.  Faça porções de 90 g a 100 g.  Forre um plástico molhado em uma bancada e modele os hambúrgueres utilizando um aro como base.  Faça um de cada vez e retire o aro logo em seguida.  Forre uma assadeira de metal com plástico, coloque os hambúrgueres e intercale camadas de carne e plásticos (sem apertar).  Faça no máximo 4 camadas por forma e leve para congelar.  Retire do congelador, frite ou asse e está pronto.",
+      "information": "Dica: preaqueça a chapa, frigideira ou grelha por 10 minutos antes de levar os hambúrgueres. Adicione um pouquinho de óleo ou manteiga e não amasse os hambúrgueres!"
     }
   ]
 }
