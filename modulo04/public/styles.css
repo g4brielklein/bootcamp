@@ -34,6 +34,7 @@ header {
 .links a {
     text-decoration: none;
     color: #777;
+    position: relative;
 }
 
 .links a.active {
@@ -42,6 +43,15 @@ header {
 }
 
 .links a:hover {
-    text-decoration: underline;
     color: var(--primary-color);
+}
+
+.links a:hover::after {
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: var(--primary-color);
+    position: absolute;
+    left: 0;
+    bottom: -4px;
 }
